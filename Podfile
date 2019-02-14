@@ -6,6 +6,8 @@ target '电视直播' do
   # use_frameworks!
 
   # Pods for 电视直播
+  pod 'Reachability'
+  pod 'MBProgressHUD'
   pod 'IJKMediaFramework'
   #pod 'Masonry'
 

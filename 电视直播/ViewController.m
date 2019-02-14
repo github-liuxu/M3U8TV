@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ListViewController.h"
 #import "IJKMediaPlayer.h"
+#import "Reachability.h"
+#import "NvToast.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
     
@@ -27,6 +29,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(networkStateChange:) name:kReachabilityChangedNotification object:nil];
+    // 创建Reachability
+    Reachability *reachability = [Reachability reachabilityForInternetConnection];
+    // 开始监控网络(一旦网络状态发生改变, 就会发出通知kReachabilityChangedNotification)
+    [reachability startNotifier];
+    
     self.isAvPlayer = YES;
     dispatch_async(dispatch_get_main_queue(), ^{
         self.controller = [[ListViewController alloc] init];
@@ -39,8 +47,32 @@
         
         [self.view addSubview:self.tableView];
         self.tableView.hidden = YES;
+        
+        //获取当前网络状态
+        if ([reachability currentReachabilityStatus] == ReachableViaWiFi) {
+            [NvToast showInfoWithMessage:@"当前使用Wi-Fi网络"];
+        } else if ([reachability currentReachabilityStatus] == ReachableViaWWAN) {
+            [NvToast showInfoWithMessage:@"当前使用蜂窝网络"];
+        } else {
+            [NvToast showInfoWithMessage:@"没有网络"];
+        }
     });
 
+}
+
+- (void)networkStateChange:(NSNotification *)notification {
+    Reachability *reach = [notification object];
+    if([reach isKindOfClass:[Reachability class]]){
+        NetworkStatus status = [reach currentReachabilityStatus];
+        if (status == ReachableViaWiFi) {
+            [NvToast showInfoWithMessage:@"当前使用Wi-Fi网络"];
+        } else if (status == ReachableViaWWAN) {
+            [NvToast showInfoWithMessage:@"当前使用蜂窝网络"];
+        } else {
+            [NvToast showInfoWithMessage:@"没有网络"];
+        }
+        
+    }
 }
     
 - (void)shareFilePath:(NSString *)filePath {

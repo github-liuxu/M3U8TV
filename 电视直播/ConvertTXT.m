@@ -19,7 +19,7 @@
         NSArray *array = [resultStr componentsSeparatedByString:@"\n"];
         [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSArray *arr = [obj componentsSeparatedByString:@","];
-            if (arr.count>0) {
+            if (arr.count == 2) {
                 NSString *name = arr.firstObject;
                 NSString *url = arr.lastObject;
                 NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:name,@"name",url,@"url", nil];

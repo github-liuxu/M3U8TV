@@ -1,0 +1,860 @@
+美国芝加哥WGN9频道HD,http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/master.m3u8
+美国FLIXHD,http://z5ams.akamaized.net/andflixhd/tracks-v1a1/index.m3u8
+美国Free IPTV,http://stream.srg-ssr.ch/m/rsj/mp3_128
+美国July.12.2018,http://stream.srg-ssr.ch/m/rsc_de/mp3_128
+美国World News,http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-einws_backup
+美国Al Jazeera (Opt-1),http://aljazeera-eng-hd-live.hls.adaptive.level3.net/aljazeera/english2/index.m3u8
+美国Bloomberg TV Europe,http://cdn-videos.akamaized.net/btv/desktop/akamai/europe/live/primary.m3u8
+美国CGTN (Opt-1) ,http://live.cgtn.com/500/prog_index.m3u8
+美国CGTN (Opt-2) ,http://live.cgtn.com/1000/prog_index.m3u8
+美国Deutsche Welle ,http://dwstream4-lh.akamaihd.net/i/dwstream4_live@131329/master.m3u8
+美国TRT World ,http://trtcanlitv-lh.akamaihd.net/i/TRTWORLD_1@321783/master.m3u8
+美国24/7 ,http://stream.dubstep.fm:80/256mp3
+美国30A TV,http://30a-tv.com/my999.m3u8
+美国360 North,http://wowzaprod3-i.akamaihd.net/hls/live/252236/2147483647_360north_247/playlist.m3u8
+美国Atlanta Channel，,http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/chucklist.m3u8
+美国Beach TV - 30A,http://media4.tripsmarter.com:1935/LiveTV/DTVHD/playlist.m3u8
+美国Beach TV - Panama City,http://media4.tripsmarter.com:1935/LiveTV/BTVHD/chucklist.m3u8
+美国Beach TV - Pawleys Island,http://media4.tripsmarter.com:1935/LiveTV/MTVHD/playlist.m3u8
+美国Bounce TV,http://tv.bmx-tv.top:1935/live/5.smil/playlist.m3u8
+美国Bowie TV,http://granicusliveus3-a.akamaihd.net/cityofbowie/G0466_001/playlist.m3u8
+美国Buffalo TV,http://na-all15.secdn.net/pegstream3-live/play/c3e1e4c4-7f11-4a54-8b8f-c590a95b4ade/playlist.m3u8
+美国Buzzr (Opt-1),http://tv.bmx-tv.top:1935/live/17.smil/playlist.m3u8
+美国California Music Channel,http://cmctv.ios.internapcdn.net/cmctv_vitalstream_com/live_1/CMCUSA/CCURstream0.m3u8
+美国Cars.TV,http://tv.bmx-tv.top:1935/live/29.smil/playlist.m3u8
+美国CBS (Opt-2),http://tv.bmx-tv.top:1935/live/33.smil/playlist.m3u8
+美国CBS News (Opt-1),http://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/master.m3u8
+美国Channel 7,http://radio.7chan.org:8000/CH7
+美国Comedy.TV，,http://tv.bmx-tv.top:1935/live/22.smil/playlist.m3u8
+美国Comet TV (Opt-2),http://tv.bmx-tv.top:1935/live/12.smil/playlist.m3u8
+美国Cozi TV,http://tv.bmx-tv.top:1935/live/14.smil/playlist.m3u8
+美国Daytona Beach TV,http://oflash.dfw.swagit.com/live/daytonabeachfl/smil:std-4x3-1-a/chucklist.m3u8
+美国Denver 8 TV,http://granicusliveus8-a.akamaihd.net/denver/G0080_002/chunklist.m3u8
+美国District of Columbia Network，,http://video.oct.dc.gov/out/u/DCN.m3u8
+美国Entertainment Studios,http://tv.bmx-tv.top:1935/live/32.smil/playlist.m3u8
+美国Fight Network,http://tv.bmx-tv.top:1935/live/2.smil/playlist.m3u8
+美国FNTSY Sports Network,http://tv.bmx-tv.top:1935/live/7.smil/playlist.m3u8
+美国Fox News Talk Radio,http://fnurtmp-f.akamaihd.net/i/FNRADIO_1@92141/master.m3u8
+美国Garland TV,http://oflash-alt.dfw.swagit.com/live/garlandtx/smil:hd-16x9-1-a/chunklist.m3u8
+美国Get TV,http://tv.bmx-tv.top:1935/live/6.smil/playlist.m3u8
+美国Greenbelt TV,http://granicusliveus4-a.akamaihd.net/greenbeltmd/G0610_001/chunklist.m3u8
+美国House of Representatives,http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:HouseChannel_all/chucklist.m3u8
+美国InfoWars,http://infowarslive-lh.akamaihd.net/i/infowarslivestream_1@353459/master.m3u8
+美国Jewelry Television,http://wowzaprod134-i.akamaihd.net/hls/live/577814/ccddaf02/playlist.m3u8
+美国Jupiter Broadcasting,http://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream/playlist.m3u8
+美国Justice Central,http://tv.bmx-tv.top:1935/live/21.smil/playlist.m3u8
+美国Key TV,http://media4.tripsmarter.com:1935/LiveTV/KTVHD/chunklist_w363623166.m3u8
+美国Kool TV,http://173.199.158.79:1935/roku/myStream/playlist.m3u8
+美国Light TV,http://tv.bmx-tv.top:1935/live/27.smil/playlist.m3u8
+美国Metro Cable Network,http://live.mcn6.org:8180/live/CELL-496k-270p/CELL-496k-270p.m3u8
+美国MLB Network,http://mlblive-akc.mlb.com/ls01/mlbam/mlb_network/NETWORK_LINEAR_1/master_wired.m3u8
+美国MyDestination.TV,http://tv.bmx-tv.top:1935/live/31.smil/playlist.m3u8
+美国NBC (Opt-2),http://tv.bmx-tv.top:1935/live/34.smil/playlist.m3u8
+美国New Orleans TV,http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
+美国Newsmax TV,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
+美国Orange TV,http://otv3.ocfl.net:1936/OrangeTV/smil:OrangeTV.smil/chunklist_w1007974604_b894100_sleng.m3u8
+美国Pets.TV,http://tv.bmx-tv.top:1935/live/30.smil/playlist.m3u8
+美国Pursuit,http://tv.bmx-tv.top:1935/live/3.smil/playlist.m3u8
+美国QVC (Opt-1),http://qvclvp2.mmdlive.lldns.net/qvclvp2/cd5bfeab75a34ba18301490388fd4daa/manifest.m3u8
+美国QVC (Opt-1),http://qvclvp2.mmdlive.lldns.net/qvclvp2/9aa645c89c5447a8937537011e8f8d0d/manifest.m3u8
+美国QVC 2,http://qvclvp2.mmdlive.lldns.net/qvclvp2/1af4a53fda904f6c90a4389c8fe92dc0/manifest.m3u8
+美国Recipe.TV,http://tv.bmx-tv.top:1935/live/23.smil/playlist.m3u8
+美国Red Bull TV SD,http://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_1660.m3u8
+美国Revn,http://dcunilive28-lh.akamaihd.net/i/dclive_1@624563/master.m3u8
+美国Revolt,http://tv.bmx-tv.top:1935/live/20.smil/playlist.m3u8
+美国RFD TV,http://tv.bmx-tv.top:1935/live/10.smil/playlist.m3u8
+美国Ride TV,http://tv.bmx-tv.top:1935/live/19.smil/playlist.m3u8
+美国Southeastern Channel,http://147.174.13.196/live/WIFI-1296k-540p/WIFI-1296k-540p.m3u8
+美国Speed Sport,http://tv.bmx-tv.top:1935/live/4.smil/playlist.m3u8
+美国Temple TV,http://streaming.temple.edu/tutvlive/_definst_/mp4:play/chunklist.m3u8
+美国The Blaze (Opt-1),http://theblaze.global.ssl.fastly.net/live/blaze-dvr/master.m3u8
+美国The Blaze (Opt-2),http://tv.bmx-tv.top:1935/live/16.smil/playlist.m3u8
+美国The Weather Channel,http://weather-lh.akamaihd.net/i/twc_1@92006/master.m3u8
+美国This TV，,http://tv.bmx-tv.top:1935/live/15.smil/playlist.m3u8
+美国TSTV,http://tstv-stream.tsm.utexas.edu/hls/livestream_hi/index.m3u8
+美国TVW,http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:TVWAIR_all/chucklist.m3u8
+美国TVW-2,http://d3ktuc8v2sjk6m.cloudfront.net/livetv/ngrp:TVW2_all/master.m3u8
+美国VTV Channel 6 Colorado,http://hls.ksl.com/t/strata/playlist.m3u8
+美国Weather Nation,http://cdnapi.kaltura.com/p/931702/sp/93170200/playManifest/entryId/1_oorxcge2/format/applehttp/protocol/http/uiConfId/28428751/a.m3u8
+美国West Ohio Sports Network,http://tv.bmx-tv.top:1935/live/1.smil/playlist.m3u8
+美国WHPR TV 33 Detroit,http://162.244.81.156:1935/whprtv33roku/whprtv33roku/playlist.m3u8
+美国本土NBC 11 News (Bay Area).,http://kntvlive-f.akamaihd.net/i/kntvb2_1@15530/index_1286_av-p.m3u8
+美国本土News 12 (The Bronx),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12BX
+美国本土News 12 (Brooklyn),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12KN
+美国本土News 12 (Long Island - Traffic).,http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_LI
+美国本土News 12 (Long Island - News),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12LI_WEST
+美国本土News 12 (Connecticut),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12CT_WEST
+美国本土News 12 (Connecticut - Traffic),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_CT
+美国本土News 12 (New York City - Traffic),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_NYC
+美国本土News 12 (New Jersey - Traffic),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_NJ
+美国本土News 12 (New Jersey),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12NJ_CENTRAL
+美国本土News 12 (Hudson Valley),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12HV
+美国本土News 12 (Westchester),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12WH_WESTCHESTER
+美国本土NBC 5 News (Chicago),http://wmaqlive-f.akamaihd.net/i/wmaqa1_1@22923/master.m3u8
+美国本土WGN 9 News (Chicago),http://wgntribune-lh.akamaihd.net/i/WGNPrimary_1@304622/index_750_av-b.m3u8
+美国本土WVIT 30 News (Hartford),http://wvitlive-f.akamaihd.net/i/wvitb2_1@71164/master.m3u8
+美国本土News 12 (Hudson Valley),http://hls.iptv.optimum.net/news12/nipadlive/index_new.m3u8?callsign=N12TW_WC
+美国本土CBS 4 News (Indianapolis),http://wttv-lh.akamaihd.net:80/i/WTTVBreaking_1@333494/index_3000_av-b.m3u8
+美国本土Channel 11 News WPXI (Pittsburgh),http://svc-lvanvato-cxtv-wpxi.cmgvideo.com/wpxi/2564k/index.m3u8
+美国本土ABC 7 News (Sarasota),http://live.field59.com/wwsb/ngrp:wwsb1_all/playlist.m3u8
+加拿大Assemblee Nationale du Quebec，,http://diffusionm4.assnat.qc.ca/canal9/250.sdp/playlist.m3u8
+加拿大Canadian Arab TV,http://192.226.228.32:8080/hls/catv/index.m3u8
+加拿大Canal Savoir,http://stream.canalsavoir.tv/livestream/stream.m3u8
+加拿大CBC News (VOD),http://cbcnewshd-f.akamaihd.net/i/cbcnews_1@8981/index_2500_av-p.m3u8
+加拿大CTV News Live 1,http://ams-lp10.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News18.m3u8
+加拿大CTV News Live 2,http://ams-lp7.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News28.m3u8
+加拿大CTV News Live 3,http://ams-lp6.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News38.m3u8
+加拿大CTV News Live 4,http://ams-lp5.9c9media.com/hls-live/livepkgr/_definst_/liveNews/News48.m3u8
+加拿大The Shopping Channel,http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8
+加拿大NTV Newfoundland,http://1-fss-fso35.streamhoster.com/lv_ntv/_definst_/broadcast1/chunklist.m3u8
+英国sky TG24,http://skyianywhere2-i.akamaihd.net:80/hls/live/200275/tg24/playlist.m3u8
+英国MTV,http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/master.m3u8
+英国SkyNews,http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8
+英国Arise News,http://contributionstreams.ashttp9.visionip.tv/live/visiontv-contributionstreams-arise-tv-hsslive-25f-16x9-SD/chunklist.m3u8
+英国Jewellery Maker,http://edge01.cdn.aws.subset.host/JewelleryMakerLive/JewelleryMakerLive/playlist.m3u8
+英国Kool London Radio,http://w10.streamgb.com:1935/kool/kool/playlist.m3u8
+英国London Live,http://bcoveliveios-i.akamaihd.net/hls/live/217434/3083279840001/master.m3u8
+英国Sky News,http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8
+英国Sony Movie Channel,http://yipcontent-lh.akamaihd.net/i/sonymoviechannel_1@569927/index_1080_av-p.m3u8?sd=10&rebase=on
+爱尔兰TG4,http://csm-e.cds1.yospace.com/csm/live/74246610.m3u8
+爱尔兰RTE News Now,http://wmsrtsp1.rte.ie/live/android.sdp/playlist.m3u8
+澳大利亚2UE Sydney,http://syd2uevid-lh.akamaihd.net/i/sydneyuevid_1@110994/index_500_av-p.m3u8
+澳大利亚3AW Melbourne,http://melb3awvid-lh.akamaihd.net/i/melbournevid_1@109381/master.m3u8
+澳大利亚4BC Brisbane,http://bris4bcvid-lh.akamaihd.net/i/brisbanebcvida_1@110989/master.m3u8
+新西兰Parliament TV (Opt-2),http://streaming.kordia.net.nz/out/u/ptv_houseaudio.m3u8
+新西兰Three,http://mediaworks-i.akamaihd.net/hls/live/220435/3812193411001/3news_live/master.m3u8
+新西兰TVSN,http://tvsn-i.akamaihd.net/hls/live/261837/tvsn_nz/tvsn_nz_750.m3u8
+德国SPORT,http://61.216.177.73/sta/ch91865016.m3u8
+德国1-2-3 TV,http://123tv.cdn.ses-ps.com/index.m3u8
+德国ALEX Berlin，,http://alex-stream.rosebud-media.de:80/live/smil:alexlivetv.smil/playlist.m3u8
+德国Allgau TV，,http://tvallgaeu.iptv-playoutcenter.de:1935/tvallgaeu/tvallgaeu.stream_2/playlist.m3u8
+德国Baden TV，,http://badentv-stream2.siebnich.info/rtplive/btv.stream/live.m3u8
+德国Blizz TV，,http://familytvblizz-lh.akamaihd.net/i/familytv_1@458351/master.m3u8
+德国Das Erste，,http://daserste_live-lh.akamaihd.net/i/daserste_int@91203/master.m3u8
+德国Der Aktionar TV，,http://edge-h.daf.tmt.de/ios-live/daf-ios-live-livetv.stream/playlist.m3u8
+德国Deutsche Welle (Opt-1)，,http://dwstream5-lh.akamaihd.net/i/dwstream5_live@124540/master.m3u8
+德国Deutsche Welle (Opt-2)，,http://dwstream72-lh.akamaihd.net/i/dwstream72_live@123556/master.m3u8
+德国Deutsche Welle (Opt-3)，,http://dwstream6-lh.akamaihd.net/i/dwstream6_live@123962/master.m3u8
+德国Deutsches Musik Fernsehen，,http://tv.artcom-venture.de:1322/dmf/tv.m3u8
+德国Elbekanal，,http://62.113.210.250/medienasa-live/_definst_/mp4:elbe_high/chunklist_w1146564478.m3u8
+德国EOTV，,http://cdn-europe.smartcast.de:1935/eotv/eotvhd/playlist.m3u8
+德国Family TV，,http://familytvblizz-lh.akamaihd.net/i/blizzlive_1@36699/master.m3u8
+德国Franken Fernsehen，,http://frankentv.iptv-playoutcenter.de:1935/frankentv/frankentv.stream_1/playlist.m3u8
+德国Folx TV，,http://46.101.244.86:8081/folx-abr/live-abr/fle/fle1/chunks.m3u8
+德国HR Fernsehen，,http://livestream-1.hr.de:80/i/hr_fernsehen@75910/master.m3u8
+德国INTV，h,ttps://586c13b083c0d.streamlock.net/ingolstadttv/ingolstadttv.stream_1/playlist.m3u8
+德国Isar TV，,http://isar-tv.iptv-playoutcenter.de:1935/isar-tv/isar-tv.stream_1/playlist.m3u8
+德国MagentaMusik 360，,http://streaming-magenta-music-360.akamaized.net/hls/live/504581/magentamusik1/magentamusik1_1/magentamusik1.m3u8
+德国MDF.1，,http://62.113.210.250/medienasa-live/mdf1_high/agustiny.m3u8
+德国Munchen TV，,http://muenchentv.iptv-playoutcenter.de:1935/muenchentv/muenchentv.stream_2/playlist.m3u8
+德国Noa 4 Norderstedt，,http://hls1.wtnet.de/noa4/apple/wifi6500.m3u8
+德国Noa 4 Hamburg，,http://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8
+德国Oberpfalz TV，,http://oberpfalztv.iptv-playoutcenter.de:1935/oberpfalztv/oberpfalztv.stream_1/master.m3u8
+德国Offener Kanal Magdeburg，,http://iptvcodes.blogspot.com@62.113.210.250/medienasa-live/ok-magdeburg_high/hasbahca.m3u8?bitrate=800
+德国pop10，,http://iptvcodes.blogspot.com@62.113.210.250/medienasa-live/ok-dessau_high/hasbahca.m3u8?bitrate=800
+德国RFO，,http://rfo.iptv-playoutcenter.de:1935/rfo/rfo.stream_2/playlist.m3u8
+德国Rheinmain TV，,http://62.67.13.54:1935/rmtv/rmtv_livestream/playlist.m3u8
+德国tagesschau24，,http://tagesschau-lh.akamaihd.net/i/tagesschau_1@119231/master.m3u8
+德国TVA Ostbayern，,http://tvaktuellr.iptv-playoutcenter.de:1935/tvaktuellr/tvaktuellr.stream_1/master.m3u8
+德国TV Oberfranken，,http://tvoberfranken.iptv-playoutcenter.de:1935/tvoberfranken/tvoberfranken.stream_1/playlist.m3u8
+德国TV Touring Schweinfurt，,http://tvtourings.iptv-playoutcenter.de:1935/tvtourings/tvtourings.stream_1/playlist.m3u8
+德国TV Touring Wurzburg，,http://tvtouringw.iptv-playoutcenter.de:1935/tvtouringw/tvtouringw.stream_1/playlist.m3u8
+德国WDR Fernsehen,http://wdr_fs-lh.akamaihd.net/i/wdrfs_weltweit@112033/master.m3u8
+德国Welt der Wunder,http://live.vidoo.de/live/weltderwunder/f1tv.m3u8
+德国QVC,http://ios-stream.qvc.de/qvc.m3u8
+奥地利KRALHD,http://bqgsd19q.rocketcdn.com/kralpop_720/chunklist.m3u8
+奥地利Okto TV,http://d2jk87psbjrjdz.cloudfront.net/livehttporigin/okto/playlist.m3u8
+奥地利ORF 1 [Geo],http://apasfiisl.apa.at/ipad/orf1_q4a/orf.sdp/playlist.m3u8
+奥地利ORF 2 [NoKodi],http://apasfiisl.apa.at/ipad/orf2_q4a/orf.sdp/playlist.m3u8
+奥地利ORF 3 [NoKodi],http://apasfiisl.apa.at/ipad/orf3_q4a/orf.sdp/playlist.m3u8
+奥地利ORF Sport (Geo),http://apasfiisl.apa.at/ipad/orfs_q4a/orf.sdp/playlist.m3u8
+奥地利ORF Sport + (Geo),http://orfs.orf.cdn.ors.at/orfs/q8c.sdp/playlist.m3u8
+奥地利Tirol TV,http://lb.hd-livestream.de:1935/live/TirolTV/playlist.m3u8
+奥地利"W24,http://ms01.w24.at/hls-live/livepkgr/_definst_/liveevent.m3u8
+卢森堡RTL,http://live01.rtl.lu/channel1/smil:channel1/chunklist.m3u8
+瑞士Beatz music tvr,http://beats.vedge.infomaniak.com/livecast/beats_1/playlist.m3u8
+荷兰AT5,http://lb-at5-live.cdn.streamgate.nl/at5/video/at5.smil/playlist.m3u8
+荷兰Feel Good Radioh,ttps://media.streamone.net/hlslive/account=HQQBFe-bAB4S/livestream=lwQBr4-YDU8y/events(1513813894)/live-audio_1=96000-video=1904000.m3u8
+荷兰Klipkar TV,http://live.wowza.kpnstreaming.nl/omropfryslanlive/_definst_/OFstream01.smil/chunklist-b1200000.m3u8
+荷兰NH,http://lb-nh-live.cdn.streamgate.nl:1935/nh/video/nh.smil/playlist.m3u8
+荷兰Omroep Ede,http://live.streamone.nl/livestream/yEr2XzzAi311/playlist.m3u8
+荷兰Omroep Flevoland,http://lb-omroepflevoland-live.cdn.streamgate.nl/omroepflevoland/livestream1.mp4/playlist.m3u8
+荷兰Omroep West,http://d2dslh4sd7yvc1.cloudfront.net/live/omroepwest/ngrp:tv-feed_all/playlist.m3u8
+荷兰Omroep Zeeland,http://livestream.zeelandnet.nl:1935/live/omroepzeeland_tv_1500k.sdp/playlist.m3u8
+荷兰Omrop Fryslan,http://live.wowza.kpnstreaming.nl/omropfryslanlive/OFstream04.smil/playlist.m3u8
+荷兰Qmusic,http://102793ooyala-lh.akamaihd.net/i/depers02_delivery@381748/master.m3u8
+荷兰RTV Drenthe,http://stream.rtvdrenthe.nl/tv/:tvstream1/playlist.m3u8
+荷兰RTV Rijnmond,http://d1eexm99gmxi2a.cloudfront.net/live/rijnmond/ngrp:TV-Rijnmond_all/playlist.m3u8
+荷兰RTV Purmerend,http://wowza.pmedia74.kpnstreaming.nl/pi6atvlive/rtvpurm/chunklist_w2047641916.m3u8
+荷兰Silence TV,http://109.236.85.100:8081/sipTV/live/playlist.m3u8
+荷兰Slam! TV*,http://hls.slam.nl/streaming/hls/SLAM!/lower_500000/playlist.m3u8
+荷兰Xite Music,http://highvolume03.streampartner.nl:1935/vleugels_hd4/livestream/playlist.m3u8
+冰岛N4,http://tv.vodafoneplay.is/n4/03.m3u8
+冰岛RUV,http://ruvruverl-live.hls.adaptive.level3.net/ruv/ruverl/index/stream4.m3u8
+丹麦TV2 Bornholm,http://live.tv2bornholm.dk/stream/live/chunklist.m3u8
+丹麦TV2 Fyn,http://cdn-lt-hls-vod.tv2fyn.dk/fhls/p/1966291/sp/196629100/serveFlavor/entryId/0_yct7rqn3/v/2/flavorId/0_h2wfmuqm/name/a.mp4/index.m3u8
+丹麦TV2 Lorry,http://cdn-lt-hls-vod.tv2lorry.dk/fhls/p/2045321/sp/204532100/serveFlavor/entryId/0_0u9letdh/v/1/flavorId/0_p5f7q6yf/name/a.mp4/index.m3u8
+丹麦TV2 Sport,http://tv2danmark-tv2sport-live.hls.adaptive.level3.net/tv2danmark/tv2sport/master.m3u8
+丹麦TV Syd,http://cdn-lt-live.tvsyd.dk/dc-1/live/hls/p/1956351/e/0_e9slj9wh/t/ut3_n5VQ1FqzlqMhwbQmJg/index-s32.m3u8
+丹麦KKR TV.,http://stream.kkr.dk/live/ngrp:kkr_adaptive/chunklist_w184691500_b1628000.m3u8
+挪威Kanal 10,http://cdn-kanal10.crossnet.net/kanal10no/live1/playlist.m3u8
+挪威MTV,http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/master.m3u8
+挪威Stortinget,http://flash0.19333-live0.dna.qbrick.com:1935/19333-live0/push-stortinget_1/playlist.m3u8
+芬兰YLE TV 1,http://yletvhdliveworld-lh.akamaihd.net/i/yletv1hdworld_1@187592/index_2764_av-p.m3u8
+芬兰YLE TV 2,http://yletvhdliveworld-lh.akamaihd.net/i/yletv2hdworld_1@187593/index_2764_av-p.m3u8
+瑞典24 Corren,http://lw-ntm-live.lwcdn.com/live/amlst:2df87a73-e998-4be4-b469-8e1614976f3c_all/playlist.m3u8
+瑞典Himlen TV7,http://vod.tv7.fi:1935/tv7-se/_definst_/mp4:tv7-se.stream_360p/playlist.m3u8
+瑞典Kanal 10,http://cdn-kanal10.crossnet.net:1935/kanal10/mp4:mpegts.stream/playlist.m3u8
+瑞典Oppna Kanalen,http://83.140.64.214/edge/_451iw2h_/451iw2h/playlist.m3u8
+瑞典Vastmanlands TV,http://83.140.64.214/edge/_93pr0kxj_/93pr0kxj/chunklist_w404315212.m3u8
+比利时Antenne Centre TV (French),http://vm109.imust.org:1935/live/livestream/playlist.m3u8
+比利时ATV (Dutch),http://urtmpkal-f.akamaihd.net/i/1ut1nl3fq_1@316656/master.m3u8
+比利时NRJ Hits TV (Opt-1),http://5.196.138.6:1935/live/nrjbelgique/playlist.m3u8
+比利时NRJ Hits TV (Opt-2),http://5.196.138.6:1935/live/nrjbelgique_720p/playlist.m3u8
+比利时Radio Contact 102.2 FM Brussels,http://contact-lh.akamaihd.net/i/CONTACT_1@321283/master.m3u8
+比利时RTL-TVI,http://rtltvi-lh.akamaihd.net/i/TVI_1@319659/master.m3u8
+比利时TVL (Dutch),http://urtmpkal-f.akamaihd.net/i/1ef9833b4_1@128347/master.m3u8
+比利时TV OOST,http://urtmpkal-f.akamaihd.net/i/156m2vpg5_1@322941/index_1_av-p.m3u8
+法国Midnight Secretsh,ttps://fash1043.cloudycdn.services/slive/_definst_/ftv_ftv_midnite_k1y_27049_midnite_secr_108_hls.smil/playlist.m3u8
+法国Alsace 20,http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
+法国Bblack! Africa,http://ec.playmedia.fr/beblack/africa/playlist.m3u8
+法国Bblack! Caribbean,http://ec.playmedia.fr/beblack/caribbean/playlist.m3u8
+法国BFM TV,http://csm-e.dai.bfmtv.com/csm/live/109797390.m3u8
+法国BFM Paris,http://bfmparishdslive-lh.akamaihd.net/i/DVMR_PARIS@429747/master.m3u8
+法国BFM Business,http://bfmlive-i.akamaihd.net/hls/live/254438/876450612001/DVMR_BFMBusiness2/master.m3u8
+法国BFM Sport,http://rmc-i.akamaihd.net/hls/live/218333/876630703001/BFMSPORT/master.m3u8
+法国CGTN,http://live.cgtn.com/1000f/prog_index.m3u8
+法国CNews (Updated),http://stream-03.nyc.dailymotion.com/25/dm/3/x3b68jn/live-3.m3u8
+法国DJing Animationh,ttps://www.djing.com/tv/animation.m3u8
+法国DJing Classicsh,ttps://www.djing.com/tv/classics.m3u8
+法国DJing Dancefloorh,ttps://www.djing.com/tv/dancefloor.m3u8
+法国DJing Electro Rockh,ttps://www.djing.com/tv/session_electro-rock.m3u8
+法国DJing Mainh,ttps://www.djing.com/tv/live.m3u8
+法国DJing Summer Vibesh,ttps://www.djing.com/tv/session_summer-vibes.m3u8
+法国DJing Undergroundh,ttps://www.djing.com/tv/underground.m3u8
+法国Fashion TV,http://stream-01.nyc.dailymotion.com/52/dm/3/x3m6nld/live-3.m3u8
+法国France 24,http://f24hls-i.akamaihd.net/hls/live/221192/F24_FR_LO_HLS/master_900.m3u8
+法国FranceInfoh,ttps://stream-02.nyc.dailymotion.com/39/dm/3/x4rdeu6/live-3.m3u8
+法国Francophonie 24,http://mv2.tvfrancophonie.org/live/Stream1/media_b776739_w671289549.m3u8
+法国Gong,http://ec.playmedia.fr/gong-base/live/playlist.m3u8
+法国La Chaine Normande,http://live.lachainenormande.fr/live/lcn/livestream/playlist.m3u8
+法国Monaco Info (Monaco),http://46.105.34.238/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
+法国RT,http://secure-streams.akamaized.net/rt-fr/index2500.m3u8
+法国TV5 Monde Info (Opt-1),http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/index.m3u8
+法国TV5 Monde Info (Opt-2),http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/v3plusinfo247hls_1_1.m3u8
+法国Tebeo,http://live2.awedia.com/hls/tebeo.m3u8
+海地Radio TeleBoston (USA),http://162.244.81.145:3333/live//telebostonrtb/playlist.m3u8
+海地Ynet TV,http://162.244.83.199:1935/ynettv/ynettv/playlist.m3u8
+喀麦隆 Vision 4,http://cdnamd-hls-globecast.akamaized.net/live/ramdisk/vision4/hls_video/index.m3u8
+卢旺达RTV,http://197.243.19.131:1935/rtv/rtv/chunklist_w2093872577.m3u8
+瑞士Beatz TV,http://beats.vedge.infomaniak.com/livecast/beats_1/playlist.m3u8
+瑞士Radio Pilatus TVh,ttps://livevideo.infomaniak.com/streaming/livecast/rp_tv_1/playlist.m3u8
+瑞士Tele M1,http://klive-a.akamaihd.net/dc-1/live/hls/p/1719221/e/1_ljzy3evp/sd/10000/t/nwOKUovT2mwnA8x_KnC4zg/index-s32.m3u8
+瑞士TeleBarn,http://klive-a.akamaihd.net/dc-1/live/hls/p/1719221/e/1_0mc3z57p/t/gaudIWTPWrpJe6yJmHI9vA/index-s32.m3u8
+瑞士Telebasel,http://xapp510394368c1000199.f.l.z.lb.core-cdn.net/10096xtelebase/ios_500/master.m3u8
+瑞士TeleZurih,ttps://klive-a.akamaihd.net/dc-1/live/hls/p/1719221/e/1_hoislpiz/sd/10000/t/AFb4DZ0W2ts1a8fV5xo1VQ/index-s32.m3u8
+意大利SkyNews,http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8
+意大利 VIBEE TV,http://139.59.166.48:8081/live/live3/playlist.m3u8
+意大利51 Radio TV,http://wms.shared.streamshow.it:80/canale51/canale51/playlist.m3u8
+意大利Alto Adige TV,http://77.72.196.214:8554/live/AltoAdigeTV/livestream.m3u8
+意大利AutoMoto TV (Opt-1),http://178.22.187.253:1935/streaming-tv/mp4:myStream3/playlist.m3u8
+意大利Canale 7,http://wms.shared.streamshow.it:1935/canale7/canale7/live.m3u8
+意大利Canale 10,http://37.187.142.147:1935/ch10live/high.stream/live.m3u8
+意大利Carina TV,http://wms.shared.streamshow.it/carinatv/carinatv/playlist.m3u8
+意大利Company TV,http://wma10.fluidstream.net/CompanyTV/smil:CompanyTV.smil/playlist.m3u8
+意大利Cremona 1,http://cremona1.econcept.it/live/cremona1_high.isml/manifest(format=m3u8-aapl).m3u8
+意大利DeeJay TV,http://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/master.m3u8
+意大利FM Italia,http://flash8.streaming.xdevel.com/fmitalia/fmitalia/playlist.m3u8
+意大利La 7,http://la7-vh.akamaihd.net/i/content/entry/data/0/299/0_b7o9lvba_0_kyyr8vxz_1.mp4/master.m3u8
+意大利m20 TV,http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-p.m3u8
+意大利Radio 105 TV,http://wow01.105.net:1935/live/105Test1/livestream.m3u8
+意大利Radio Azzurra,http://188.165.224.142:1935/radiotivuazzurralive/radiotivuazzurralive/playlist.m3u8
+意大利Radio Bruno,http://37.48.83.34:80/radiobrunotv/radiobrunotv/playlist.m3u8
+意大利Radio Capital TiVu,http://capital-live-tv-01-hls.akamai.media.kataweb.it/i/CapitalTv_1@183098/master.m3u8
+意大利Radio Iglesias,http://wms.shared.streamshow.it/visualradio/mp4:visualradio/chunklist.m3u8
+意大利Radio Italia TV,http://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/index_720x480_av-p.m3u8
+意大利Radio Monte Carlo,http://wow01.105.net:1935/live/rmc1/livestream.m3u8
+意大利Radio Taormina,http://flash5.streaming.xdevel.com/taorminatv/taorminatv/playlist.m3u8
+意大利Radio Virgin TV (Opt-1),http://wow01.105.net:1935/live/virgin1/livestream.m3u8
+意大利Radio Virgin TV (Opt-2),http://fms.105.net:1935/live/virgin1/livestream.m3u8
+意大利Radionorba TV,http://flash5.streaming.xdevel.com/radionorbatv/smil:radionorbatv.smil/playlist.m3u8
+意大利Rai Movie,http://b2everyrai-lh.akamaihd.net/i/raimovie_1@67348/master.m3u8
+意大利Rai Premium,http://b2everyrai-lh.akamaihd.net/i/raipremium_1@181837/master.m3u8
+意大利Rete 55 (Opt-1),http://live.youiptv.ch:1935/Rete55/ngrp:R55.stream_all/livestream.m3u8
+意大利Retesole,http://flash2.bsnewline.com:1935/retesolelazio/retesolelazio/playlist.m3u8
+意大利Sky TG24,http://skyianywhere2-i.akamaihd.net:80/hls/live/200275/tg24/playlist.m3u8
+意大利Standby TV,http://176.31.226.78:1935/standbytvlive/stream1.sdp/playlist.m3u8
+意大利Sudtirol TV,http://77.72.196.214:8554/live/SuedtirolTV/livestream.m3u8
+意大利SuperTV,http://wms.shared.streamshow.it:1935/supertv/supertv/live.m3u8
+意大利TeleArena,http://wma07.fluidstream.net:1935/TeleArena/livestream/playlist.m3u8
+意大利teleMonteneve,http://wms.shared.streamshow.it:1935/telemonteneve/telemonteneve/live.m3u8
+意大利telePAVIA,http://wms.shared.streamshow.it:1935/telepavia/telepavia/live.m3u8
+意大利Tele Milano,http://91.121.222.160:1935/piublu/piublu.sdp/live.m3u8
+意大利Trentino TV (Opt-1),http://77.72.196.214:8554/live/TrentinoTV/livestream.m3u8
+意大利Trentino TV (Opt-2),http://77.72.196.214:8554/live/TrentinoSAT/livestream.m3u8
+意大利TSN,http://wms.shared.streamshow.it:1935/tsn2/tsn2/live.m3u8
+意大利TVRS,http://wms.shared.streamshow.it:1935/tvrs/tvrs/live.m3u8
+意大利TV Luna (Opt-2),http://live.Kronopress.com:1935/test_live/teleluna/livestream.m3u8
+意大利Video Brescia,http://wms.shared.streamshow.it:1935/videobrescia/videobrescia/live.m3u8
+意大利Video Calabria,http://wms.shared.streamshow.it:80/videocalabria/videocalabria/playlist.m3u8
+葡萄牙Porto Canal,http://213.13.26.41:1935/live/portocanal/KodiPortugal.pt.m3u8
+巴西AllSports,http://173.236.10.10:1935/dgrau/dgrau/playlist.m3u8
+巴西Amazon Sat,http://slrp.sambavideos.sambatech.com/liveevent/amazonsatabr1_3e9c859611a5e7fbedc785bd33c418b5/livestream3/chunklist.m3u8
+巴西Aperipe TV,http://wz-brasil1.comets.com.br/tvaperipe/aovivo/playlist.m3u8
+巴西Classique TV,http://45.43.208.2:1935/classique/classique/live.m3u8
+巴西E-Parana,http://200.189.113.201/hls/tve.m3u8
+巴西G2P TV,http://srv3.zoeweb.tv:1935/z474-live/aovivo/livestream.m3u8
+巴西MultiTV Cidades,http://a3.fabricahost.com.br:1935/multitv/stream/live.m3u8
+巴西PUC TV Goias,http://flash.softhost.com.br:1935/pucgoias/aovivo/live.m3u8
+巴西Radio Menina TV,http://173.236.10.10:1935/tvmocinha/tvmocinha/playlist.m3u8
+巴西RBC Salvador,http://45.43.208.98:1935/alexandre3116/alexandre3116/live.m3u8
+巴西RecordTV Espirito Santo,http://tvvitoria2.viacast.tv/livepl/tvvitoria_2_original.m3u8
+巴西RecordTV MatoGrosso,http://wz3.dnip.com.br:1935/tvgazetamt/tvgazetamt.sdp/playlist.m3u8
+巴西RecordTV Mozambique,http://api.new.livestream.com/accounts/21076186/events/6180705/live.m3u8
+巴西RecordTV Sao Paulo,http://wz3.dnip.com.br/tvgazetamt/tvgazetamt.sdp/tv.m3u8
+巴西Record News,http://stmv4.srvstm.com/recordnewses/recordnewses/playlist.m3u8?wowzasessionid=356495000
+巴西Rede Atividade,http://173.236.10.10:1935/redeatividade/redeatividade/playlist.m3u8
+巴西Rede Brasil [Opt-1],http://173.236.10.10:1935/rbtv/rbtv/playlist.m3u8
+巴西Rede Brasil [Opt-2]h,ttps://59f1cbe63db89.streamlock.net:1443/rbtv/rbtv/chunklist_w1757672591.m3u8
+巴西Rede Familia,http://srv9.zoeweb.tv:1935/zw901/smil:zw901.smil/playlist.m3u8
+巴西Rede Meio Norte,http://api.new.livestream.com/accounts/3332377/events/2958396/live.m3u8
+巴西Rede Minas,http://rtmp.cdn.upx.net.br/00084/myStream.sdp/playlist.m3u8
+巴西Rede TV,http://evpp.mm.uol.com.br/redetv1/redetv1/chunklist_w1483436880.m3u8
+巴西Rede TV Rondonia,http://173.236.10.10:1935/tvonline/tvonline/playlist.m3u8
+巴西Reporter Brasil,http://wse7.player.tv.br:1935/canalreporter/canalreporter/live.m3u8
+巴西SBT Piaui,http://192.99.46.182:1935/pioneira-tv3/pioneira-tv3/playlist.m3u8
+巴西TVE Bahia,http://200.187.60.190:80/hls-live/livepkgr/_definst_/irdeb/pgm-2.m3u8
+巴西TVE Rio Grande do Sul (Opt-1),http://selpro1348.procergs.com.br:1935/tve/stve/playlist.m3u8
+巴西TVE Rio Grande do Sul (Opt-2),http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
+巴西TVN,http://painelvj.com.br:1935/tvnbrasil/tvnbrasil.sdp/live.m3u8
+巴西TVR,http://painel.serveron.com.br:1935/tvregional/tvregional/live.m3u8
+巴西TV Art,http://stmv1.srvstm.com/tvarthd/tvarthd/playlist.m3u8
+巴西TV Assembleia SP,http://srv3.zoeweb.tv:1935/z93-live/stream/livestream.m3u8
+巴西TV Brasil,http://ebcremuxlive-live.hls.adaptive.level3.net/manifests/ebcremuxlive-ebctvbrasil/live.m3u8
+巴西TV Brasil Animada,http://stream2.ba.gov.br:80/hls-live/livepkgr/_definst_/irdeb/pgm-2.m3u8
+巴西TV Camara,http://stream2.camara.leg.br:8134/tv1/manifest.m3u8
+巴西TV Cultura,http://177.73.84.49/hls/live/live.m3u8
+巴西TV Diario,http://slrp.sambavideos.sambatech.com:80/liveevent/tvdiario_7a683b067e5eee5c8d45e1e1883f69b9/livestream/live.m3u8
+巴西TV Diario do Sertao,http://painelvj.com.br:1935/pdsertaotv/pdsertaotv.sdp/playlist.m3u8
+巴西TV Faap,http://midia.faap.br/faaplatamlive-live/stream_480/livestream.m3u8
+巴西TV Gazeta,http://api.new.livestream.com/accounts/5381476/events/2395418/live.m3u8
+巴西TV Geral,http://fms1.tacitus.com.br:1935/tvgeral/tvgeral/live.m3u8
+巴西TV INES,http://liveabr2.sambatech.com.br/abr/acerpTvINESABR_d360fbbfbf3e5e59a31cf89ec45eb3dc/livestreamabr.m3u8
+巴西TV MCJ,http://wse5.player.tv.br:1935/tvmcj/tvmcj/playlist.m3u8
+巴西TV O Povo,http://srv3.zoeweb.tv:1935/z01-live/stream/livestream.m3u8
+巴西TV Rio Preto,http://186.227.165.118:1935/insatv/livestream/live.m3u8
+巴西TV Sindeepres (Opt-2),http://v.pool.us.wse-1.srvstream.com:1935/fx7-live/fx7-live_720p/livestream.m3u8
+巴西TV Somzoom,http://srv3.zoeweb.tv:1935/z443-live/stream1/livestream.m3u8
+巴西TV Tuba,http://69.46.0.170:1935/rcr_tuba/tv.stream/live.m3u8
+巴西Web TV Minas,http://173.236.10.10:1935/webtvminas/webtvminas/live.m3u8
+西班牙皇马足球台HD,http://rmtv24hweblive-lh.akamaihd.net/i/rmtv24hwebes_1@300661/index_3_av-p.m3u8
+西班牙3/24,http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:324_mobil/chunklist_b548000.m3u8
+西班牙7 Murcia,http://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8
+西班牙8 TV (Opt-2),http://iphone.radiocat.net:1935/livereflector/8aldia.stream/playlist.m3u8
+西班牙13 TV,http://streaming.enetres.net:1935/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/stream.m3u8
+西班牙Andorra TV (Andorra),http://194.158.80.31:443/live/rtva/playlist.m3u8
+西班牙Aragon TV,http://aragontv.stream.flumotion.com/aragontv/hls-live/main.m3u8
+西班牙Calle 13,http://streaming.enetres.net:80/091DB7AFBD77442B9BA2F141DCC182F5021/mobile/chunklist.m3u8
+西班牙Canal 25,http://188.165.135.22/tvbarbastro/livestream/playlist.m3u8
+西班牙Canal Extremadura,http://hlstv.canalextremadura.es/livetv/smil:multistream.smil/playlist.m3u8
+西班牙Canal Parlamento (Updated),http://congresodirecto-f.akamaihd.net:80/i/congreso6_1@54665/master.m3u8
+西班牙Canaria SAT,http://streaming2.mad.idec.net/rtvcnet/rtvcnet.drb.360plr.stream/playlist.m3u8
+西班牙Ceuta TV,http://cls.todostreaming.eu/anguloce/livestream/chunklist.m3u8
+西班牙Costa del Sol TV,http://cls.todostreaming.eu/benalmadena/webtv/chunklist.m3u8
+西班牙Emporda TV,http://ventdelnord.tv:8080/escala/directe.m3u8
+西班牙ETB Sat,http://etbvnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@300391/master.m3u8
+西班牙IB3,http://ibsatiphone.ib3tv.com/iphoneliveIB3/IB3/bitrate_2.m3u8
+西班牙Imas TV,http://cls.todostreaming.eu/imastv/livestream/chunklist.m3u8
+西班牙La Otra,http://telemadridhls-live.hls.adaptive.level3.net/telemadrid/laotra1/index.m3u8
+西班牙La Xarxa,http://video-streaming.laxarxa.com:1935/xal1/mp4:directe/playlist.m3u8
+西班牙Lancelot TV,http://62.210.141.18:1935/directo/lancelot.television/live.m3u8
+西班牙Lebrija TV,http://212.104.160.156:1935/live/lebrijatv2/playlist3.m3u8
+西班牙Levante TV,http://teledifusion.tv:1935/levantetvlive/levantetvlive/master.m3u8
+西班牙Navarra TV (Opt-1),http://cdn.s3.eu.nice264.com:1935/niceLiveServer/NTV_livenatvmb_MB_478/live.m3u8
+西班牙Navarra TV (Opt-2),http://nws.nice264.com/SmilLive/getLiveIOS.smil?stream=NTV_livenatvmb&system=NTV&protocol=http_cupertino/playlist.m3u8
+西班牙Onda Algeciras,http://cls.provideo.es/algecirastv/livestream/playlist.m3u8
+西班牙RTVCE,http://teledifusion.tv:1935/rtvcetv/rtvcetvlive/playlist.m3u8
+西班牙RTPA,http://iphone.rtpa.stream.flumotion.com/rtpa/tv-iphone/main.m3u8
+西班牙San Roque TV,http://188.165.135.22/sanroque/mystream/chunklist_w1703138822.m3u8
+西班牙Sevilla FC TV,http://sevillafc_live-lh.akamaihd.net/i/video_0@354142/master.m3u8
+西班牙TEF TV,http://server10.streaming-pro.com:1937/live/teftvlive/playlist.m3u8
+西班牙TeleBilbao,http://cls.todostreaming.eu/telebilbao/restricted/playlist.m3u8
+西班牙Telemadri,http://telemadridhls-live.hls.adaptive.level3.net/telemadrid/telemadrid1/index.m3u8
+西班牙TeleSafor,http://video.telesafor.com/hls/video_low.m3u8
+西班牙TeleValencia,http://streaming.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/live.smil/.m3u8
+西班牙TV3 (Opt-1),http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3_web/playlist.m3u8
+西班牙TV3 (Opt-2),http://ccma-tva-int-abertis-live.hls.adaptive.level3.net/int/ngrp:tv3cat_web/chunklist_b1296000_DVR.m3u8
+西班牙TV4 La Vall,http://188.165.135.22/15o8376r/mystream/chunklist_w511176900.m3u8
+西班牙TV Galicia America,http://america-crtvg.flumotion.com/playlist.m3u8
+西班牙TV Galicia Europa,http://europa-crtvg.flumotion.com/playlist.m3u8
+西班牙TV Mediterraneo,http://streaming.enetres.net/489DDF7FE98241D19D8970314BC9D3EF021/smil:live.smil/master.m3u8
+西班牙Vega Baja TV,http://185.29.68.24/tvb.m3u8
+拉丁美洲CGTN,http://livees.cgtn.com/1000e/prog_index.m3u8
+拉丁美洲Cuenca Vision,http://wceatv1.srfms.com:2177/live/livestream/playlist.m3u8
+拉丁美洲Deutsche Welle,http://dwstream3-lh.akamaihd.net/i/dwstream3_live@124409/index_1_av-p.m3u8
+拉丁美洲La Mega Mundial,http://68.235.35.243:1935/lamegamundial/lamegamundial2/playlist.m3u8
+拉丁美洲Locomotion TV,http://locomotiontv.com/envivo/loco_channel/stream.m3u8
+拉丁美洲Melody Channel,http://186.155.200.118:1935/live/MelodyChannel/playlist.m3u8
+拉丁美洲TV Marti,http://ocb-lh.akamaihd.net/i/ocb_mpls_tvmc1@383606/master.m3u8
+墨西哥15TV Sabinas,http://live.gvstream.net:554/e-tv-video/play.stream/playlist.m3u8
+墨西哥Aprende TV Mexico City,http://live10.cdnmedia.tv/dgtvelive/smil:aprend24.smil/playlist.m3u8
+墨西哥Canal 4 Saltillo,http://162.241.190.126:1935/live/canal4/playlist.m3u8
+墨西哥Canal 10 Cancun,http://stream2.dynalias.com:1935/live/tvlive1/playlist.m3u8
+墨西哥Canal 10 Chiapas,http://klive-a.akamaihd.net/dc-0/live/hls/p/290412/e/0_es0kdjdz/sd/10000/t/bj1DqoE8O0tNhHgd6BvqXQ/index-s32.m3u8
+墨西哥Canal 20 Zacatecas,http://wowza.zuperdns.net:1935/zuperhosting.live.grupob.canal20zacatecas/smil:livestream.smil/playlist.m3u8
+墨西哥Canal del Congreso,http://live10.cdnmedia.tv/cngmexicolive/smil:diputados1.smil/chunklist_b500000.m3u8
+墨西哥Canal Judicial,http://dl-scjn.scjn.gob.mx/scjn/scjn.mp4/playlist.m3u8
+墨西哥Canal Once Mexico City,http://live.canaloncelive.tv:1935/livepkgr2/smil:internacional.smil/playlist.m3u8
+墨西哥Capital 21 Mexico City,http://wowzaprod158-i.akamaihd.net/hls/live/595142/a9251b55/playlist.m3u8?set-akamai-hls-revision=5&set-cc-attribute=cc
+墨西哥Ingenio TV Mexico City,http://live10.cdnmedia.tv/dgtvelive/smil:ingen30.smil/playlist.m3u8
+墨西哥Mexiquense Toluca,http://1-fss-fso36.streamhoster.com/lv_tvmexiquense/_definst_/broadcast1/playlist.m3u8
+墨西哥Milenio TV,http://bcoveliveios-i.akamaihd.net/hls/live/201661/57828478001/milenio_center_512k@51752.m3u8
+墨西哥Multimedios Laguna,http://mdstrm.com/live-stream-playlist_1200/57bf686a61ff39e1085d43e1.m3u8
+墨西哥Multimedios Monterrey (Opt-1),http://mdstrm.com/live-stream-playlist_400/57b4dbf5dbbfc8f16bb63ce1.m3u8
+墨西哥Multimedios Monterrey (Opt-2),http://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8
+墨西哥RCG 3 Saltillo,http://wowzacontrol.com:1936/stream56/stream56/playlist.m3u8
+墨西哥RTG Guerrero,http://50.7.98.234:1935/5936soyguerrero/guerrerovideo/playlist.m3u8
+墨西哥RTQ Queretaro,http://wms.tecnoxia.com:1935/rytqrolive/rytqrolive/master.m3u8
+墨西哥Teleformula (New),http://wms30.tecnoxia.com/radiof/abr_radioftele/playlist.m3u8
+墨西哥Telemar Campeche,http://wms.tecnoxia.com:1935/8006/8006/playlist.m3u8
+墨西哥TvAcapulco,http://stream.duplika.com:1935/tvacapulco/tvacapulco/playlist.m3u8
+墨西哥TVMAS Veracruz,http://50.7.98.234:1935/rtv/videortv/playlist.m3u8
+墨西哥Uno TV (VOD),http://ooyalahd2-f.akamaihd.net/i/UnoTV01_delivery@122640/master.m3u8
+阿根廷Aire de Santa Fe,http://184.154.28.210:1935/airevideo/airevideo/playlist.m3u8
+阿根廷Canal 3 Pinamar,http://wowza.telpin.com.ar:1935/canal3/canal3.stream/playlist.m3u8
+阿根廷Canal 4 Posadas,http://184.154.28.210:1935/canal4/canal4/live.m3u8
+阿根廷Canal 5 Concepcion Tucuman,http://5.179.201.88:1935/golive/59_179_live/playlist.m3u8
+阿根廷Canal 5 Telesol,http://149.56.98.124:9090/hls/telesol.m3u8
+阿根廷Canal 9 Comodoro Rivadavia,http://live.canalnueve.tv:8082/hls/canal.m3u8
+阿根廷Canal 9 Salta,http://panel.dattalive.com:1935/8250/8250/playlist.m3u8
+阿根廷Canal 10 Rio Negro,http://panel.dattalive.com:1935/8204/8204/playlist.m3u8
+阿根廷Canal 26 Buenos Aires (Opt-1),http://200.115.193.177/live/26hd-720/.m3u8
+阿根廷Canal 26 Buenos Aires (Opt-2),http://live-edge01.telecentro.net.ar:1935/live/26hd-720/livestream.m3u8
+阿根廷Canal 79 Mar del Plata,http://painel.serveron.com.br:1935/8168/8168/live.m3u8
+阿根廷Canal Local Olavarria,http://186.0.180.11:1935/festival/mp4:festival/playlist.m3u8
+阿根廷Canal Provincial San Miguel,http://www.trimi.com.ar/provincial/streaming/mystream.m3u8
+阿根廷DeporTV，,http://186.33.227.198/DXTV/smil:DXTV.smil/playlist.m3u8
+阿根廷El 1 Web TV La Matanza,http://server4.stweb.tv/unlam/ngrp:video1_all/playlist.m3u8
+阿根廷Garage TV,http://186.0.233.76:1935/Garage/smil:garage.smil/master.m3u8
+阿根廷Litus TV Santa Fe,http://192.99.38.174:1935/litustv/ngrp:litustv_all/playlist.m3u8
+阿根廷Medios Rioja,http://streamyes.alsolnet.com/mediosrioja/live/chunklist_w635100631.m3u8
+阿根廷Music Top,http://live-edge01.telecentro.net.ar/live/msctphd-720/playlist.m3u8
+阿根廷Net TV,http://unlimited2-us.dps.live/nettv/nettv.smil/playlist.m3u8
+阿根廷Power HD,http://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
+阿根廷Radio TV Neuquen,http://media.neuquen.gov.ar/rtn/television/chunklist_w1330236482.m3u8
+阿根廷Soy Rock,http://stmv4.questreaming.com/questreaming/questreaming/playlist.m3u8
+阿根廷TDC Online Firmat,http://painel.serveron.com.br:1935/8166/8166/live.m3u8
+阿根廷Telemax,http://live-edge01.telecentro.net.ar/live/smil:tlx.smil/master.m3u8
+阿根廷 Telpin Teve Pinamar，,http://201.219.100.30:1935/telpintv/ttv.stream_720p/playlist.m3u8
+阿根廷 XFN Canal 41 Mar del Plata,http://painel.serveron.com.br:1935/8172/8172/playlist.m3u8
+阿根廷 Urban 106.1 FM Pehuajo,http://ar.solumedia.com.ar:1935/2/myStream/master.m3u8
+智利Cachipum.tv,http://edge1.cl.grupoz.cl/cachipuntv/live/chunklist_w2057048261.m3u8
+智利Carolina TV,http://unlimited1-us.dps.live/carolinatv/carolinatv.smil/playlist.m3u8
+智利CDO,http://edge1.cl.grupoz.cl/cdofree/live/playlist.m3u8
+智利Chilevision,http://chv.movil.rtsp.ztreaming.com/chvmovil2/chilevision@140569/chunklist_w787114469.m3u8
+智利CNN,http://unlimited1-us.dps.live/cnn/cnn.smil/playlist.m3u8
+智利Consorcio Aciducto,http://186.67.41.10:8085/main/playlist.m3u8
+智利DJ Loncho TV,http://stmv2.srvstm.com/alonso3439/alonso3439/playlist.m3u8
+智利Futuro 88.9，,http://unlimited6-cl.dps.live/futurotv/futurotv.smil/playlist.m3u8
+智利Maxima TV,http://190.107.176.55:1935/live/maxima-fm/playlist.m3u8
+智利Pandero Music,http://evo.eltelon.com:1935/panderocl/smil:panderocl.smil/chunklist_w229718808_b1936705.m3u8
+智利Pinguino TV,http://streaming.elpinguino.com:1935/live/pinguinotv_720p/hasbahca.m3u8
+智利Pinguino TV*,http://streaming.elpinguino.com:1935/live/pinguinotv_source/livestream.m3u8
+智利Portal Foxmix,http://tv.portalfoxmix.club:1935/portalfoxmix/portalfoxmix/playlist.m3u8
+智利T13,http://cdn.ztreaming.com/t13vivo3/desktop.m3u8
+智利Teletrak HD,http://unlimited5-cl.dps.live/sportinghd/sportinghd.smil/sportinghd/livestream1/chunks.m3u8
+智利Teletrak [Opt-1]，,http://unlimited5-cl.dps.live/sportinghd/sportinghd.smil/sportinghd/livestream2/chunks.m3u8
+智利TV Senado，,http://janus-tv-ply.senado.cl/playlist/stream.m3u8?s=tvsenado-hd
+智利UC13 (Opt-1)，,http://cdn.streamingmedia.cl:1935/live/rtmp.stream/hasbahca.m3u8
+智利VTVVina del Mar,http://cdn.streamingmedia.cl:1935/live//vtvvina/playlist.m3u8
+厄瓜多尔Ecuavisa SD,http://elcanaldelfutbol.com/static/wowza/test/hls/20001/480p/playlist.m3u8
+厄瓜多尔Ecuavisa HD,http://elcanaldelfutbol.com/static/wowza/test/hls/20001/720p/playlist.m3u8
+厄瓜多尔Canela TV,http://servicioamerica.com:1935/8200/8200/playlist.m3u8
+厄瓜多尔TC，,http://elcanaldelfutbol.com/static/wowza/test/hls/10001/480p/playlist.m3u8
+厄瓜多尔TC HD,http://elcanaldelfutbol.com/static/wowza/test/hls/10001/720p/playlist.m3u8
+哥伦比亚Cali TV,http://video.cehis.net/live-calitv/calitv1/playlist.m3u8
+哥伦比亚Canal CNC Medellin,http://streaming.canalcncmedellin.com/hls-live/livepkgr/_definst_/liveevent/canalcnc.m3u8
+哥伦比亚Teleislas,http://vbox2.cehis.net/live-teleislas/smil:teleislas.smil/playlist.m3u8
+秘鲁Antares TV,http://173.192.105.252:1935/iptvantares/liveantarestv/playlist.m3u8
+秘鲁Digital TV 1,http://uvodscp-lh.akamaihd.net:80/i/ped001rtmp_1@460473/master.m3u8
+秘鲁Digital TV 2,http://uvodscp-lh.akamaihd.net:80/i/ped002rtmp_1@460476/index_1_av-p.m3u8
+秘鲁Mega TV Araquipa,http://play.hostreamperu.com:1935/8016/8016/playlist.m3u8
+秘鲁Monterrico TV，,http://vs8.live.opencaster.com/20100152275/jcpstream/playlist.m3u8
+秘鲁RBC TV,http://184.154.28.210:1935/rbc-tv/rbc-tv/playlist.m3u8
+秘鲁Turbo Mix Radio TV,http://167.114.116.212:1935/tvmb/turbomix/master.m3u8
+秘鲁TV Noticias 7.3,http://www.radiosargentina.com.ar/php/tvm3u.php?id=DIPE0002&mode=12
+秘鲁TV Peru,http://www.radiosargentina.com.ar/php/tvm3u.php?id=DIPE0003&mode=12
+乌拉圭 Canal M,http://wowza.montevideo.com.uy:1936/live/_definst_/mvdstrem/chunklist_w1488231185.m3u8
+巴拉圭 Intercable,http://201.217.3.212/TV/intercable/playlist.m3u8
+哥斯达黎加 Extrema TV,http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/playlist.m3u8
+哥斯达黎加 Telered,http://k4.usastreams.com/Telesistemas/Telesistemas/playlist.m3u8
+哥斯达黎加 Telesur,http://k3.usastreams.com:1935/telesur/telesur/playlist.m3u8
+哥斯达黎加 TeleUno TV,http://k3.usastreams.com:1935/tvuno1/tvuno1/playlist.m3u8
+哥斯达黎加 TV Sur 14,http://205.164.56.130:1935/tvsur81/tvsur81/playlist.m3u8
+多明尼加Digital 15,http://www.radiosargentina.com.ar/php/tvm3u.php?id=LVDO0011&mode=12
+多明尼加MicroVision Canal 10，,http://190.103.183.24:1935/live/MicroHD/chunklist_w1105794626.m3u8
+多明尼加Naranja TV,http://ciez45.live.cloud.influxis.com/ciez45/_definst_/NaranjaTV/playlist.m3u8
+多明尼加Orbit TV,http://ss6.domint.net:2082/202_str/orbittv/chunklist_w29206476.m3u8
+多明尼加Telenord Canal 8,http://www.radiosargentina.com.ar/php/tvm3u.php?id=DIDO0026&mode=12
+多明尼加Telenord Canal 12,http://www.radiosargentina.com.ar/php/tvm3u.php?id=DIDO0028&mode=12
+多明尼加Xtremo Channel,http://ss6.domint.net:1948/zol_str/vzol/playlist.m3u8
+波多黎各 WORO-TV Teleoro Canal 13，,http://live247tv.com:1935/worodtcanal13/worodtcanal13/playlist.m3u8
+巴拿马Eco TV,http://cdnlive.medcom.com.pa/medcom-livestream/eco-live/eco-live/streamout-480p/chunks.m3u8
+巴拿马RPC Radio,http://cdnlive.medcom.com.pa/rpcradio/source/chunks.m3u8
+巴拿马Telemetro Radio,http://cdnlive.medcom.com.pa/tmradio/source/chunks.m3u8
+洪都拉斯Azteca Honduras,http://aztecalive-lh.akamaihd.net/i/0dcqjxkgx_1@502208/master.m3u8
+洪都拉斯Teleceiba Canal 7,http://190.11.224.14:8134/liveevent.m3u8
+玻利维亚ATB,http://stmv1.questreaming.com/atb/atb/playlist.m3u8?wowzasessionid=658130495
+罗马尼亚 Accent TV,http://188.173.22.231:8080/video/emisie.m3u8
+罗马尼亚Alfa Omega TV,http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/playlist.m3u8?wowzasessionid=1441530266&time=1463063123262
+罗马尼亚Banat TV,http://81.18.66.155:1935/live/banat-tv/playlist.m3u8
+罗马尼亚Cromtel TV,http://webmobile.xdev.ro:81/tv7/playlist.m3u8?time=1463062060161
+罗马尼亚Digi 24,http://82.76.40.76/digi24edge/digi24hdhqhls/index.m3u8
+罗马尼亚Iasi TV Life,http://webmobile.xdev.ro:81/tv24/playlist.m3u8?time=1464028219168
+罗马尼亚Informatia TV,http://s1.streamnet.ro:8014/stream.flv
+罗马尼亚inTV,http://80.91.115.211:1935/live/livestream/playlist.m3u8
+罗马尼亚STV,http://s2.streamnet.ro:8035/stream.flv
+罗马尼亚Telestar 1,http://193.34.109.10:8090
+罗马尼亚TV Kit,http://webmobile.xdev.ro:81/tv9/playlist.m3u8
+罗马尼亚TVM Piatra Neamt,http://tvm.ambra.ro/
+罗马尼亚TVPlus Suceava,http://85.186.146.34:8080
+罗马尼亚UTV (Opt-1),http://82.76.40.76:80/utvedge/utvlive/playlist.m3u8
+摩尔多瓦Acasa TV,http://hls.protv.md/acasatv/acasatv.m3u8
+摩尔多瓦Actualitatea,http://188.210.224.6:81/tv4/playlist.m3u8
+摩尔多瓦NTV,http://93.115.137.166/hls/ntvm.m3u8
+摩尔多瓦Pro TV,http://hls.protv.md/hls/protv.m3u8
+摩尔多瓦Publika TV,http://livebeta.publika.md/LIVE/P/6810.m3u8
+摩尔多瓦Tele M,http://webmobile.xdev.ro:81/tv16/playlist.m3u8
+摩尔多瓦TV Buzau,http://95.77.16.72:81/tv20/playlist.m3u8
+摩尔多瓦TV Elita,http://46.55.111.242:8080/Rezina.m3u8
+阿尔巴尼亚Albanian TV of America，,http://stream.shqiptv.com:7080/altvusa/index.m3u8
+阿尔巴尼亚Dasma TV,http://91.187.117.230:8080
+阿尔巴尼亚News 24,http://tv.balkanweb.com:8081/news24/livestream/playlist.m3u8
+阿尔巴尼亚Report-TV,http://66.55.93.204/hls-live/livepkgr/_definst_/report/stream.m3u8
+阿尔巴尼亚Rrokum TV,http://82.114.65.202:1935/live/rrokumtv/playlist.m3u8
+阿尔巴尼亚TV Jug,http://84.20.77.50:554/live/rtmp.stream/playlist.m3u8
+塞尔维亚 Duga TV,http://w10.streamgb.com:1935/dugaplus/dugaplus/playlist.m3u8
+塞尔维亚 TV Partizan,http://212.200.102.3:5000/udp/239.99.99.99:23999
+塞尔维亚 TVKopernikus1,http://212.200.102.3:5000/rtp/239.0.0.1:5000
+塞尔维亚 TVKopernikus2,http://212.200.102.3:5000/rtp/239.0.0.2:5000
+塞尔维亚 TVKopernikus3,http://212.200.102.3:5000/rtp/239.0.0.3:5000
+波斯尼亚 777 TehnikaTV,http://109.123.70.27:1935/tehnikatv777/tehnikatv777/playlist.m3u8
+波斯尼亚 Al Jazeera Balkans,http://aljazeera-balkans-apple-live.adaptive.level3.net/apple/aljazeera/balkans/800.m3u8
+波斯尼亚 BN TV,http://tvstream.rtvbn.com:1935/live/stream/chunklist_w1957700324.m3u8
+波斯尼亚 Televizija 5,http://37.59.21.217:8809/live/tv5web.m3u8
+波斯尼亚 Top Sound,http://tvstream.tvtopsound.com:1935/live/ngrp:mpegts.stream_all/playlist.m3u8
+马其顿 Plus TV,http://141.136.14.18/kanal1/kanal1_1500/index.m3u8
+马其顿 Sky Folk TV,http://skyfolk.mk/live.m3u8
+马其顿 TVPlus (Opt-1),http://141.136.14.18/kanal1/kanal1.m3u8
+保加利亚 100% Automoto TV,http://100automoto.tv:1935/bgtv1/autotv/playlist.m3u8
+保加利亚 Planeta HD,http://84.43.207.130/planetahd/planetahd.m3u8
+保加利亚 Roma TV,http://185.46.161.3/hls/sd.m3u8
+保加利亚 Travel HD,http://31.13.223.104:1935/travel/community.stream/chunklist_w511463959.m3u8
+俄罗斯1 HD,http://cdn-01.bonus-tv.ru:8080/1HDmusic/index.m3u8
+俄罗斯7 TV,http://78.40.108.218/7channel/index.m3u8
+俄罗斯8 Kanal,http://v1.proofix.ru/live-tv8/stream1/playlist.m3u8
+俄罗斯43 Kanal,http://sochi-strk.ru:1936/strk/43Kanal.stream/playlist.m3u8
+俄罗斯Arig Us 24,http://arigus-online.ru/files/playlist.m3u8
+俄罗斯Astrakhan 24 (Opt-2),http://streaming.astrakhan.ru/astrakhan24/index.m3u8
+俄罗斯Boutique TV,http://live-btq.cdnvideo.ru/btq/btq.sdp/playlist.m3u8
+俄罗斯BST,http://cdn-01.bonus-tv.ru:7778/bst/index.m3u8
+俄罗斯Bum TV,http://live-bumtv.cdnvideo.ru/bumtv-live/smil:bumtv.smil/playlist.m3u8
+俄罗斯CGTN,http://live.cgtn.com/1000r/prog_index.m3u8
+俄罗斯CGTRK Grozny,http://live2.mediacdn.ru/sr1/grozny/playlist.m3u8
+俄罗斯CP Info，,http://109.68.40.67/life/magnolia.m3u8
+俄罗斯First Music (Opt-1),http://rtmp.one.by:2300/
+俄罗斯First Music (Opt-2),http://rtmp.one.by:1300/
+俄罗斯First Music (Opt-3),http://rtmp.one.by:1200
+俄罗斯HD Fashion,http://95.67.47.115/hls/hdfashion_ua_hi/index.m3u8
+俄罗斯HD Media 3D,http://62.76.26.81:8081/hdmedia/hdmedia_3d/playlist.m3u8
+俄罗斯Impact,http://206.190.141.27:1935/live/impact/playlist.m3u8
+俄罗斯Ingushetiya TV,http://live-ntk.cdnvideo.ru/ntk-publish/ntk.sdp/playlist.m3u8
+俄罗斯K1,http://109.68.40.67/life/k1.m3u8
+俄罗斯Kalejdoskop TV (Opt-3),http://serv24.vintera.tv:8081/kaledoskop/kaledoskop/playlist.m3u8
+俄罗斯KinoMenu HD,http://62.76.26.81:8081/hdmedia/menu/playlist.m3u8
+俄罗斯Krasnaja Linija,http://kprf-htlive.cdn.ngenix.net/live/_definst_/stream_high/playlist.m3u8
+俄罗斯Luxury HD，,http://nano.teleservice.su:8080/hls/luxury.m3u8
+俄罗斯Maks 24,http://live.maksmedia.cdnvideo.ru/maksmedia/maksmedia.sdp/playlist.m3u8
+俄罗斯Meteo TV,http://meteotv.cdnvideo.ru/meteotv/meteotv.sdp/playlist.m3u8
+俄罗斯Mir,http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
+俄罗斯Mir (+4),http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv3_2500/playlist.m3u8
+俄罗斯Mir HD,http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/hd/playlist.m3u8
+俄罗斯Mir 24 (Opt-1),http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
+俄罗斯MostVideo TV 1,http://w4.mostvideo.tv/tv/ch1.m3u8
+俄罗斯Moscow 24,http://cdnmg.secure.live.rtr-vesti.ru/live/smil:m24.smil/chunklist_b1600000.m3u8
+俄罗斯Muz Sojuz,http://hls.tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/chunklist.m3u8
+俄罗斯MuzzOne,http://live.muzzone.cdnvideo.ru/muzzone/muzzone.sdp/playlist.m3u8
+俄罗斯MTVmix Ufa,http://81.30.182.82:18092/hls/live.m3u8
+俄罗斯My Planet,http://cdnmg.secure.live.rtr-vesti.ru/live/smil:mplan.smil/master.m3u8
+俄罗斯Nastoyashcheye Vremya,http://rfe-lh.akamaihd.net/i/rfe_tvmc5@383630/master.m3u8
+俄罗斯Novyj Mir,http://stream.studio360.tv/nw/nw_576p/playlist.m3u8
+俄罗斯RBC (Opt-1),http://92.50.128.180/utv/1358/index.m3u8
+俄罗斯RBC (Opt-2),http://online.video.rbc.ru/online/rbctv_480p/index.m3u8
+俄罗斯RBC (Opt-3),http://online.video.rbc.ru/online/rbctv_576p/index.m3u8
+俄罗斯Russia-1 (Opt-1),http://cdnmg.secure.live.rtr-vesti.ru/live/smil:r1.smil/chunklist_b1600000.m3u8
+俄罗斯RUTV,http://live-rmg.cdnvideo.ru/rmg/rutv_new.sdp/playlist.m3u8
+俄罗斯Shanson TV (Opt-1),http://hls.shansontv.cdnvideo.ru/shansontv/smil:shansontv.smil/playlist.m3u8
+俄罗斯Shanson TV (Opt-2),http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8
+俄罗斯Shop 24,http://cdn-01.bonus-tv.ru:8080/shop24_edge/index.m3u8
+俄罗斯Shopping Live,http://shoppinglive.mediacdn.ru/sr1/shoppinglive/playlist.m3u8
+俄罗斯Skazki Zayki,http://skazki.vintera.tv:8081/skazki/zaj/playlist.m3u8
+俄罗斯STRK,http://sochi-strk.ru:1936/strk/strk.stream/playlist.m3u8
+俄罗斯TV-21 Murmansk,http://tv21.inmurmansk.ru/full_stream.flv
+俄罗斯Tivikom Ulan-Udje,http://tvcom.stream.intelema.ru/tvcom/studio/index.m3u8
+俄罗斯TBN,http://109.68.190.192:1935/WEB_TBN/TBN.stream/playlist.m3u8
+俄罗斯TDK,http://live.tdktv.cdnvideo.ru/tdktv/tdktv.sdp/playlist.m3u8
+俄罗斯Tjumenskoe Vremja,http://streams.sibinformburo.cdnvideo.ru/sibinformburo/sibinformburo.sdp/playlist.m3u8
+俄罗斯TNV Planeta (Opt-1),http://cdn-g.bonus-tv.ru:80/tnv/playlist.m3u8
+俄罗斯TNV Planeta (Opt-2),http://cdn-g.bonus-tv.ru:80/tnv/tracks-v1a1/index.m3u8
+俄罗斯Tochka TV (Opt-1),http://serv24.vintera.tv:8081/tochka/tochkatv/playlist.m3u8
+俄罗斯TopShop,http://tv-topshop.netrack.ru/hls/topshop.m3u8
+俄罗斯TRO Soyuz,http://live2.mediacdn.ru/sr1/tro/playlist.m3u8
+俄罗斯TV Centre,http://tvc.cdnvideo.ru/tvc-p212/smil:tvc.smil/playlist.m3u8
+俄罗斯TVM Channel,http://cdn-03.bonus-tv.ru/tvm/tvm/type/none/eol/20200101T0000/hash/9ee236eb709eaaba97b5722f1eedae4af79377c7/playlist.m3u8
+俄罗斯Ugra TV,http://live.ugratv.cdnvideo.ru/ugratv/smil:ugrastream1.smil/playlist.m3u8
+乌克兰VOTV,http://hls.cdn.ua/vo.org.ua_live/_definst_/online-ru-hotbird-high/chunklist.m3u8
+乌克兰Первый Крымский,http://vid.techbee.pro:8080/1tvcrimea/index.m3u8
+乌克兰Крым 24,http://vid.techbee.pro:8080/crimea24/index.m3u8
+乌克兰24 Krim (Crimea),http://vid.techbee.pro:8080/crimea24/index.m3u8
+乌克兰100% News,http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
+乌克兰112 Ukraine (Opt-1),http://app.live.112.events/hls/112hd_mid/index.m3u8
+乌克兰112 Ukraine (Opt-2),http://app.live.112.events/hls-ua/112hd_mid/index.m3u8
+乌克兰112 Ukraine HD,http://app.live.112.events/hls-ua/112hd_hi/index.m3u8
+乌克兰ATR (Crimea),http://stream.atr.ua/atr/live/index.m3u8
+乌克兰Hromadske TV,http://94.45.135.158:1935/live/HrBroadcast/playlist.m3u8
+乌克兰Kiev TV,http://kyivtv.cdnvideo.ru/kyivtv/kyivtv.sdp/playlist.m3u8
+乌克兰Krym 1 (Crimea),http://vid.techbee.pro:8080/1tvcrimea/index.m3u8
+乌克兰Lale,http://stream.atr.ua/lale//live/index.m3u8
+乌克兰M2,http://live.m2.tv/hls/stream.m3u8
+乌克兰NTS (Crimea),http://hls.nts.cdnvideo.ru/nts/nts.sdp/playlist.m3u8
+乌克兰NewsOne TV,http://77.120.104.64/hls/newsone-hd/stream.m3u8
+乌克兰Rada TV,http://217.20.164.181/live/rada480p.stream/playlist.m3u8
+乌克兰RTI,http://cdn.vsnw.net:8081/interradio/720i.m3u8
+乌克兰UA-TV,http://vs38.vcdn.biz/fa5a0dda44c68b44804557b13322cff3_megogo/vod/fs/o/22814441/u_sid/0/u_uid/0/u_vod/1/u_device/flash/type.live/playlist.m3u8
+捷克Elektrika TV,http://rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8
+捷克Nickelodeon,http://65.254.55.10:4000/live/195/195.m3u8
+捷克Nova Action,http://174.36.163.12:4000/live/304/304.m3u8
+捷克Prima Max,http://74.208.44.158:5000/live/518/518.m3u8
+捷克Retro (Opt-1),http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
+捷克Tuty TV,http://stream.mediawork.cz/tuty/tutytv/playlist.m3u8
+斯洛伐克RiK,http://5.63.149.252:5000/live/499/499.m3u8
+斯洛伐克TV 8,http://109.74.145.11:1935/tv8/mp4:tv8.stream_360p/chunklist_w974670813.m3u8
+斯洛伐克TV Lux,http://live.tvlux.sk:1935/lux/lux.stream_360p/chunklist_w1295439472.m3u8
+斯洛伐克TV Nitricka,http://195.168.28.243/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8
+斯洛伐克TVNZ,http://s1.media-planet.sk:80/live/novezamky/BratuMarian.m3u8
+斯洛伐克TV Pezinok,http://s1.media-planet.sk:80/live/pezinok/BratuMarian.m3u8
+波兰Disco Polo Music,http://hls.redefine.pl/E33F843E/10260/0/hls576/576p/list.m3u8
+波兰Duck TV,http://hls.redefine.pl/1CAD6ACA/4325/0/hls576/masterlist.m3u8
+波兰Polsat News 2,http://hls.redefine.pl/20C4EB56/1575/0/hls576/masterlist.m3u8
+波兰Stars TV,http://starstv.live.e55-po.insyscd.net/starstvhd.smil/index.m3u8
+波兰TV Asta,http://xeon.asta-net.pl/trans.isml/manifest(format=m3u8-aapl).m3u8
+波兰TV Kujawy (Opt-1),http://stream.tvkujawy.pl:8080/live/broadcast.m3u8
+波兰TV Torun,http://217.173.176.107:1935/live/ngrp:tvk.stream_all/master.m3u8
+波兰TV Trwam,http://trwamtv.live.e55-po.insyscd.net/trwamtv.smil/playlist.m3u8
+波兰TVP3 Bialystok,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpbialystok
+波兰TVP3 Bydgoszcz,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpbydgoszcz
+波兰TVP3 Gdansk,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpgdansk
+波兰TVP3 Gorzow Wielkopolski,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpgorzow
+波兰TVP3 Info,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpinfo
+波兰TVP3 Katowice,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkatowice
+波兰TVP3 Kielce,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkielce
+波兰TVP3 Krakow,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkrakow
+波兰TVP3 Lodz,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplodz
+波兰TVP3 Lublin,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplublin
+波兰TVP3 Olsztyn,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpolsztyn
+波兰TVP3 Poznan,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvppoznan
+波兰TVP3 Rzeszow,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvprzeszow
+波兰TVP3 Szczecin,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpszczecin
+波兰TVP3 Warszawa,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwarszawa
+波兰TVP3 Wroclaw,http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwroclaw
+波兰TVT Zgorzelec,http://gargoyle.tomkow.pl/hls/tvt.m3u8
+波兰Twoja TV (Opt-1),http://94.246.169.19/ttv_hls/live_270p/index.m3u8
+波兰Twoja TV (Opt-2),http://94.246.169.19/ttv_hls/live_720p/index.m3u8
+拉脱维亚Chau TV,http://video.chaula.tv/hls/live/high/playlist_high.m3u8
+拉脱维亚RETV,http://edge-telia1.tiesraides.lv/live/retv.lv.1_1/playlist_b1825196.m3u8
+拉脱维亚TV Net,http://player.tvnet.lv/stream/amlst:61659/chunklist_w1822312625_b528000_pd892000.m3u8
+匈牙利Hit Music Channel,http://1mstream.digicable.hu/hitmusic/hitmusic.m3u8
+匈牙利Tisza TV,http://www.tiszatv.hu:443/tiszatv.f4v
+希腊4E TV,http://82.192.84.30:554/live/myStream.sdp/playlist.m3u8
+希腊Cannali TV,http://live.streams.ovh:1935/cannali/cannali/playlist.m3u8
+希腊Crete TV,http://live.cretetv.gr:1935/cretetv/myStream/playlist.m3u8
+希腊Epsilon TVh,ttps://57b1c3ae400ed.streamlock.net/live/epsilontv/playlist.m3u8
+希腊Fox TV,http://live.streams.ovh:1935/foxtv/foxtv/playlist.m3u8
+希腊Ionian Channel,http://stream.ioniantv.gr:8081/ionian/live/playlist.m3u8
+希腊Kontra,http://flashcloud.mediacdn.com/live/kontratv/.m3u8
+希腊Life Kids Network,http://live.streams.ovh:1935/LIFEHD/LIFEHD/playlist.m3u8
+希腊Montreal Greek TV (CA),http://138.197.136.102:8081/live/greektv/playlist.m3u8
+希腊NETV (CA),http://live.netvtoronto.com:1935/NetvToronto/NetvToronto/playlist.m3u8
+希腊New Generation,http://live.streams.ovh:1935/NGradio/NGradio_360p/playlist.m3u8
+希腊TV 100,http://178.62.176.153/hls/tv100/index.m3u8
+希腊Vouli TV,http://streamer-cache.grnet.gr/parliament/hls/webtv.m3u8
+希腊Zougla,http://zouglacam.mdc.akamaized.net/zouglalive/main/playlist.m3u8
+塞浦路斯Sigma TV (Greek),http://81.21.47.74/hls/live.m3u8
+塞浦路斯BRT 1 (Turkish),http://wms.brtk.net:1935/live/brt1/playlist.m3u8
+塞浦路斯BRT 2 (Turkish),http://wms.brtk.net:1935/live/brt2/playlist.m3u8
+土耳其1AN TV,http://broadcasttr.com:1935/birantv/bant1/playlist.m3u8
+土耳其AKSU TV,http://stream.taksimbilisim.com:1935/aksutv/smil:aksutv.smil/playlist.m3u8
+土耳其Bursapor TV,http://stream.yayindayiz.biz/Bursaspor/bursaspor/radyodelisi.m3u8
+土耳其Cay TV,http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
+土耳其CNN Turk,http://media.netd.com.tr/S1/HLS_LIVE/cnn_turk/1000/prog_index.m3u8
+土耳其Dream TV,http://live.netd.com.tr/S1/HLS_LIVE/dreamtv/1000/prog_index.m3u8
+土耳其Dreamturk TV,http://live.netd.com.tr/S1/HLS_LIVE/dreamturktv/1000/prog_index.m3u8
+土耳其FRM TV,http://185.50.68.221:1935/live/myStream/iptvdelisi.m3u8
+土耳其Kanal D,http://212.224.109.109/S2/HLS_LIVE/kanald/500/prog_index.m3u8
+土耳其Kanal D*,http://live.netd.com.tr/S1/HLS_LIVE/kanald/index.m3u8
+土耳其Meclis TV,http://mecliscanlitv-lh.akamaihd.net:80/i/MECLISTV_1@127503/master.m3u8
+土耳其Sky Turk 360,http://mn-l.mncdn.com/360tv_live/smil:360tv.smil/playlist.m3u8
+土耳其SportsTV,http://stream.sportstv.com.tr:1935/sportstv/SportsTV3/playlist.m3u8
+土耳其TGRT Belgesel,http://cdn1.streamencoding.com:1935/tgrt_belgesel/amlst:live-30/playlist.m3u8
+土耳其TJK TV,http://tjktv.ercdn.net/tjktv_576p.m3u8
+土耳其TRT 1,http://trtcanlitv-lh.akamaihd.net/i/TRT1HD_1@181842/master.m3u8
+土耳其TRT Avaz,http://trtcanlitv-lh.akamaihd.net/i/TRTAVAZ_1@182244/master.m3u8
+土耳其TRT Cocuk,http://trtcanlitv-lh.akamaihd.net/i/TRTCOCUK_1@181844/master.m3u8
+土耳其TRT Haber,http://trtcanlitv-lh.akamaihd.net/i/TRTHABERHD_1@181942/master.m3u8
+土耳其TRT Muzik,http://trtcanlitv-lh.akamaihd.net/i/TRTMUZIK_1@181845/master.m3u8
+土耳其TRT Okul,http://trtcanlitv-lh.akamaihd.net/i/TRTOKUL_1@182245/master.m3u8
+土耳其TRT Turk,http://trtcanlitv-lh.akamaihd.net/i/TRTTURK_1@182144/master.m3u8
+土耳其Vulsat TV,http://yayin3.canlitv.com:1935/live/vuslattv/playlist.m3u8
+阿塞拜疆CBC Sport,http://s69362.cdn.ngenix.net/live/_definst_/Stream1/chunklist.m3u8
+阿塞拜疆MUZ TV,http://85.132.78.6:1935/live/muztv.stream/younessiptv.m3u8
+库尔德斯坦TRT Kurdi,http://trtcanlitv-lh.akamaihd.net/i/TRT6_1@181944/master.m3u8
+以色列Channel 20,http://live.ch20-cdnwiz.com/ch20-abr/ch20-abr/ch20/high/chunks.m3u8
+以色列Knesset Channel,http://w3.013.gostreaming.tv:1935/Knesset/myStream/playlist.m3u8
+尼泊尔Nepali TV,http://live.zecast.net/ntvglobal/nepalitv/chunklist.m3u8
+斯里兰卡 Hiru TV,http://cdncities.com/8012/8012/playlist.m3u8
+印度indiaTV,http://indiatvnews-lh.akamaihd.net/i/ITV_1@199237//master.m3u8
+印度ZEE CINEMA,http://z5ams.akamaized.net/zcinemahd/tracks-v1a1/index.m3u8
+印度ABP Ananda,http://bengaliabp-lh.akamaihd.net/i/abpbanglanew_1@192108/master.m3u8
+印度ABP Asmita,http://abpasmita-lh.akamaihd.net:80/i/abpasmita_1@77821/master.m3u8
+印度Bloomberg India,http://bloomtv.live-s.cdn.bitgravity.com/cdn-live-b5/_definst_/bloomtv/live/feed01/playlist.m3u8
+印度DD News,http://nicls1-lh.akamaihd.net/i/ddnews_1@409133/master.m3u8
+印度Desi Channel (Opt-1),http://live.wmncdn.net/desichannel/7e2dd0aed46b70a5c77f4affdb702e4b.sdp/playlist.m3u8
+印度India TV,http://indiatvnews-lh.akamaihd.net/i/ITV_1@199237//master.m3u8
+印度JK 24x7 News,http://edge-ind.inapcdn.in:1935/device2/camera2.stream/playlist.m3u8
+印度Lok Sabha TV,http://nicls1-lh.akamaihd.net/i/lst_1@26969/master.m3u8
+印度MH1 Music (Opt-2),http://capcobroadcaststream.in:1935/edge1/mhmusic.stream_aac/chunklist_w376285821.m3u8
+印度Mirror Now,http://mbnowweb-lh.akamaihd.net/i/MBNOW/mbnowweb_1@346545/master.m3u8
+印度Murasu TV Tamil,http://45.79.203.234:1935/murasutv/myStream/playlist.m3u8
+印度NDTV,http://ndtvstream-lh.akamaihd.net/i/ndtv_india_1@300634/index_736_av-b.m3u8
+印度NDTV 24x7,http://ndtvstream-lh.akamaihd.net:80/i/ndtv_24x7_1@300633/master.m3u8
+印度Paras TV,http://208.109.243.12/apiupload/parasInternational/hls/5/parastv/playlist_9.m3u8
+印度PBN Music (USA),http://live.wmncdn.net/pbnmusic/b437d1e185b4c95b08b9c830a9d97cff.sdp/playlist.m3u8
+印度Rajya Sabha TV,http://nicls2-lh.akamaihd.net/i/rstv_1@26970/master.m3u8
+印度Times Now,http://timesnow-lh.akamaihd.net/i/TIMESNOWWEB/TimesNow_1@129288/index_600_av-p.m3u8
+印度Vasanth TV Tamil,http://vasanth.live.cdn.bitgravity.com/vasanth/secure/live/feed03?e=0&h=a9be0836bc39f96d0a9a958a659dfc1d&bgsecuredir=1
+印度Vendhar TV,http://45.79.203.234:1935/vendharm/myStream/playlist.m3u8
+印度Zoom,http://zoomweblive-lh.akamaihd.net/i/Zoom-TIL-WAP/Zoomweb_1@348071/master.m3u8
+巴基斯坦92 News (Opt-1),http://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
+巴基斯坦92 News (Opt-2),http://92news.vdn.dstreamone.net/92newshd/92hd_160p/playlist.m3u8
+巴基斯坦ARY Digital,http://149.202.205.24:1935/DIGITAL/myStream/playlist.m3u8
+巴基斯坦ARY News,http://158.69.228.195:1935/newsmobile/myStream/playlist.m3u8
+巴基斯坦Dunya News (Opt-1),http://imob.dunyanews.tv:1935/live/smil:stream.smil/playlist.m3u8
+巴基斯坦Eye 95 TV (US),http://cdn20.liveonlineservices.com/hls/eye95tv.m3u8
+巴基斯坦Lahore News,http://mlive.lahorenews.tv:1935/lahorelive/lnews_1/playlist.m3u8
+巴基斯坦PTV News,http://67.231.248.131:1935/live/PTVnews/chunklist_w1281891626.m3u8
+伊朗BBC,http://bbcwshdlive01-lh.akamaihd.net/i/ptv_1@78015/master.m3u8
+伊朗Caltex Music,http://vid1.caltexmusic.com/hls/caltextv.m3u8
+伊朗IraneFarda TV,http://66.160.192.249:8080/iranefarda/high/112416/TVBOXHD.COM/tracks-v1a1/index.m3u8
+伊朗Melli TV Channel,http://208.75.229.50:1935/mellitv/myStream.sdp/playlist.m3u8
+伊朗Omid-e-Iran OITN,http://66.160.192.250:8080/oitn.tvboxhd.com/high/798536241/tracks-v1a1/index.m3u8
+伊朗PBC Tapesh TV,http://iptv.tapesh.tv/tapesh/playlist.m3u8
+伊朗Radio Asal Israel,http://66.160.192.250:8080/asaltv/live/index.m3u8
+伊朗Radio Farda,http://rfe-lh.akamaihd.net/i/rfe_tvmc1@383622/master.m3u8
+伊朗Radio Javan,http://198.98.181.244/live/smil:rjtv.smil/playlist.m3u8
+伊朗Rangarang TV,http://iptv.rangarang.us/live/playlist.m3u8
+伊朗Tin TV,http://66.160.192.250:8080/afn-TVBOXHD.COM/afn/tracks-v1a1/index.m3u8
+阿拉伯半岛电视新闻网Al Hurra,http://mbnhls-lh.akamaihd.net/i/MBN_1@118619/master.m3u8
+阿拉伯半岛电视新闻网(Opt-2),http://bbcwshdlive01-lh.akamaihd.net/i/atv_1@61433/master.m3u8
+阿拉伯半岛电视新闻网CGTN,http://live.cgtn.com/1000a/prog_index.m3u8
+阿拉伯半岛电视新闻网Deutsche Welle,http://dwstream2-lh.akamaihd.net/i/dwstream2_live@124400/master.m3u8
+阿拉伯半岛电视新闻网TRT,http://trtcanlitv-lh.akamaihd.net/i/TRTARAPCA_1@181945/master.m3u8
+阿拉伯半岛电视台,http://aljazeera-eng-hd-live.hls.adaptive.level3.net/aljazeera/english2/index.m3u8
+黎巴嫩Al Manar,http://live.mediaforall.net:1935/liveorigin/livestream_480p/playlist.m3u8
+叙利亚ANN,http://ns8.indexforce.com:1935/ann/ann/playlist.m3u8
+约旦Amen FM 89.5,http://185.27.116.54:1935/live/amn/chunklist_w1521888123.m3u8
+约旦Toyor Al Janah TV,http://199.167.151.237:1935/live/sp15_12.stream/gmswf.m3u8
+巴勒斯坦Al Aqsa,http://live.aqsatv.ps:1935/aqsatv/live/tv/playlist.m3u8
+巴勒斯坦Al Quds TV,http://www.qudstv.com:8134/hls-live/livepkgr1/_definst_/liveevent/livestream.m3u8
+伊拉克 Al Rasheed,http://streamer11.elementssys.com:8080/alrashid/alrashid_850kbps/index.m3u8
+伊拉克 Al Sharqiya,http://ns8.indexforce.com:1935/home/mystream/playlist.m3u8
+伊拉克 Sharqiya News,http://ns8.indexforce.com:1935/alsharqiyalive/mystream/playlist.m3u8
+沙特阿拉伯Masdar TV,http://streamer12.elementssys.com:8080/SAUDI-Channels/MASDAR_TV/index.m3u8
+阿拉伯联合酋长国Abu Dhabi Sports 2 SD (Opt-2),http://adtv.ercdn.net/adsport2/adsport2_480p.m3u8
+阿拉伯联合酋长国Abu Dhabi Sports 2 HD (Opt-2),http://adtv.ercdn.net/adsport2/adsport2.m3u8
+阿拉伯联合酋长国Abu Dhabi Sports 2 HD (Opt-3),http://adtv.ercdn.net/adsport2/adsport2_720p.m3u8
+阿拉伯联合酋长国Al Arabiya,http://www.elahmad.com/tv/m3u8/arabiya.m3u8?id=aa
+阿拉伯联合酋长国Dubai One,http://www.elahmad.com/tv/m3u8/dubaitv.m3u8?id=dubaione
+阿拉伯联合酋长国Emarat TV,http://www.elahmad.com/tv/m3u8/adtv.m3u8?id=abudhabi_alemarat
+卡塔尔 Al Kass Sports 1,http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass1
+卡塔尔 Al Kass Sports 3,http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass3
+卡塔尔 Al Kass Sports 4,http://www.elahmad.com/tv/m3u8/alkass.m3u8?id=alkass4
+也门Yemen TV (Opt-1),http://streamer12.elementssys.com:8080/demo/Yemen/index.m3u8
+利比亚218,http://95.85.47.43/218tv/tracks-v1a1/index.m3u8
+利比亚218 News,http://95.85.47.43/218news/tracks-v1a1/index.m3u8
+利比亚Al Hadath,http://starmena.ercdn.net/libya-alhadath/libya-alhadath.m3u8
+利比亚Al Nabaa,http://cdg3.edge.tmed.pw/alnabaatv/abr/alnabaatv/live_1024p/chunks.m3u8
+利比亚Libya's Channel (Opt-1),http://starmena.ercdn.net/libyaschannel/libyaschannel_480p.m3u8
+利比亚Libya's Channel (Opt-2),http://1599780955@starmena.ercdn.net/libyaschannel/libyaschannel.m3u8
+摩洛哥Al Aoula International,http://cdn-hls.globecast.tv/live/ramdisk/al_aoula_inter/hls_snrt/index.m3u8
+摩洛哥Al Aoula Laayoune,http://cdn-hls.globecast.tv/live/ramdisk/al_aoula_laayoune/hls_snrt/index.m3u8
+摩洛哥Arryadia,http://cdn-hls.globecast.tv/live/ramdisk/arriadia/hls_snrt/index.m3u8
+摩洛哥Arrabiaa,http://cdn-hls.globecast.tv/live/ramdisk/arrabiaa/hls_snrt/index.m3u8
+摩洛哥Al Maghribia,http://cdn-hls.globecast.tv/live/ramdisk/al_maghribia_snrt/hls_snrt/index.m3u8
+摩洛哥Assadissa,http://cdn-hls.globecast.tv/live/ramdisk/assadissa/hls_snrt/index.m3u8
+摩洛哥Tamazight,http://cdn-hls.globecast.tv/live/ramdisk/tamazight_tv8_snrt/hls_snrt/index.m3u8
+加纳TV Africa (Ghana)，,http://africatv.live.net.sa:1935/live/africatv/playlist.m3u8
+马来西亚 TV1，,http://rtm-live.glueapi.io/smil:rtmch001.smil/chunklist_b1064000_sleng.m3u8
+马来西亚 TV2，,http://rtm-live.glueapi.io/smil:rtmch002/chunklist_b1064000_sleng.m3u8
+印尼Berita Satu，,http://edge.linknetott.swiftserve.com/live/BsNew/amlst:bsnew/chunklist_b2121000.m3u8
+印尼Jakarta Globe (English)，,http://edge.linknetott.swiftserve.com/live/BsNew/amlst:bsenglish/playlist.m3u8
+印尼Insan TV [Off]，,http://wz.insantv.net/group/ngrp:insantv_all/playlist.m3u8
+印尼MetroTV，,http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
+印尼TV Edukasi，,http://118.98.221.131/live/smil:tvedukasi.smil/playlist.m3u8
+印尼TVRI，,http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINasional)/Stream(04)/index.m3u8
+印尼TVRI*，,http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIdki)/index.m3u8
+泰国Bluesky Channel，,http://live.blueskychannel.tv:1935/bluesky_live/myStream/playlist.m3u8
+泰国Channel 2，,http://stream.rs.co.th/ch2-hi/index.m3u8
+泰国Channel 8，,http://usa.login.in.th:1935/ch8/ch8/playlist.m3u8
+泰国DDTV，,http://203.156.63.20:1935/live/ddtv/playlist.m3u8
+泰国ETV，,http://61.19.244.112:1935/live/livestream/playlist.m3u8
+泰国Sabaidee TV，,http://stream.rs.co.th/sbd-low/index.m3u8
+泰国Spring News，,http://1457077260.cat-cdn.i-iptv.com/T1457077260/ngrp:livestream_all/playlist.m3u8
+泰国Thairath TV，,http://live.thairath.co.th/trtv2/playlist.m3u8
+泰国You Channel，,http://stream.rs.co.th/you-hi/index.m3u8
+日本QVC Japan,http://cdn-live1.qvc.jp/iPhone/800/800.m3u8
+日本NHK WORLD,http://nhkwtvglobal-i.akamaihd.net/hls/live/263941/nhkwtvglobal/index_1180.m3u8
+日本NHK WORLDh,ttps://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/263941/live_wa_s.m3u8
+日本ntv knews,http://www.news24.jp/livestream/index.m3u8
+日本Japanet Channel DX,http://bcsecurelivehls-i.akamaihd.net/hls/live/265320/5043843989001/140130JTDX/index_1200.m3u8
+日本Japanet Channel DX,http://bcsecurelivehls-i.akamaihd.net/hls/live/265320/5043843989001/140130JTDX/index_600.m3u8
+日本NTV News24,http://www.news24.jp/livestream/index.m3u8
+日本Shop Channel,http://stream1.shopch.jp/HLS/out1/prog_index.m3u8
+韩国WFCHD,http://wfc.bonus-tv.ru:80/cdn/wfcint/tracks-v1a1/index.m3u8
+韩国购物,http://221.151.151.195:9981/stream/channelid/94136290
+韩国购物,http://221.151.151.195:9981/stream/channelid/59331629
+韩国RunwayTV,http://edge2.everyon.tv/etv2sb/phd753/chunklist_w881820644.m3u8
+韩国TV Chosun,http://live.chosun.gscdn.com/live/_definst_/tvchosun1.stream/playlist.m3u8
+韩国KBS2,http://123.108.164.71/etv2/phd847/playlist.m3u8
+韩国CBS,http://cbs-live.gscdn.com/cbs-live/cbs-live.stream/playlist.m3u8
+韩国KBS1,http://ebsonair.ebs.co.kr/groundwavefamilypc/familypc1m/chunklist_w1960240276.m3u8
+韩国音乐台,http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b928000_sleng.m3u8
+韩国EBSeHD,http://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8
+韩国Arirang (Opt-1)，,http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+韩国Arirang (Opt-2)，,http://cdn-01.bonus-tv.ru:8080/arirang_edge/index.m3u8
+韩国CBS TV，,http://cbs-live.gscdn.com/cbs-live/cbs-live.stream/hasbahca.m3u8
+韩国CMC，,http://main1sb.everyon.tv:1935/etv1sb/_definst_/phd1/playlist.m3u8
+韩国KBC SBS，,http://221.157.125.232:1935/live/kbctv/playlist.m3u8
+韩国KBS 2，,http://123.108.164.71/etv2/phd847/playlist.m3u8
+韩国KCTV，,http://122.202.129.136:1935/live/ch5/playlist.m3u8
+韩国KCTV-N，,http://122.202.129.136:1935/live/ch4/hasbahca.m3u8
+韩国KTV，,http://218.38.152.69:1935/da_live/72136989/mp4:ch001/playlist.m3u8
+韩国Chosun，,http://live.chosun.gscdn.com/live/tvchosun1.stream/playlist.m3u8
+韩国YTN，,http://112.175.248.34:1935/ytn/_definst_/ylivehd_20140419_1/playlist.m3u8
+中国香港RTHK 31 (Hong Kong),http://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_810_av-b.m3u8
+新加坡mediacorph,ttps://ftacnas.akamaized.net/out/v1/9ddbc4447c95436baf9bcf61377f7046/index_1.m3u8
+新加坡Mediacorp Channel 5,http://tglch5-lh.akamaihd.net/i/channel5_fta@334581/master.m3u8
+新加坡Mediacorp Channel 8,http://tglch8-lh.akamaihd.net/i/channel8_fta@334582/master.m3u8
+新加坡Mediacorp Channel U,http://tglchu-lh.akamaihd.net/i/channelu_fta@334583/master.m3u8
+越南SET TV,http://livestream.vnvn.net/hls-live/livepkgr/_definst_/settv574-1/se
+越南ANTVHD,http://antvlive.ab5c6921.cdnviet.com/antv/playlist.m3u8
+越南VTC5频道HD,http://vtsstr4.sctv.vn:1935/testlive1/vtc5_SD.smil/chunklist_w973536658_b2292000.m3u8
