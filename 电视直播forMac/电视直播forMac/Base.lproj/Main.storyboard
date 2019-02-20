@@ -706,7 +706,7 @@
         <scene sceneID="liC-cj-JM2">
             <objects>
                 <viewController showSeguePresentationStyle="single" id="CCo-9J-brU" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" id="v7s-eK-tt7">
+                    <view key="view" wantsLayer="YES" id="v7s-eK-tt7">
                         <rect key="frame" x="0.0" y="0.0" width="818" height="460"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -756,12 +756,12 @@
                                 </scroller>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cx9-XU-UAA" customClass="MyButton">
-                                <rect key="frame" x="548" y="180" width="30" height="100"/>
+                                <rect key="frame" x="548" y="179" width="30" height="102"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="7fe-jR-BU3"/>
                                     <constraint firstAttribute="width" constant="30" id="hnn-qK-VWU"/>
                                 </constraints>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ggY-U5-988">
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ggY-U5-988">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -793,7 +793,4 @@
             <point key="canvasLocation" x="96" y="948"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="NSAddTemplate" width="11" height="11"/>
-    </resources>
 </document>

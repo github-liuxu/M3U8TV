@@ -34,16 +34,12 @@
     listArr = [listArr sortedArrayWithOptions:NSSortConcurrent usingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         return obj1>obj2;
     }];
-    BOOL first = [[NSUserDefaults standardUserDefaults] boolForKey:@"First"];
-    if (!first) {
-        [listArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            NSString *filestr = [fpath stringByAppendingPathComponent:obj];
-            if (![fm fileExistsAtPath:filestr]) {
-                [fm copyItemAtPath:[listPath stringByAppendingPathComponent:obj] toPath:filestr error:nil];
-            }
-        }];
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"First"];
-    }
+    [listArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *filestr = [fpath stringByAppendingPathComponent:obj];
+        if (![fm fileExistsAtPath:filestr]) {
+            [fm copyItemAtPath:[listPath stringByAppendingPathComponent:obj] toPath:filestr error:nil];
+        }
+    }];
     self.filePath = [fpath stringByAppendingPathComponent:listArr.firstObject];
     
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
