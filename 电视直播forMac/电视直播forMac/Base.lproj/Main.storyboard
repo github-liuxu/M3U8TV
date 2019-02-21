@@ -713,13 +713,13 @@
                             <avPlayerView controlsStyle="inline" translatesAutoresizingMaskIntoConstraints="NO" id="auV-yK-z5I">
                                 <rect key="frame" x="0.0" y="0.0" width="818" height="460"/>
                             </avPlayerView>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IP-5I-9LC">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IP-5I-9LC">
                                 <rect key="frame" x="578" y="0.0" width="240" height="460"/>
                                 <clipView key="contentView" id="VWc-Vs-aOC">
                                     <rect key="frame" x="1" y="1" width="238" height="458"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="22" id="xNW-sy-XPT">
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="xNW-sy-XPT">
                                             <rect key="frame" x="0.0" y="0.0" width="238" height="458"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
@@ -769,16 +769,64 @@
                                     <action selector="clickList:" target="CCo-9J-brU" id="x2V-d8-h2C"/>
                                 </connections>
                             </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="M0q-fh-aaV">
+                                <rect key="frame" x="740" y="30" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="G9C-FM-YDj"/>
+                                    <constraint firstAttribute="width" constant="48" id="ybt-Q4-Pef"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="add" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mfW-Zj-4uI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="addClick:" target="CCo-9J-brU" id="zvr-Lp-t6F"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="ttd-Qa-JOs">
+                                <rect key="frame" x="740" y="108" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="mIR-Qr-h2B"/>
+                                    <constraint firstAttribute="width" constant="48" id="poK-Sj-d2g"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="list" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mIx-76-3r4">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="listClick:" target="CCo-9J-brU" id="l1K-7u-aaJ"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Vdg-ks-DQw">
+                                <rect key="frame" x="740" y="186" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="1XG-GX-bhg"/>
+                                    <constraint firstAttribute="height" constant="48" id="TCW-qL-yvv"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="edit" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="m5s-fP-bIN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="editClick:" target="CCo-9J-brU" id="MHa-d2-cDh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="6IP-5I-9LC" firstAttribute="trailing" secondItem="M0q-fh-aaV" secondAttribute="trailing" constant="30" id="6K1-3b-c7Q"/>
                             <constraint firstAttribute="bottom" secondItem="6IP-5I-9LC" secondAttribute="bottom" id="6jx-u3-CZN"/>
                             <constraint firstAttribute="trailing" secondItem="auV-yK-z5I" secondAttribute="trailing" id="GS6-JD-1lx"/>
                             <constraint firstItem="auV-yK-z5I" firstAttribute="top" secondItem="v7s-eK-tt7" secondAttribute="top" id="HN4-zX-0T4"/>
                             <constraint firstItem="auV-yK-z5I" firstAttribute="leading" secondItem="v7s-eK-tt7" secondAttribute="leading" id="JwX-0k-HT9"/>
+                            <constraint firstAttribute="bottom" secondItem="M0q-fh-aaV" secondAttribute="bottom" constant="30" id="TXz-9I-IJp"/>
+                            <constraint firstItem="6IP-5I-9LC" firstAttribute="trailing" secondItem="Vdg-ks-DQw" secondAttribute="trailing" constant="30" id="Tf3-ut-JoB"/>
+                            <constraint firstItem="ttd-Qa-JOs" firstAttribute="top" secondItem="Vdg-ks-DQw" secondAttribute="bottom" constant="30" id="Xu7-0q-l1M"/>
                             <constraint firstAttribute="bottom" secondItem="auV-yK-z5I" secondAttribute="bottom" id="b7c-Ed-Ruc"/>
                             <constraint firstAttribute="trailing" secondItem="6IP-5I-9LC" secondAttribute="trailing" id="eF4-7S-OwS"/>
+                            <constraint firstItem="M0q-fh-aaV" firstAttribute="top" secondItem="ttd-Qa-JOs" secondAttribute="bottom" constant="30" id="gvN-60-DaK"/>
                             <constraint firstItem="6IP-5I-9LC" firstAttribute="top" secondItem="v7s-eK-tt7" secondAttribute="top" id="qBR-I8-aBv"/>
                             <constraint firstItem="Cx9-XU-UAA" firstAttribute="centerY" secondItem="v7s-eK-tt7" secondAttribute="centerY" id="qoH-dM-4Si"/>
+                            <constraint firstItem="6IP-5I-9LC" firstAttribute="trailing" secondItem="ttd-Qa-JOs" secondAttribute="trailing" constant="30" id="tgQ-AP-ech"/>
                             <constraint firstItem="6IP-5I-9LC" firstAttribute="leading" secondItem="Cx9-XU-UAA" secondAttribute="trailing" id="zmD-SS-XZN"/>
                         </constraints>
                     </view>
@@ -793,4 +841,9 @@
             <point key="canvasLocation" x="96" y="948"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="172.06298828125" height="172.06298828125"/>
+        <image name="edit" width="721" height="744"/>
+        <image name="list" width="183" height="184"/>
+    </resources>
 </document>

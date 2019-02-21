@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "ConvertTXT.h"
+#import "InfoWindowController.h"
 
 @interface ViewController()
 
 @property (nonatomic, strong) NSString *filePath;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (weak) IBOutlet NSLayoutConstraint *right;
+
+@property (nonatomic, strong) InfoWindowController *infoWindow;
 
 @end
 
@@ -52,6 +55,7 @@
         [self.playerView.player play];
     }
     
+    self.infoWindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindowController" owner:self];
 }
 - (IBAction)clickList:(id)sender {
     if (self.right.constant == 0) {
@@ -59,6 +63,20 @@
     } else {
         self.right.constant = 0;
     }
+}
+
+- (IBAction)addClick:(id)sender {
+//    [self.infoWindow showWindow:self];
+//    [NSApp runModalForWindow:self.infoWindow.window];
+    [[NSApplication sharedApplication] runModalForWindow:self.infoWindow.window];
+}
+
+- (IBAction)listClick:(id)sender {
+    
+}
+
+- (IBAction)editClick:(id)sender {
+    
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
