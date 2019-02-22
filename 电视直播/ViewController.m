@@ -11,11 +11,6 @@
 #import "IJKMediaPlayer.h"
 #import "Reachability.h"
 #import "NvToast.h"
-#import "Masonry.h"
-
-//获取屏幕尺寸
-#define SCREEN_WDITH [[UIScreen mainScreen] bounds].size.width
-#define SCREEN_HEIGTH [[UIScreen mainScreen] bounds].size.height
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
     
@@ -26,9 +21,6 @@
 
 @property (nonatomic, assign) BOOL isAvPlayer;//是否使用avplayer
 @property (nonatomic, strong) NSURL *avurl;
-
-@property (nonatomic, strong) UIButton *jumpBtn;
-@property (nonatomic, strong) UIWebView *webview;
 
 @end
 
@@ -56,18 +48,6 @@
         [self.view addSubview:self.tableView];
         self.tableView.hidden = YES;
         
-        self.jumpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.jumpBtn.backgroundColor = UIColor.redColor;
-        [self.jumpBtn setTitle:@"跳转" forState:UIControlStateNormal];
-        [self.jumpBtn addTarget:self action:@selector(jumpBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:self.jumpBtn];
-        [self.jumpBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.view).offset(-10);
-            make.right.equalTo(self.view).offset(-10);
-            make.width.offset(100);
-            make.height.offset(60);
-        }];
-        
         //获取当前网络状态
         if ([reachability currentReachabilityStatus] == ReachableViaWiFi) {
             [NvToast showInfoWithMessage:@"当前使用Wi-Fi网络"];
@@ -77,99 +57,7 @@
             [NvToast showInfoWithMessage:@"没有网络"];
         }
     });
-}
 
-#pragma mark jumpBtnClick点击事件
-- (void)jumpBtnClick:(UIButton *)sender{
-    self.webview = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WDITH, SCREEN_HEIGTH-100)];
-    
-    [self.view addSubview:self.webview];
-    
-    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
-    [self.webview loadRequest:[NSURLRequest requestWithURL:url]];
-    
-    UIView *bottomView = [[UIView alloc]init];
-    [self.view addSubview:bottomView];
-    bottomView.backgroundColor = UIColor.whiteColor;
-    [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.webview.mas_bottom);
-        make.left.equalTo(self.view);
-        make.right.equalTo(self.view);
-        make.height.offset(100);
-    }];
-    
-    UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.backgroundColor = UIColor.redColor;
-    [backBtn setTitle:@"返回" forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:backBtn];
-    [backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.offset(SCREEN_WDITH/4.0);
-        make.height.offset(60);
-        make.centerY.equalTo(bottomView);
-    }];
-    
-    UIButton *forwardBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    forwardBtn.backgroundColor = UIColor.redColor;
-    [forwardBtn setTitle:@"前进" forState:UIControlStateNormal];
-    [forwardBtn addTarget:self action:@selector(forwardBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:forwardBtn];
-    [forwardBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(backBtn.mas_right);
-        make.width.offset(SCREEN_WDITH/4.0);
-        make.height.offset(60);
-        make.centerY.equalTo(bottomView);
-    }];
-    
-    UIButton *refreshBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    refreshBtn.backgroundColor = UIColor.redColor;
-    [refreshBtn setTitle:@"刷新" forState:UIControlStateNormal];
-    [refreshBtn addTarget:self action:@selector(refreshBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:refreshBtn];
-    [refreshBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(forwardBtn.mas_right);
-        make.width.offset(SCREEN_WDITH/4.0);
-        make.height.offset(60);
-        make.centerY.equalTo(bottomView);
-    }];
-    
-    UIButton *homeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    homeBtn.backgroundColor = UIColor.redColor;
-    [homeBtn setTitle:@"主页" forState:UIControlStateNormal];
-    [homeBtn addTarget:self action:@selector(homeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
-    [bottomView addSubview:homeBtn];
-    [homeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(refreshBtn.mas_right);
-        make.width.offset(SCREEN_WDITH/4.0);
-        make.height.offset(60);
-        make.centerY.equalTo(bottomView);
-    }];
-}
-
-#pragma mark backBtnClick点击事件{
-- (void)backBtnClick:(UIButton *)sender{
-    if (self.webview.canGoBack) {
-        [self.webview goBack];
-    }
-}
-
-#pragma mark forwardBtnClick点击事件{
-- (void)forwardBtnClick:(UIButton *)sender{
-    if (self.webview.canGoForward) {
-        [self.webview goForward];
-    }
-}
-
-#pragma mark refreshBtnClick点击事件{
-- (void)refreshBtnClick:(UIButton *)sender{
-    [self.webview reload];
-}
-
-#pragma mark homeBtnClick点击事件{
-- (void)homeBtnClick:(UIButton *)sender{
-    [self.webview loadHTMLString:@" " baseURL:nil];
-    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
-    [self.webview loadRequest:[NSURLRequest requestWithURL:url]];
 }
 
 - (void)networkStateChange:(NSNotification *)notification {
