@@ -10,7 +10,6 @@
 		0C313CB8221D885000B6886F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C313CB7221D885000B6886F /* AVKit.framework */; };
 		0C313CBB221DB28400B6886F /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C313CBA221DB28400B6886F /* MyButton.m */; };
 		B5296E24221E739100971AAB /* InfoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5296E22221E739100971AAB /* InfoWindowController.m */; };
-		B5296E25221E739100971AAB /* InfoWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5296E23221E739100971AAB /* InfoWindowController.xib */; };
 		B56B46FA221CECAF00DF7691 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B46F9221CECAF00DF7691 /* AppDelegate.m */; };
 		B56B46FD221CECAF00DF7691 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B46FC221CECAF00DF7691 /* ViewController.m */; };
 		B56B46FF221CECB100DF7691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56B46FE221CECB100DF7691 /* Assets.xcassets */; };
@@ -26,7 +25,6 @@
 		0C313CBA221DB28400B6886F /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		B5296E21221E739100971AAB /* InfoWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoWindowController.h; sourceTree = "<group>"; };
 		B5296E22221E739100971AAB /* InfoWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoWindowController.m; sourceTree = "<group>"; };
-		B5296E23221E739100971AAB /* InfoWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoWindowController.xib; sourceTree = "<group>"; };
 		B55FEC25221D6DDC00656DC4 /* 电视直播forMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "电视直播forMac.entitlements"; sourceTree = "<group>"; };
 		B56B46F5221CECAF00DF7691 /* 电视直播forMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电视直播forMac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56B46F8221CECAF00DF7691 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				B56B46FC221CECAF00DF7691 /* ViewController.m */,
 				B5296E21221E739100971AAB /* InfoWindowController.h */,
 				B5296E22221E739100971AAB /* InfoWindowController.m */,
-				B5296E23221E739100971AAB /* InfoWindowController.xib */,
 				B56B46FE221CECB100DF7691 /* Assets.xcassets */,
 				B56B4700221CECB100DF7691 /* Main.storyboard */,
 				0C313CB9221DB28400B6886F /* MyButton.h */,
@@ -168,7 +165,6 @@
 				B56B46FF221CECB100DF7691 /* Assets.xcassets in Resources */,
 				B56B4702221CECB100DF7691 /* Main.storyboard in Resources */,
 				B56B471D221CFBB300DF7691 /* list in Resources */,
-				B5296E25221E739100971AAB /* InfoWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

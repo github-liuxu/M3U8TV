@@ -7,10 +7,19 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class InfoWindowController;
+
+@protocol InfoWindowControllerDelegate <NSObject>
+
+- (void)infoWindowController:(InfoWindowController *)infoWindowController name:(NSString *)name url:(NSString *)url;
+
+@end
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface InfoWindowController : NSWindowController
+@interface InfoWindowController : NSViewController
+
+@property (nonatomic, weak) id delegate;
 
 @end
 

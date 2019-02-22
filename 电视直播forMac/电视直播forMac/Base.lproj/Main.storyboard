@@ -840,6 +840,109 @@
             </objects>
             <point key="canvasLocation" x="96" y="948"/>
         </scene>
+        <!--Window Controller-->
+        <scene sceneID="UIw-wa-8Jx">
+            <objects>
+                <windowController storyboardIdentifier="AddWindow" id="Ejp-6c-kNZ" sceneMemberID="viewController">
+                    <window key="window" identifier="AddWindow" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="LqW-qs-l4o">
+                        <windowStyleMask key="styleMask" titled="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <connections>
+                            <outlet property="delegate" destination="Ejp-6c-kNZ" id="avj-Wf-NCq"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="EXn-GD-hWu" kind="relationship" relationship="window.shadowedContentViewController" id="dYN-5m-M4e"/>
+                    </connections>
+                </windowController>
+                <customObject id="VTa-gu-3IT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="1450"/>
+        </scene>
+        <!--Info Window Controller-->
+        <scene sceneID="WP6-4A-Ccs">
+            <objects>
+                <viewController id="EXn-GD-hWu" customClass="InfoWindowController" sceneMemberID="viewController">
+                    <view key="view" id="IoZ-6d-2vb">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="160"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w5P-sF-yjY">
+                                <rect key="frame" x="20" y="118" width="394" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Ycf-XH-lW0"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="5Z3-8M-iKc">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9MR-Uf-sAQ">
+                                <rect key="frame" x="20" y="86" width="394" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="vB5-GH-sBo"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="p6k-ox-bsK">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hyi-SD-X4l">
+                                <rect key="frame" x="20" y="18" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="cT0-XW-wEB"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" title="ok" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b3W-KE-YS1">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="sureClick:" target="EXn-GD-hWu" id="FfO-HL-R6N"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-4N-ElZ">
+                                <rect key="frame" x="354" y="18" width="60" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="nyQ-GK-dt0"/>
+                                    <constraint firstAttribute="width" constant="60" id="pey-YR-49C"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" title="cancel" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oz1-tw-WmU">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelClick:" target="EXn-GD-hWu" id="akY-PA-lPX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GPj-4N-ElZ" secondAttribute="bottom" constant="20" id="Adf-dn-r3C"/>
+                            <constraint firstAttribute="trailing" secondItem="w5P-sF-yjY" secondAttribute="trailing" constant="20" id="J36-IR-RrN"/>
+                            <constraint firstItem="GPj-4N-ElZ" firstAttribute="top" secondItem="9MR-Uf-sAQ" secondAttribute="bottom" constant="44" id="M3l-wz-gVa"/>
+                            <constraint firstItem="w5P-sF-yjY" firstAttribute="top" secondItem="IoZ-6d-2vb" secondAttribute="top" constant="20" id="PpD-u4-i4B"/>
+                            <constraint firstItem="9MR-Uf-sAQ" firstAttribute="top" secondItem="w5P-sF-yjY" secondAttribute="bottom" constant="10" id="baw-uy-htj"/>
+                            <constraint firstItem="w5P-sF-yjY" firstAttribute="leading" secondItem="IoZ-6d-2vb" secondAttribute="leading" constant="20" id="bqI-Bp-i5e"/>
+                            <constraint firstItem="9MR-Uf-sAQ" firstAttribute="leading" secondItem="IoZ-6d-2vb" secondAttribute="leading" constant="20" id="mK4-FE-gt9"/>
+                            <constraint firstAttribute="trailing" secondItem="9MR-Uf-sAQ" secondAttribute="trailing" constant="20" id="pYh-Bt-p54"/>
+                            <constraint firstItem="hyi-SD-X4l" firstAttribute="leading" secondItem="IoZ-6d-2vb" secondAttribute="leading" constant="20" id="pqm-mb-IPd"/>
+                            <constraint firstItem="hyi-SD-X4l" firstAttribute="top" secondItem="9MR-Uf-sAQ" secondAttribute="bottom" constant="44" id="qA9-Ah-7UK"/>
+                            <constraint firstAttribute="bottom" secondItem="hyi-SD-X4l" secondAttribute="bottom" constant="20" id="qis-Zb-x78"/>
+                            <constraint firstAttribute="trailing" secondItem="GPj-4N-ElZ" secondAttribute="trailing" constant="20" id="tEx-xF-Uvt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameField" destination="w5P-sF-yjY" id="ZeE-n0-aKq"/>
+                        <outlet property="urlField" destination="9MR-Uf-sAQ" id="hEG-hy-bWo"/>
+                    </connections>
+                </viewController>
+                <customObject id="RDt-hf-vvy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="495" y="1444"/>
+        </scene>
     </scenes>
     <resources>
         <image name="add" width="172.06298828125" height="172.06298828125"/>

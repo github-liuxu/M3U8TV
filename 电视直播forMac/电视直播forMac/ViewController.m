@@ -24,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.right.constant = -240;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     NSString *fpath = [NSHomeDirectory() stringByAppendingPathComponent:@".tvlist"];
@@ -54,8 +55,7 @@
         self.playerView.player = [AVPlayer playerWithURL:url];
         [self.playerView.player play];
     }
-    
-    self.infoWindow = [[InfoWindowController alloc] initWithWindowNibName:@"InfoWindowController" owner:self];
+
 }
 - (IBAction)clickList:(id)sender {
     if (self.right.constant == 0) {
@@ -66,9 +66,10 @@
 }
 
 - (IBAction)addClick:(id)sender {
-//    [self.infoWindow showWindow:self];
-//    [NSApp runModalForWindow:self.infoWindow.window];
-    [[NSApplication sharedApplication] runModalForWindow:self.infoWindow.window];
+    NSStoryboard *st = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    NSWindowController *window = [st instantiateControllerWithIdentifier:@"AddWindow"];
+    ((InfoWindowController *)window.contentViewController).delegate = self;
+    [[NSApplication sharedApplication] runModalForWindow:window.window];
 }
 
 - (IBAction)listClick:(id)sender {
@@ -77,6 +78,31 @@
 
 - (IBAction)editClick:(id)sender {
     
+}
+
+- (void)saveData:(NSMutableArray *)dataSource {
+    NSFileManager *fm = [NSFileManager defaultManager];
+    if ([fm fileExistsAtPath:self.filePath]) {
+        [fm removeItemAtPath:self.filePath error:nil];
+    }
+    NSMutableString *dataString = NSMutableString.new;
+    [dataSource enumerateObjectsUsingBlock:^(NSMutableDictionary*  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSString *name = obj[@"name"];
+        NSString *url = obj[@"url"];
+        [dataString appendString:name];
+        [dataString appendString:@","];
+        [dataString appendString:url];
+        if (idx != dataSource.count-1) {
+            [dataString appendString:@"\n"];
+        }
+    }];
+    [dataString writeToFile:self.filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+}
+
+- (void)infoWindowController:(InfoWindowController *)infoWindowController name:(NSString *)name url:(NSString *)url {
+    [self.dataSource addObject:@{@"name":name,@"url":url}];
+    [self saveData:self.dataSource];
+    [self.tableView reloadData];
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
