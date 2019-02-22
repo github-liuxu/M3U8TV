@@ -9,6 +9,8 @@ target '电视直播' do
   pod 'Reachability'
   pod 'MBProgressHUD'
   pod 'IJKMediaFramework'
+  pod 'AFNetworking'
+  pod 'Masonry'
   #pod 'Masonry'
 
 end
