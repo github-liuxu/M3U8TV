@@ -47,6 +47,7 @@
         
         [self.view addSubview:self.tableView];
         self.tableView.hidden = YES;
+        self.tableView.backgroundColor = [UIColor clearColor];
         
         //获取当前网络状态
         if ([reachability currentReachabilityStatus] == ReachableViaWiFi) {
@@ -168,6 +169,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCellFileList" forIndexPath:indexPath];
     cell.textLabel.text = self.fileList[indexPath.row];
+    cell.backgroundColor = [UIColor colorWithWhite:0 alpha:0.6];
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 

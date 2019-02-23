@@ -30,6 +30,7 @@
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor clearColor];
     
     NSString *fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     
@@ -58,38 +59,38 @@
     [self.button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(self.rect.size.width - 70, self.rect.size.height - 70, 40, 40)];
-    [button setTitle:@"Add" forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor colorWithRed:13/255.0 green:191.0/255.0 blue:186.0/255.0 alpha:1]];
+    [button setImage:[UIImage imageNamed:@"add"] forState:UIControlStateNormal];
     button.layer.cornerRadius = 20;
     [self.view addSubview:button];
-    [button setBackgroundColor:[UIColor redColor]];
     [button addTarget:self action:@selector(addTVInfo:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *shareButton = [[UIButton alloc] initWithFrame:CGRectMake(self.rect.size.width - 70, self.rect.size.height - 130, 40, 40)];
-    [shareButton setTitle:@"↑" forState:UIControlStateNormal];
+    [shareButton setBackgroundColor:[UIColor colorWithRed:13/255.0 green:191.0/255.0 blue:186.0/255.0 alpha:1]];
+    [shareButton setImage:[UIImage imageNamed:@"share"] forState:UIControlStateNormal];
     shareButton.layer.cornerRadius = 20;
     [self.view addSubview:shareButton];
-    [shareButton setBackgroundColor:[UIColor redColor]];
     [shareButton addTarget:self action:@selector(shareFilePath:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *editButton = [[UIButton alloc] initWithFrame:CGRectMake(self.rect.size.width - 70, self.rect.size.height - 190, 40, 40)];
-    [editButton setTitle:@"Edit" forState:UIControlStateNormal];
+    [editButton setBackgroundColor:[UIColor colorWithRed:13/255.0 green:191.0/255.0 blue:186.0/255.0 alpha:1]];
+    [editButton setImage:[UIImage imageNamed:@"edit"] forState:UIControlStateNormal];
     editButton.layer.cornerRadius = 20;
     [self.view addSubview:editButton];
-    [editButton setBackgroundColor:[UIColor redColor]];
     [editButton addTarget:self action:@selector(editClick:) forControlEvents:UIControlEventTouchUpInside];
     
     UIButton *listButton = [[UIButton alloc] initWithFrame:CGRectMake(self.rect.size.width - 70, self.rect.size.height - 250, 40, 40)];
-    [listButton setTitle:@"list" forState:UIControlStateNormal];
+    [listButton setBackgroundColor:[UIColor colorWithRed:13/255.0 green:191.0/255.0 blue:186.0/255.0 alpha:1]];
+    [listButton setImage:[UIImage imageNamed:@"list"] forState:UIControlStateNormal];
     listButton.layer.cornerRadius = 20;
     [self.view addSubview:listButton];
-    [listButton setBackgroundColor:[UIColor redColor]];
     [listButton addTarget:self action:@selector(listClick:) forControlEvents:UIControlEventTouchUpInside];
     
     self.SwitchButton = [[UIButton alloc] initWithFrame:CGRectMake(self.rect.size.width - 70, self.rect.size.height - 310, 40, 40)];
-    [self.SwitchButton setTitle:@"AV" forState:UIControlStateNormal];
+    [self.SwitchButton setBackgroundColor:[UIColor colorWithRed:13/255.0 green:191.0/255.0 blue:186.0/255.0 alpha:1]];
+    [self.SwitchButton setImage:[UIImage imageNamed:@"av"] forState:UIControlStateNormal];
     self.SwitchButton.layer.cornerRadius = 20;
     [self.view addSubview:self.SwitchButton];
-    [self.SwitchButton setBackgroundColor:[UIColor redColor]];
     [self.SwitchButton addTarget:self action:@selector(switchButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     
     if ([self.delegate respondsToSelector:@selector(didSelectUrlString:)]) {
@@ -147,7 +148,11 @@
 }
 
 - (void)setSwitchText:(NSString *)text {
-    [self.SwitchButton setTitle:text forState:UIControlStateNormal];
+    if ([text isEqualToString:@"AV"]) {
+        [self.SwitchButton setImage:[UIImage imageNamed:@"av"] forState:UIControlStateNormal];
+    } else {
+        [self.SwitchButton setImage:[UIImage imageNamed:@"ijk"] forState:UIControlStateNormal];
+    }
 }
 
 - (BOOL)shouldAutorotate {
@@ -182,8 +187,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor colorWithWhite:0 alpha:0.6];
     NSDictionary*dic = self.dataSource[indexPath.row];
     cell.textLabel.text = [NSString stringWithFormat:@"%@   %@",dic[@"name"],dic[@"url"]];
+    cell.textLabel.textColor = [UIColor whiteColor];
     return cell;
 }
 

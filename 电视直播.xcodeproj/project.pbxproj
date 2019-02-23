@@ -162,8 +162,6 @@
 				0CBB57B921CD2AE600282EFF /* Sources */,
 				0CBB57BA21CD2AE600282EFF /* Frameworks */,
 				0CBB57BB21CD2AE600282EFF /* Resources */,
-				04CCC2A7C83964EC7838C831 /* [CP] Embed Pods Frameworks */,
-				0CCDE5C3C26511BCBE0985B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,36 +219,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		04CCC2A7C83964EC7838C831 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电视直播/Pods-电视直播-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0CCDE5C3C26511BCBE0985B4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-电视直播/Pods-电视直播-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		60DDF3E32F800EEFEF417F2B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
