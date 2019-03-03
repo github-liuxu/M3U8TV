@@ -90,7 +90,7 @@
     [self.player pause];
     self.player = nil;
     
-    if (_isAvPlayer && ![url.absoluteString containsString:@"rtmp://"]) {
+    if (_isAvPlayer && ![url.absoluteString containsString:@"rtmp://"] && ![url.absoluteString containsString:@"rtsp://"]) {
         self.player = [AVPlayer playerWithURL:url];
         self.showsPlaybackControls = YES;
         _isAvPlayer = YES;

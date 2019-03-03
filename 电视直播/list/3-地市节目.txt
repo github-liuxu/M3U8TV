@@ -1,4 +1,4 @@
-﻿天津滨海1,http://60.30.52.41/live/bhtv1/playlist.m3u8
+天津滨海1,http://60.30.52.41/live/bhtv1/playlist.m3u8
 天津滨海2,http://60.30.52.41/live/bhtv2/playlist.m3u8
 杭州1,http://125.210.152.20:9090/live/HZZH.m3u8
 杭州2,http://125.210.152.20:9090/live/XHMZ.m3u8
@@ -957,4 +957,3 @@
 秭归新闻综合,rtmp://zigui.live.cjyun.org/video/s10111-ZGTV1
 DV生活,http://www.szmgiptv.com:14436/hls/09.m3u8
 i综艺,http://dlhls.live.cnlive.com:1935/cdn/izongyi/playlist.m3u8
- 

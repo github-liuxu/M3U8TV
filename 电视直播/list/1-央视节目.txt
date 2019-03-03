@@ -1,4 +1,4 @@
-﻿CCTV-1综合,http://221.6.85.150:9000/live/cctv1_800/cctv1_800.m3u8
+CCTV-1综合,http://221.6.85.150:9000/live/cctv1_800/cctv1_800.m3u8
 CCTV-1综合,http://hbpx.chinashadt.com:2036/live/px2.stream/playlist.m3u8
 CCTV-1综合，http://39.134.176.157/PLTV/88888888/224/3221226541/index.m3u8
 CCTV-2财经,http://ivi.bupt.edu.cn/hls/cctv2.m3u8
