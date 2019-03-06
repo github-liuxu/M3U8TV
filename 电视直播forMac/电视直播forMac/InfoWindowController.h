@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id delegate;
 
+@property (nonatomic, strong) NSString *identify;
+
+- (void)setName:(NSString *)name url:(NSString *)urlString;
+
 @end
 
 NS_ASSUME_NONNULL_END

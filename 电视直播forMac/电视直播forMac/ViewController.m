@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSString *filePath;
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (weak) IBOutlet NSLayoutConstraint *right;
+@property (nonatomic, strong) NSDictionary *currentDic;
 
 @property (nonatomic, strong) InfoWindowController *infoWindow;
 
@@ -48,7 +49,8 @@
     
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView reloadData];
-
+    
+    self.currentDic = self.dataSource.firstObject;
     NSString *urlString = [self.dataSource.firstObject objectForKey:@"url"];
     if (urlString) {
         NSURL *url = [NSURL URLWithString:urlString];
@@ -68,7 +70,9 @@
 - (IBAction)addClick:(id)sender {
     NSStoryboard *st = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     NSWindowController *window = [st instantiateControllerWithIdentifier:@"AddWindow"];
-    ((InfoWindowController *)window.contentViewController).delegate = self;
+    InfoWindowController *infoController = (InfoWindowController *)window.contentViewController;
+    infoController.delegate = self;
+    infoController.identify = @"Add";
     [[NSApplication sharedApplication] runModalForWindow:window.window];
 }
 
@@ -77,7 +81,13 @@
 }
 
 - (IBAction)editClick:(id)sender {
-    
+    NSStoryboard *st = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    NSWindowController *window = [st instantiateControllerWithIdentifier:@"AddWindow"];
+    InfoWindowController *infoController = (InfoWindowController *)window.contentViewController;
+    infoController.delegate = self;
+    infoController.identify = @"Edit";
+    [infoController setName:self.currentDic[@"name"] url:self.currentDic[@"url"]];
+    [[NSApplication sharedApplication] runModalForWindow:window.window];
 }
 
 - (void)saveData:(NSMutableArray *)dataSource {
@@ -100,9 +110,16 @@
 }
 
 - (void)infoWindowController:(InfoWindowController *)infoWindowController name:(NSString *)name url:(NSString *)url {
-    [self.dataSource addObject:@{@"name":name,@"url":url}];
-    [self saveData:self.dataSource];
-    [self.tableView reloadData];
+    if ([infoWindowController.identify isEqualToString:@"Edit"]) {
+        [self.currentDic setValue:name forKey:@"name"];
+        [self.currentDic setValue:url forKey:@"url"];
+        [self saveData:self.dataSource];
+        [self.tableView reloadData];
+    } else if ([infoWindowController.identify isEqualToString:@"Add"]){
+        [self.dataSource addObject:@{@"name":name,@"url":url}];
+        [self saveData:self.dataSource];
+        [self.tableView reloadData];
+    }
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView {
@@ -126,6 +143,7 @@
 }
 
 - (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(NSInteger)row{
+    self.currentDic = self.dataSource[row];
     NSString *urlString = [self.dataSource[row] objectForKey:@"url"];
     NSURL *url = [NSURL URLWithString:urlString];
     [self.playerView.player pause];

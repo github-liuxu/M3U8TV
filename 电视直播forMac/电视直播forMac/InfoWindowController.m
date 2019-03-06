@@ -22,6 +22,11 @@
     // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
 }
 
+- (void)setName:(NSString *)name url:(NSString *)urlString {
+    self.nameField.stringValue = name;
+    self.urlField.stringValue = urlString;
+}
+
 - (IBAction)cancelClick:(id)sender {
     [[NSApplication sharedApplication] stopModal];
     [[NSApplication sharedApplication].windows.lastObject close];
