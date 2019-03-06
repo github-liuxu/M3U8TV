@@ -21,7 +21,7 @@
             NSArray *arr = [obj componentsSeparatedByString:@","];
             if (arr.count == 2) {
                 NSString *name = arr.firstObject;
-                NSString *url = arr.lastObject;
+                NSString *url = [[arr.lastObject stringByReplacingOccurrencesOfString:@"\r" withString:@""] stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                 NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:name,@"name",url,@"url", nil];
                 if (![name isEqualToString:@""] && ![url isEqualToString:@""]) {
                     [self.array addObject:dic];

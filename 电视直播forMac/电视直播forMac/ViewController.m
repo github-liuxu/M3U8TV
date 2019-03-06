@@ -28,12 +28,13 @@
     self.right.constant = -240;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    NSString *fpath = [NSHomeDirectory() stringByAppendingPathComponent:@".tvlist"];
+    NSString *fpath = [NSHomeDirectory() stringByAppendingPathComponent:@"tvlist"];
     
     NSString *listPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Resources/list"];
     NSFileManager *fm = [NSFileManager defaultManager];
     if (![fm fileExistsAtPath:fpath]) {
-        [fm createDirectoryAtPath:fpath withIntermediateDirectories:YES attributes:nil error:nil];
+        NSError *error;
+        [fm createDirectoryAtPath:fpath withIntermediateDirectories:YES attributes:nil error:&error];
     }
     NSArray *listArr = [fm contentsOfDirectoryAtPath:listPath error:nil];
     listArr = [listArr sortedArrayWithOptions:NSSortConcurrent usingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
@@ -77,7 +78,32 @@
 }
 
 - (IBAction)listClick:(id)sender {
-    
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+    [openPanel setPrompt: @"选择"];
+    [openPanel setCanChooseFiles:YES];  //是否能选择文件file
+    openPanel.allowsMultipleSelection = NO;
+    openPanel.canChooseDirectories = NO;
+    openPanel.allowedFileTypes = [NSArray arrayWithObjects: @"txt", nil];
+    NSURL *openpath = [NSURL fileURLWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"tvlist"] isDirectory:YES];
+    [openPanel setDirectoryURL:openpath];
+    __weak typeof(self)weakSelf = self;
+    [openPanel beginSheetModalForWindow:NSApp.mainWindow completionHandler:^(NSModalResponse returnCode) {
+        if (returnCode == 1) {
+            NSURL *fileUrl = [[openPanel URLs] firstObject];
+            weakSelf.filePath = [fileUrl.path stringByReplacingOccurrencesOfString:@"file://" withString:@""];
+            
+            weakSelf.dataSource = [[ConvertTXT alloc] initTextWith:weakSelf.filePath].array;
+            [weakSelf.tableView reloadData];
+            
+            weakSelf.currentDic = weakSelf.dataSource.firstObject;
+            NSString *urlString = [weakSelf.dataSource.firstObject objectForKey:@"url"];
+            if (urlString) {
+                NSURL *url = [NSURL URLWithString:urlString];
+                weakSelf.playerView.player = [AVPlayer playerWithURL:url];
+                [weakSelf.playerView.player play];
+            }
+        }
+    }];
 }
 
 - (IBAction)editClick:(id)sender {
