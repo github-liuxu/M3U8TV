@@ -1,4 +1,5 @@
-cctv1,http://223.110.242.130:6610/gitv/live1/G_CCTV-1-HQ/1.m3u8
+cctv1高清,http://223.110.242.130:6610/gitv/live1/G_CCTV-1-HQ/1.m3u8
+cctv1,http://121.17.126.228/slive5.tvesou.com/live/cctv1.m3u8?xys=1525527095&xyt=08B904BB992D47263F5CCED33C058E58&time=1553349276980
 cctv2,http://hbzq.chinashadt.com:1936/live/zaoqiang3.stream_360p/chunklist_w1912464900.m3u8
 cctv2高清,http://112.50.243.10/PLTV/88888888/224/3221225800/1.m3u8
 cctv3,http://223.110.243.155:80/PLTV/3/224/3221227415/index.m3u8
