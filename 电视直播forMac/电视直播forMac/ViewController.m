@@ -46,7 +46,7 @@
             [fm copyItemAtPath:[listPath stringByAppendingPathComponent:obj] toPath:filestr error:nil];
         }
     }];
-    self.filePath = [fpath stringByAppendingPathComponent:listArr.firstObject];
+    self.filePath = [fpath stringByAppendingPathComponent:@"1-tvinfo.txt"];
     
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView reloadData];
