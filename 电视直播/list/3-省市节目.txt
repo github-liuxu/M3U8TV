@@ -210,10 +210,16 @@
 兵团卫视,http://202.107.188.247:5002/bingtuan_hdcq-1.m3u8?token=iUa4EopGuBKLRrgS_yoongoo&ct=wifi&gid=bingtuan_hdcq
 兵团卫视,http://klmyyun.chinavas.com/hls/qishi3.m3u8
 兵团建设,http://v.btzx.com.cn:1935/live/news.stream/playlist.m3u8
+
+
 内蒙古卫视,http://125.210.152.20:9090/live/NMGWS.m3u8
+
+
 西藏卫视,http://125.210.152.20:9090/live/XZWS.m3u8
 西藏卫视,http://111.40.205.87/PLTV/88888888/224/3221225638/index.m3u8
 西藏藏语,http://cstv.live.wscdns.com/live/qhxizangws/playlist.m3u8
+
+
 云南卫视,http://125.210.152.20:9090/live/YNWS.m3u8
 云南卫视,rtsp://119.39.49.116:554/ch00000090990000001072.sdp?vcdnid=001
 新闻综合,http://store.ovp.wsrtv.com.cn:9090/ch1/hls/playlist.m3u8
