@@ -112,5 +112,3 @@ EBS,http://ebsonair.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8
 台湾卫视,http://stream.mastvnet.com/MSTV/SD/live.m3u8
 凤凰资讯台,rtmp://58.200.131.2:1935/livetv/fhzx
 欢乐颂,http://aldirect.hls.huya.com/huyalive/94525224-2579730250-11079857056251904000-3048959666-10057-A-0-1.m3u8
-盗墓笔记,https://sslproxy.yy.com:4443/livesystem/15013_xv_36493344_36493344_0_0_0-15013_xa_36493344_36493344_0_0_0.m3u8?org=yyweb&t=1560661398&tk=bac169e7d33255501c74c7108d049b1c&uuid=fe1580bec09b4fcc93b49072cd716162
-上海滩,https://sslproxy.yy.com:4443/livesystem/15013_xv_79382500_79382500_0_0_0-15013_xa_79382500_79382500_0_0_0.m3u8?org=yyweb&t=1560661227&tk=0be2922566c31b20832b7fb931741dc6&uuid=f62d0745f4a9461e87d3ba14308db68a&wh=1

@@ -16,10 +16,10 @@
 		0CBB57CD21CD2AE700282EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB57CB21CD2AE700282EFF /* LaunchScreen.storyboard */; };
 		0CBB57D021CD2AE700282EFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57CF21CD2AE700282EFF /* main.m */; };
 		0CBB57DD21CD416700282EFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57DC21CD416700282EFF /* ViewController.m */; };
+		18E1955AFBAF09B0C290D911 /* libPods-TVOnLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */; };
 		B51CB39722156438006EC5BC /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B51CB39622156438006EC5BC /* libMBProgressHUD.a */; };
 		B51CB39922156438006EC5BC /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B51CB39822156438006EC5BC /* libReachability.a */; };
 		B51CB39C22156906006EC5BC /* NvToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CB39B22156906006EC5BC /* NvToast.m */; };
-		FCEB7118E53C59661D2FB00F /* libPods-电视直播.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4055795F056556309BA730 /* libPods-电视直播.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		0C86CBE221F77DA300C26F51 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTXT.h; sourceTree = "<group>"; };
 		0C86CBE321F77DA300C26F51 /* ConvertTXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTXT.m; sourceTree = "<group>"; };
 		0C86CBF121F78C7600C26F51 /* list */ = {isa = PBXFileReference; lastKnownFileType = folder; path = list; sourceTree = "<group>"; };
-		0CBB57BD21CD2AE600282EFF /* 电视直播.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电视直播.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CBB57BD21CD2AE600282EFF /* TVOnLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOnLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBB57C021CD2AE600282EFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CBB57C121CD2AE600282EFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0CBB57C321CD2AE600282EFF /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
@@ -40,6 +40,9 @@
 		0CBB57DB21CD416700282EFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0CBB57DC21CD416700282EFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1A4AC7482CCC7A0D44A7BE6A /* Pods-电视直播.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电视直播.release.xcconfig"; path = "Pods/Target Support Files/Pods-电视直播/Pods-电视直播.release.xcconfig"; sourceTree = "<group>"; };
+		6F29C244BD323972B3D87ADC /* Pods-TVOnLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOnLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVOnLine/Pods-TVOnLine.debug.xcconfig"; sourceTree = "<group>"; };
+		937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVOnLine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1AE8B4AD7EEE4C52FAE041 /* Pods-TVOnLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOnLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVOnLine/Pods-TVOnLine.release.xcconfig"; sourceTree = "<group>"; };
 		B51CB39622156438006EC5BC /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51CB39822156438006EC5BC /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51CB39A22156906006EC5BC /* NvToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NvToast.h; sourceTree = "<group>"; };
@@ -69,7 +72,7 @@
 			files = (
 				B51CB39722156438006EC5BC /* libMBProgressHUD.a in Frameworks */,
 				B51CB39922156438006EC5BC /* libReachability.a in Frameworks */,
-				FCEB7118E53C59661D2FB00F /* libPods-电视直播.a in Frameworks */,
+				18E1955AFBAF09B0C290D911 /* libPods-TVOnLine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +82,7 @@
 		0CBB57B421CD2AE600282EFF = {
 			isa = PBXGroup;
 			children = (
-				0CBB57BF21CD2AE600282EFF /* 电视直播 */,
+				0CBB57BF21CD2AE600282EFF /* TVOnLine */,
 				0CBB57BE21CD2AE600282EFF /* Products */,
 				B5455B7722014C2F008FE896 /* Frameworks */,
 				EDFA029BFB65CC8DEA9C0526 /* Pods */,
@@ -89,12 +92,12 @@
 		0CBB57BE21CD2AE600282EFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0CBB57BD21CD2AE600282EFF /* 电视直播.app */,
+				0CBB57BD21CD2AE600282EFF /* TVOnLine.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0CBB57BF21CD2AE600282EFF /* 电视直播 */ = {
+		0CBB57BF21CD2AE600282EFF /* TVOnLine */ = {
 			isa = PBXGroup;
 			children = (
 				0C86CBF121F78C7600C26F51 /* list */,
@@ -114,7 +117,7 @@
 				0CBB57CE21CD2AE700282EFF /* Info.plist */,
 				0CBB57CF21CD2AE700282EFF /* main.m */,
 			);
-			path = "电视直播";
+			path = TVOnLine;
 			sourceTree = "<group>";
 		};
 		B5455B7722014C2F008FE896 /* Frameworks */ = {
@@ -138,6 +141,7 @@
 				B5455B7E22014CA4008FE896 /* libz.tbd */,
 				B5455B7C22014C99008FE896 /* libc++.tbd */,
 				DF4055795F056556309BA730 /* libPods-电视直播.a */,
+				937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,6 +151,8 @@
 			children = (
 				07CC21E247B082966D12A6D1 /* Pods-电视直播.debug.xcconfig */,
 				1A4AC7482CCC7A0D44A7BE6A /* Pods-电视直播.release.xcconfig */,
+				6F29C244BD323972B3D87ADC /* Pods-TVOnLine.debug.xcconfig */,
+				AC1AE8B4AD7EEE4C52FAE041 /* Pods-TVOnLine.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -154,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0CBB57BC21CD2AE600282EFF /* 电视直播 */ = {
+		0CBB57BC21CD2AE600282EFF /* TVOnLine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CBB57D321CD2AE700282EFF /* Build configuration list for PBXNativeTarget "电视直播" */;
+			buildConfigurationList = 0CBB57D321CD2AE700282EFF /* Build configuration list for PBXNativeTarget "TVOnLine" */;
 			buildPhases = (
 				60DDF3E32F800EEFEF417F2B /* [CP] Check Pods Manifest.lock */,
 				0CBB57B921CD2AE600282EFF /* Sources */,
@@ -167,9 +173,9 @@
 			);
 			dependencies = (
 			);
-			name = "电视直播";
+			name = TVOnLine;
 			productName = "电视直播";
-			productReference = 0CBB57BD21CD2AE600282EFF /* 电视直播.app */;
+			productReference = 0CBB57BD21CD2AE600282EFF /* TVOnLine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0CBB57B821CD2AE600282EFF /* Build configuration list for PBXProject "电视直播" */;
+			buildConfigurationList = 0CBB57B821CD2AE600282EFF /* Build configuration list for PBXProject "TVOnLine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -199,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0CBB57BC21CD2AE600282EFF /* 电视直播 */,
+				0CBB57BC21CD2AE600282EFF /* TVOnLine */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +236,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-电视直播-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TVOnLine-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -389,7 +395,7 @@
 		};
 		0CBB57D421CD2AE700282EFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07CC21E247B082966D12A6D1 /* Pods-电视直播.debug.xcconfig */;
+			baseConfigurationReference = 6F29C244BD323972B3D87ADC /* Pods-TVOnLine.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -404,7 +410,7 @@
 					"\"$(SRCROOT)/Pods/IJKMediaFramework/IJKMediaFramework/Classes/IJKMediaFramework.framework/Headers\"",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "电视直播/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TVOnLine/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,7 +425,7 @@
 		};
 		0CBB57D521CD2AE700282EFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A4AC7482CCC7A0D44A7BE6A /* Pods-电视直播.release.xcconfig */;
+			baseConfigurationReference = AC1AE8B4AD7EEE4C52FAE041 /* Pods-TVOnLine.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -434,7 +440,7 @@
 					"\"$(SRCROOT)/Pods/IJKMediaFramework/IJKMediaFramework/Classes/IJKMediaFramework.framework/Headers\"",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "电视直播/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TVOnLine/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +456,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CBB57B821CD2AE600282EFF /* Build configuration list for PBXProject "电视直播" */ = {
+		0CBB57B821CD2AE600282EFF /* Build configuration list for PBXProject "TVOnLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CBB57D121CD2AE700282EFF /* Debug */,
@@ -459,7 +465,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0CBB57D321CD2AE700282EFF /* Build configuration list for PBXNativeTarget "电视直播" */ = {
+		0CBB57D321CD2AE700282EFF /* Build configuration list for PBXNativeTarget "TVOnLine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0CBB57D421CD2AE700282EFF /* Debug */,

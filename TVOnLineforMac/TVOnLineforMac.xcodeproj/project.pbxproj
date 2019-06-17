@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1D817822B7DB53001B0C00 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 0C1D817722B7DB53001B0C00 /* list */; };
+		0C1D817C22B7DD6D001B0C00 /* ConvertTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D817B22B7DD6D001B0C00 /* ConvertTXT.m */; };
 		0C313CB8221D885000B6886F /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C313CB7221D885000B6886F /* AVKit.framework */; };
 		0C313CBB221DB28400B6886F /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C313CBA221DB28400B6886F /* MyButton.m */; };
 		B5296E24221E739100971AAB /* InfoWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5296E22221E739100971AAB /* InfoWindowController.m */; };
@@ -15,18 +17,19 @@
 		B56B46FF221CECB100DF7691 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56B46FE221CECB100DF7691 /* Assets.xcassets */; };
 		B56B4702221CECB100DF7691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56B4700221CECB100DF7691 /* Main.storyboard */; };
 		B56B4705221CECB100DF7691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B4704221CECB100DF7691 /* main.m */; };
-		B56B471D221CFBB300DF7691 /* list in Resources */ = {isa = PBXBuildFile; fileRef = B56B471C221CFBB300DF7691 /* list */; };
-		B56B4720221CFBC300DF7691 /* ConvertTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = B56B471E221CFBC300DF7691 /* ConvertTXT.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1D817722B7DB53001B0C00 /* list */ = {isa = PBXFileReference; lastKnownFileType = folder; name = list; path = ../../TVOnLine/list; sourceTree = "<group>"; };
+		0C1D817A22B7DD6D001B0C00 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConvertTXT.h; path = ../../TVOnLine/ConvertTXT.h; sourceTree = "<group>"; };
+		0C1D817B22B7DD6D001B0C00 /* ConvertTXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConvertTXT.m; path = ../../TVOnLine/ConvertTXT.m; sourceTree = "<group>"; };
 		0C313CB7221D885000B6886F /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		0C313CB9221DB28400B6886F /* MyButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		0C313CBA221DB28400B6886F /* MyButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		B5296E21221E739100971AAB /* InfoWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoWindowController.h; sourceTree = "<group>"; };
 		B5296E22221E739100971AAB /* InfoWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoWindowController.m; sourceTree = "<group>"; };
-		B55FEC25221D6DDC00656DC4 /* 电视直播forMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "电视直播forMac.entitlements"; sourceTree = "<group>"; };
-		B56B46F5221CECAF00DF7691 /* 电视直播forMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "电视直播forMac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55FEC25221D6DDC00656DC4 /* TVOnLineforMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TVOnLineforMac.entitlements; sourceTree = "<group>"; };
+		B56B46F5221CECAF00DF7691 /* TVOnLineforMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOnLineforMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56B46F8221CECAF00DF7691 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B56B46F9221CECAF00DF7691 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B56B46FB221CECAF00DF7691 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -35,9 +38,6 @@
 		B56B4701221CECB100DF7691 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56B4703221CECB100DF7691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56B4704221CECB100DF7691 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B56B471C221CFBB300DF7691 /* list */ = {isa = PBXFileReference; lastKnownFileType = folder; name = list; path = "../../电视直播/list"; sourceTree = "<group>"; };
-		B56B471E221CFBC300DF7691 /* ConvertTXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConvertTXT.m; path = "../../电视直播/ConvertTXT.m"; sourceTree = "<group>"; };
-		B56B471F221CFBC300DF7691 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConvertTXT.h; path = "../../电视直播/ConvertTXT.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 		B56B46EC221CECAF00DF7691 = {
 			isa = PBXGroup;
 			children = (
-				B56B46F7221CECAF00DF7691 /* 电视直播forMac */,
+				B56B46F7221CECAF00DF7691 /* TVOnLineforMac */,
 				B56B46F6221CECAF00DF7691 /* Products */,
 				0C313CB6221D885000B6886F /* Frameworks */,
 			);
@@ -72,17 +72,17 @@
 		B56B46F6221CECAF00DF7691 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B56B46F5221CECAF00DF7691 /* 电视直播forMac.app */,
+				B56B46F5221CECAF00DF7691 /* TVOnLineforMac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B56B46F7221CECAF00DF7691 /* 电视直播forMac */ = {
+		B56B46F7221CECAF00DF7691 /* TVOnLineforMac */ = {
 			isa = PBXGroup;
 			children = (
-				B56B471C221CFBB300DF7691 /* list */,
-				B56B471F221CFBC300DF7691 /* ConvertTXT.h */,
-				B56B471E221CFBC300DF7691 /* ConvertTXT.m */,
+				0C1D817722B7DB53001B0C00 /* list */,
+				0C1D817A22B7DD6D001B0C00 /* ConvertTXT.h */,
+				0C1D817B22B7DD6D001B0C00 /* ConvertTXT.m */,
 				B56B46F8221CECAF00DF7691 /* AppDelegate.h */,
 				B56B46F9221CECAF00DF7691 /* AppDelegate.m */,
 				B56B46FB221CECAF00DF7691 /* ViewController.h */,
@@ -95,17 +95,17 @@
 				0C313CBA221DB28400B6886F /* MyButton.m */,
 				B56B4703221CECB100DF7691 /* Info.plist */,
 				B56B4704221CECB100DF7691 /* main.m */,
-				B55FEC25221D6DDC00656DC4 /* 电视直播forMac.entitlements */,
+				B55FEC25221D6DDC00656DC4 /* TVOnLineforMac.entitlements */,
 			);
-			path = "电视直播forMac";
+			path = TVOnLineforMac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B56B46F4221CECAF00DF7691 /* 电视直播forMac */ = {
+		B56B46F4221CECAF00DF7691 /* TVOnLineforMac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B56B4709221CECB100DF7691 /* Build configuration list for PBXNativeTarget "电视直播forMac" */;
+			buildConfigurationList = B56B4709221CECB100DF7691 /* Build configuration list for PBXNativeTarget "TVOnLineforMac" */;
 			buildPhases = (
 				B56B46F1221CECAF00DF7691 /* Sources */,
 				B56B46F2221CECAF00DF7691 /* Frameworks */,
@@ -115,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = "电视直播forMac";
+			name = TVOnLineforMac;
 			productName = "电视直播forMac";
-			productReference = B56B46F5221CECAF00DF7691 /* 电视直播forMac.app */;
+			productReference = B56B46F5221CECAF00DF7691 /* TVOnLineforMac.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +139,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B56B46F0221CECAF00DF7691 /* Build configuration list for PBXProject "电视直播forMac" */;
+			buildConfigurationList = B56B46F0221CECAF00DF7691 /* Build configuration list for PBXProject "TVOnLineforMac" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -152,7 +152,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B56B46F4221CECAF00DF7691 /* 电视直播forMac */,
+				B56B46F4221CECAF00DF7691 /* TVOnLineforMac */,
 			);
 		};
 /* End PBXProject section */
@@ -164,7 +164,7 @@
 			files = (
 				B56B46FF221CECB100DF7691 /* Assets.xcassets in Resources */,
 				B56B4702221CECB100DF7691 /* Main.storyboard in Resources */,
-				B56B471D221CFBB300DF7691 /* list in Resources */,
+				0C1D817822B7DB53001B0C00 /* list in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B56B4720221CFBC300DF7691 /* ConvertTXT.m in Sources */,
+				0C1D817C22B7DD6D001B0C00 /* ConvertTXT.m in Sources */,
 				B56B46FD221CECAF00DF7691 /* ViewController.m in Sources */,
 				B5296E24221E739100971AAB /* InfoWindowController.m in Sources */,
 				B56B4705221CECB100DF7691 /* main.m in Sources */,
@@ -313,11 +313,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "电视直播forMac/电视直播forMac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = TVOnLineforMac/TVOnLineforMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GURX554A9Q;
-				INFOPLIST_FILE = "电视直播forMac/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TVOnLineforMac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -331,11 +331,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "电视直播forMac/电视直播forMac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = TVOnLineforMac/TVOnLineforMac.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GURX554A9Q;
-				INFOPLIST_FILE = "电视直播forMac/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TVOnLineforMac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B56B46F0221CECAF00DF7691 /* Build configuration list for PBXProject "电视直播forMac" */ = {
+		B56B46F0221CECAF00DF7691 /* Build configuration list for PBXProject "TVOnLineforMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B56B4707221CECB100DF7691 /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B56B4709221CECB100DF7691 /* Build configuration list for PBXNativeTarget "电视直播forMac" */ = {
+		B56B4709221CECB100DF7691 /* Build configuration list for PBXNativeTarget "TVOnLineforMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B56B470A221CECB100DF7691 /* Debug */,
