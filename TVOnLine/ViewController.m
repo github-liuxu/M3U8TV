@@ -95,6 +95,7 @@
         self.showsPlaybackControls = YES;
         _isAvPlayer = YES;
         [self.controller setSwitchText:@"AV"];
+        [self.player play];
     } else {
         _isAvPlayer = NO;
         // 拉流 URL
