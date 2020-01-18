@@ -10,7 +10,10 @@
 #import "ConvertTXT.h"
 #import "InfoWindowController.h"
 
-@interface ViewController()
+@interface ViewController() {
+    NSString *fpath;
+    NSURL *openpath;
+}
 
 @property (nonatomic, strong) NSString *filePath;
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -28,25 +31,13 @@
     self.right.constant = -240;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    NSString *fpath = [NSHomeDirectory() stringByAppendingPathComponent:@"tvlist"];
-    
-    NSString *listPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"Contents/Resources/list"];
+    fpath = [NSHomeDirectory() stringByAppendingPathComponent:@"tvlist"];
     NSFileManager *fm = [NSFileManager defaultManager];
-    if (![fm fileExistsAtPath:fpath]) {
-        NSError *error;
-        [fm createDirectoryAtPath:fpath withIntermediateDirectories:YES attributes:nil error:&error];
-    }
-    NSArray *listArr = [fm contentsOfDirectoryAtPath:listPath error:nil];
+    NSArray *listArr = [fm contentsOfDirectoryAtPath:fpath error:nil];
     listArr = [listArr sortedArrayWithOptions:NSSortConcurrent usingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
         return obj1>obj2;
     }];
-    [listArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        NSString *filestr = [fpath stringByAppendingPathComponent:obj];
-        if (![fm fileExistsAtPath:filestr]) {
-            [fm copyItemAtPath:[listPath stringByAppendingPathComponent:obj] toPath:filestr error:nil];
-        }
-    }];
-    self.filePath = [fpath stringByAppendingPathComponent:@"1-tvinfo.txt"];
+    self.filePath = [fpath stringByAppendingPathComponent:listArr.firstObject];
     
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView reloadData];
@@ -80,12 +71,12 @@
 - (IBAction)listClick:(id)sender {
     NSOpenPanel *openPanel = [NSOpenPanel openPanel];
     [openPanel setPrompt: @"选择"];
+    openpath = [NSURL fileURLWithPath:fpath];
+    [openPanel setDirectoryURL:openpath];
     [openPanel setCanChooseFiles:YES];  //是否能选择文件file
     openPanel.allowsMultipleSelection = NO;
     openPanel.canChooseDirectories = NO;
     openPanel.allowedFileTypes = [NSArray arrayWithObjects: @"txt", nil];
-    NSURL *openpath = [NSURL fileURLWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"tvlist"] isDirectory:YES];
-    [openPanel setDirectoryURL:openpath];
     __weak typeof(self)weakSelf = self;
     [openPanel beginSheetModalForWindow:NSApp.mainWindow completionHandler:^(NSModalResponse returnCode) {
         if (returnCode == 1) {

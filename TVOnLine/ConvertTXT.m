@@ -15,7 +15,7 @@
         self.array = [NSMutableArray array];
         NSError *error;
         NSString *resultStr = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
-        NSLog(@"%@",resultStr);
+//        NSLog(@"%@",resultStr);
         NSArray *array = [resultStr componentsSeparatedByString:@"\n"];
         [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             NSArray *arr = [obj componentsSeparatedByString:@","];
