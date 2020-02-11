@@ -47,7 +47,7 @@
         }];
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"First"];
     }
-    self.filePath = [fpath stringByAppendingPathComponent:listArr.firstObject];
+    self.filePath = [fpath stringByAppendingPathComponent:@"1-tv.txt"];
 
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
