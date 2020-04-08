@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.AVKitIBPlugin" version="14490.70"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.AVKitIBPlugin" version="15400"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -716,7 +717,7 @@
                                 <rect key="frame" x="578" y="0.0" width="240" height="460"/>
                                 <clipView key="contentView" id="VWc-Vs-aOC">
                                     <rect key="frame" x="1" y="1" width="238" height="458"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="xNW-sy-XPT">
                                             <rect key="frame" x="0.0" y="0.0" width="238" height="458"/>
@@ -891,7 +892,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hyi-SD-X4l">
-                                <rect key="frame" x="20" y="19" width="60" height="23"/>
+                                <rect key="frame" x="19.5" y="19" width="61" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="cT0-XW-wEB"/>
                                 </constraints>
@@ -904,7 +905,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-4N-ElZ">
-                                <rect key="frame" x="354" y="19" width="60" height="23"/>
+                                <rect key="frame" x="353.5" y="19" width="61" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="nyQ-GK-dt0"/>
                                     <constraint firstAttribute="width" constant="60" id="pey-YR-49C"/>
@@ -944,8 +945,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="172.06298828125" height="172.06298828125"/>
-        <image name="edit" width="721" height="744"/>
-        <image name="list" width="183" height="184"/>
+        <image name="add" width="303.5" height="303.5"/>
+        <image name="edit" width="512" height="512"/>
+        <image name="list" width="360" height="360"/>
     </resources>
 </document>

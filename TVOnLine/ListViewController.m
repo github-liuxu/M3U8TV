@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "ViewController.h"
 #import "ConvertTXT.h"
+#import "GetAVList.h"
 
 @interface ListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -48,7 +49,13 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"First"];
     }
     self.filePath = [fpath stringByAppendingPathComponent:@"1-tv.txt"];
-
+    [GetAVList getAVList:^(NSString *r) {
+        if ([fm fileExistsAtPath:self.filePath]) {
+            [fm removeItemAtPath:self.filePath error:nil];
+        }
+        [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:self.filePath atomically:true];
+        NSLog(@"%@",r);
+    }];
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     [self.tableView reloadData];

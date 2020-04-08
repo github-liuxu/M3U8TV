@@ -9,6 +9,6 @@ target 'TVOnLine' do
   pod 'Reachability'
   pod 'MBProgressHUD'
   pod 'IJKMediaFramework'
-  #pod 'Masonry'
+  pod 'HTMLKit'
 
 end

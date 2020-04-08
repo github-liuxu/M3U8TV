@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C21EF74243E481000295CB2 /* GetAVList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C21EF73243E481000295CB2 /* GetAVList.m */; };
 		0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C86CBE321F77DA300C26F51 /* ConvertTXT.m */; };
 		0C86CBF221F78C7600C26F51 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 0C86CBF121F78C7600C26F51 /* list */; };
 		0CBB57C221CD2AE600282EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57C121CD2AE600282EFF /* AppDelegate.m */; };
@@ -24,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		07CC21E247B082966D12A6D1 /* Pods-电视直播.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电视直播.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电视直播/Pods-电视直播.debug.xcconfig"; sourceTree = "<group>"; };
+		0C21EF72243E481000295CB2 /* GetAVList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAVList.h; sourceTree = "<group>"; };
+		0C21EF73243E481000295CB2 /* GetAVList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAVList.m; sourceTree = "<group>"; };
 		0C86CBE221F77DA300C26F51 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTXT.h; sourceTree = "<group>"; };
 		0C86CBE321F77DA300C26F51 /* ConvertTXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTXT.m; sourceTree = "<group>"; };
 		0C86CBF121F78C7600C26F51 /* list */ = {isa = PBXFileReference; lastKnownFileType = folder; path = list; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 				0CBB57CB21CD2AE700282EFF /* LaunchScreen.storyboard */,
 				0CBB57CE21CD2AE700282EFF /* Info.plist */,
 				0CBB57CF21CD2AE700282EFF /* main.m */,
+				0C21EF72243E481000295CB2 /* GetAVList.h */,
+				0C21EF73243E481000295CB2 /* GetAVList.m */,
 			);
 			path = TVOnLine;
 			sourceTree = "<group>";
@@ -168,8 +173,6 @@
 				0CBB57B921CD2AE600282EFF /* Sources */,
 				0CBB57BA21CD2AE600282EFF /* Frameworks */,
 				0CBB57BB21CD2AE600282EFF /* Resources */,
-				29C2E7E7451CEC56778D828E /* [CP] Embed Pods Frameworks */,
-				70F060518F6FD923F41BB6DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +194,7 @@
 				TargetAttributes = {
 					0CBB57BC21CD2AE600282EFF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -227,21 +231,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29C2E7E7451CEC56778D828E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVOnLine/Pods-TVOnLine-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		60DDF3E32F800EEFEF417F2B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,21 +249,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70F060518F6FD923F41BB6DA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVOnLine/Pods-TVOnLine-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -282,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C21EF74243E481000295CB2 /* GetAVList.m in Sources */,
 				0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */,
 				B51CB39C22156906006EC5BC /* NvToast.m in Sources */,
 				0CBB57C521CD2AE600282EFF /* ListViewController.m in Sources */,
@@ -431,7 +406,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PK2L69FY26;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -451,6 +428,9 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meishe.tv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVOnLine/TVOnLine-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,7 +441,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PK2L69FY26;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -481,6 +463,8 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meishe.tv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVOnLine/TVOnLine-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
