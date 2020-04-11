@@ -49,6 +49,10 @@
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"First"];
     }
     self.filePath = [fpath stringByAppendingPathComponent:@"1-tv.txt"];
+    self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
+    [self.tableView reloadData];
+    
     [GetAVList getAVList:^(NSString *r) {
         if ([fm fileExistsAtPath:self.filePath]) {
             [fm removeItemAtPath:self.filePath error:nil];
@@ -56,9 +60,6 @@
         [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:self.filePath atomically:true];
         NSLog(@"%@",r);
     }];
-    self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-    [self.tableView reloadData];
     
     self.button = [[UIButton alloc] initWithFrame:CGRectMake(0, self.rect.size.height/2 - 30, 30, 60)];
     [self.view addSubview:self.button];
