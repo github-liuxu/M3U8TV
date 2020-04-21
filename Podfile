@@ -8,7 +8,7 @@ target 'TVOnLine' do
   # Pods for 电视直播
   pod 'Reachability'
   pod 'MBProgressHUD'
-  pod 'IJKMediaFramework'
+  #pod 'IJKMediaFramework'
   pod 'HTMLKit'
 
 end

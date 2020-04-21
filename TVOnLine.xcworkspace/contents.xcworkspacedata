@@ -5,9 +5,6 @@
       location = "group:TVOnLine.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:TVOnLineforMac/TVOnLineforMac.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
