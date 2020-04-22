@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "ListViewController.h"
-//#import "IJKMediaPlayer.h"
+#if __has_include(<IJKMediaPlayer.h>)
+#import "IJKMediaPlayer.h"
+#endif
 #import "Reachability.h"
 #import "NvToast.h"
 
@@ -17,8 +19,9 @@
 @property (nonatomic, strong) ListViewController *controller;
 @property (nonatomic, strong) NSMutableArray *fileList;
 @property (nonatomic, strong) UITableView *tableView;
-//@property (nonatomic, strong) IJKFFMoviePlayerController *playerVC;
-
+#if __has_include(<IJKMediaPlayer.h>)
+@property (nonatomic, strong) IJKFFMoviePlayerController *playerVC;
+#endif
 @property (nonatomic, assign) BOOL isAvPlayer;//是否使用avplayer
 @property (nonatomic, strong) NSURL *avurl;
 
@@ -83,10 +86,12 @@
     
 - (void)didSelectUrlString:(NSURL *)url {
     self.avurl = url;
-//    [self.playerVC stop];
-//    [self.playerVC.view removeFromSuperview];
-//    [self.playerVC shutdown];
-//    self.playerVC = nil;
+#if __has_include(<IJKMediaPlayer.h>)
+    [self.playerVC stop];
+    [self.playerVC.view removeFromSuperview];
+    [self.playerVC shutdown];
+    self.playerVC = nil;
+#endif
     [self.player pause];
     self.player = nil;
     
@@ -99,11 +104,13 @@
     } else {
         _isAvPlayer = NO;
         // 拉流 URL
-//        self.playerVC = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
-//        [self.view addSubview:self.playerVC.view];
-//        [self.view insertSubview:self.playerVC.view belowSubview:self.controller.view];
-//        [self.playerVC prepareToPlay];
-//        [self.playerVC play];
+#if __has_include(<IJKMediaPlayer.h>)
+        self.playerVC = [[IJKFFMoviePlayerController alloc] initWithContentURL:url withOptions:nil];
+        [self.view addSubview:self.playerVC.view];
+        [self.view insertSubview:self.playerVC.view belowSubview:self.controller.view];
+        [self.playerVC prepareToPlay];
+        [self.playerVC play];
+#endif
         [self.controller setSwitchText:@"IJK"];
     }
 }
