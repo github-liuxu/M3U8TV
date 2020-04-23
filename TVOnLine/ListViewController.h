@@ -1,13 +1,14 @@
 //
 //  ListViewController.h
-//  电视直播
+//  TVOnLine
 //
-//  Created by 刘东旭 on 2018/12/21.
-//  Copyright © 2018年 刘东旭. All rights reserved.
+//  Created by 刘东旭 on 2020/4/22.
+//  Copyright © 2020 刘东旭. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol ViewContrllerDelegate <NSObject>
 
@@ -24,10 +25,8 @@
 @end
 
 @interface ListViewController : UIViewController
-    
-@property (weak, nonatomic) id delegate;
 
-@property (assign, nonatomic) CGRect rect;
+@property (weak, nonatomic) id delegate;
 
 @property (strong, nonatomic) NSString *filePath;
 
@@ -35,3 +34,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

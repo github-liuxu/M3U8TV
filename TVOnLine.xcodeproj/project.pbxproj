@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C195C0C24509FC2001351D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C195C0A24509FC2001351D9 /* ListViewController.m */; };
+		0C195C0D24509FC2001351D9 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C195C0B24509FC2001351D9 /* ListViewController.xib */; };
 		0C21EF74243E481000295CB2 /* GetAVList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C21EF73243E481000295CB2 /* GetAVList.m */; };
+		0C8252C32451E3B7002F9347 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8252C22451E3B7002F9347 /* ListView.m */; };
 		0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C86CBE321F77DA300C26F51 /* ConvertTXT.m */; };
 		0C86CBF221F78C7600C26F51 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 0C86CBF121F78C7600C26F51 /* list */; };
 		0CBB57C221CD2AE600282EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57C121CD2AE600282EFF /* AppDelegate.m */; };
-		0CBB57C521CD2AE600282EFF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57C421CD2AE600282EFF /* ListViewController.m */; };
 		0CBB57C821CD2AE600282EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB57C621CD2AE600282EFF /* Main.storyboard */; };
 		0CBB57CA21CD2AE700282EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB57C921CD2AE700282EFF /* Assets.xcassets */; };
 		0CBB57CD21CD2AE700282EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB57CB21CD2AE700282EFF /* LaunchScreen.storyboard */; };
 		0CBB57D021CD2AE700282EFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57CF21CD2AE700282EFF /* main.m */; };
-		0CBB57DD21CD416700282EFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57DC21CD416700282EFF /* ViewController.m */; };
+		0CE5D9542450977000C32651 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5D9532450977000C32651 /* PlayerViewController.m */; };
 		18E1955AFBAF09B0C290D911 /* libPods-TVOnLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */; };
 		B51CB39722156438006EC5BC /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B51CB39622156438006EC5BC /* libMBProgressHUD.a */; };
 		B51CB39922156438006EC5BC /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B51CB39822156438006EC5BC /* libReachability.a */; };
@@ -25,24 +27,27 @@
 
 /* Begin PBXFileReference section */
 		07CC21E247B082966D12A6D1 /* Pods-电视直播.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电视直播.debug.xcconfig"; path = "Pods/Target Support Files/Pods-电视直播/Pods-电视直播.debug.xcconfig"; sourceTree = "<group>"; };
+		0C195C0924509FC2001351D9 /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		0C195C0A24509FC2001351D9 /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		0C195C0B24509FC2001351D9 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		0C21EF72243E481000295CB2 /* GetAVList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAVList.h; sourceTree = "<group>"; };
 		0C21EF73243E481000295CB2 /* GetAVList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAVList.m; sourceTree = "<group>"; };
 		0C445BEC244F7B25007EBFB0 /* TVOnLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TVOnLine.entitlements; sourceTree = "<group>"; };
+		0C8252C12451E3B7002F9347 /* ListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
+		0C8252C22451E3B7002F9347 /* ListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		0C86CBE221F77DA300C26F51 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTXT.h; sourceTree = "<group>"; };
 		0C86CBE321F77DA300C26F51 /* ConvertTXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTXT.m; sourceTree = "<group>"; };
 		0C86CBF121F78C7600C26F51 /* list */ = {isa = PBXFileReference; lastKnownFileType = folder; path = list; sourceTree = "<group>"; };
 		0CBB57BD21CD2AE600282EFF /* TVOnLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOnLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBB57C021CD2AE600282EFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CBB57C121CD2AE600282EFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0CBB57C321CD2AE600282EFF /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		0CBB57C421CD2AE600282EFF /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		0CBB57C721CD2AE600282EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CBB57C921CD2AE700282EFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CBB57CC21CD2AE700282EFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CBB57CE21CD2AE700282EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CBB57CF21CD2AE700282EFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0CBB57DB21CD416700282EFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0CBB57DC21CD416700282EFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0CE5D9522450977000C32651 /* PlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		0CE5D9532450977000C32651 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		1A4AC7482CCC7A0D44A7BE6A /* Pods-电视直播.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电视直播.release.xcconfig"; path = "Pods/Target Support Files/Pods-电视直播/Pods-电视直播.release.xcconfig"; sourceTree = "<group>"; };
 		6F29C244BD323972B3D87ADC /* Pods-TVOnLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOnLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVOnLine/Pods-TVOnLine.debug.xcconfig"; sourceTree = "<group>"; };
 		937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVOnLine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,10 +116,13 @@
 				0C86CBE321F77DA300C26F51 /* ConvertTXT.m */,
 				0CBB57C021CD2AE600282EFF /* AppDelegate.h */,
 				0CBB57C121CD2AE600282EFF /* AppDelegate.m */,
-				0CBB57C321CD2AE600282EFF /* ListViewController.h */,
-				0CBB57C421CD2AE600282EFF /* ListViewController.m */,
-				0CBB57DB21CD416700282EFF /* ViewController.h */,
-				0CBB57DC21CD416700282EFF /* ViewController.m */,
+				0CE5D9522450977000C32651 /* PlayerViewController.h */,
+				0CE5D9532450977000C32651 /* PlayerViewController.m */,
+				0C195C0924509FC2001351D9 /* ListViewController.h */,
+				0C195C0A24509FC2001351D9 /* ListViewController.m */,
+				0C195C0B24509FC2001351D9 /* ListViewController.xib */,
+				0C8252C12451E3B7002F9347 /* ListView.h */,
+				0C8252C22451E3B7002F9347 /* ListView.m */,
 				B51CB39A22156906006EC5BC /* NvToast.h */,
 				B51CB39B22156906006EC5BC /* NvToast.m */,
 				0CBB57C621CD2AE600282EFF /* Main.storyboard */,
@@ -227,6 +235,7 @@
 			files = (
 				0CBB57CD21CD2AE700282EFF /* LaunchScreen.storyboard in Resources */,
 				0CBB57CA21CD2AE700282EFF /* Assets.xcassets in Resources */,
+				0C195C0D24509FC2001351D9 /* ListViewController.xib in Resources */,
 				0C86CBF221F78C7600C26F51 /* list in Resources */,
 				0CBB57C821CD2AE600282EFF /* Main.storyboard in Resources */,
 			);
@@ -262,9 +271,10 @@
 			files = (
 				0C21EF74243E481000295CB2 /* GetAVList.m in Sources */,
 				0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */,
+				0C195C0C24509FC2001351D9 /* ListViewController.m in Sources */,
 				B51CB39C22156906006EC5BC /* NvToast.m in Sources */,
-				0CBB57C521CD2AE600282EFF /* ListViewController.m in Sources */,
-				0CBB57DD21CD416700282EFF /* ViewController.m in Sources */,
+				0C8252C32451E3B7002F9347 /* ListView.m in Sources */,
+				0CE5D9542450977000C32651 /* PlayerViewController.m in Sources */,
 				0CBB57D021CD2AE700282EFF /* main.m in Sources */,
 				0CBB57C221CD2AE600282EFF /* AppDelegate.m in Sources */,
 			);

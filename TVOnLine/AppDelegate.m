@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+//#import "PlayerViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,8 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [[ViewController alloc] init];
-    [self.window makeKeyAndVisible];
+//    self.window.rootViewController = [[PlayerViewController alloc] init];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -60,7 +60,8 @@
             [fm removeItemAtPath:path error:nil];
         }
         [fm moveItemAtURL:url toURL:[NSURL fileURLWithPath:path] error:nil];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"AirdropReceiveJsonFile" object:nil];
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:path forKey:@"filePath"];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"AirdropReceiveFile" object:nil userInfo: userInfo];
         return YES;
     } else {
         return NO;
