@@ -315,7 +315,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == self.fileTableView) {
         NSString *fileString = self.fileList[indexPath.row];
-        self.fileTableView.hidden = YES;
         NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
         NSString *filePath = [path stringByAppendingPathComponent:fileString];
         [self setFilePath:filePath];
