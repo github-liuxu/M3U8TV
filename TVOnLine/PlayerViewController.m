@@ -13,6 +13,8 @@
 #if __has_include(<IJKMediaPlayer.h>)
 #import "IJKMediaPlayer.h"
 #endif
+//#if !TARGET_OS_MACCATALYST
+//#endif
 #import "Reachability.h"
 #import "NvToast.h"
 

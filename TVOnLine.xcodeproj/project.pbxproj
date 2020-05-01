@@ -13,6 +13,16 @@
 		0C8252C32451E3B7002F9347 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8252C22451E3B7002F9347 /* ListView.m */; };
 		0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C86CBE321F77DA300C26F51 /* ConvertTXT.m */; };
 		0C86CBF221F78C7600C26F51 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 0C86CBF121F78C7600C26F51 /* list */; };
+		0CAF64B0245B3925005E68AC /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAF64AF245B3925005E68AC /* libMBProgressHUD.a */; };
+		0CAF64C0245B3F18005E68AC /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64B6245B3F18005E68AC /* AFURLResponseSerialization.m */; };
+		0CAF64C1245B3F18005E68AC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64B7245B3F18005E68AC /* AFHTTPSessionManager.m */; };
+		0CAF64C2245B3F18005E68AC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64B9245B3F18005E68AC /* AFURLSessionManager.m */; };
+		0CAF64C3245B3F18005E68AC /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64BA245B3F18005E68AC /* AFURLRequestSerialization.m */; };
+		0CAF64C4245B3F18005E68AC /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64BC245B3F18005E68AC /* AFNetworkReachabilityManager.m */; };
+		0CAF64C5245B3F18005E68AC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64BD245B3F18005E68AC /* AFSecurityPolicy.m */; };
+		0CAF64CB245B4161005E68AC /* LDXNetKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64CA245B4161005E68AC /* LDXNetKit.m */; };
+		0CAF64CE245B4308005E68AC /* FileListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64CD245B4308005E68AC /* FileListManager.m */; };
+		0CAF64D2245B4D54005E68AC /* AdvanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64D0245B4D53005E68AC /* AdvanceViewController.m */; };
 		0CBB57C221CD2AE600282EFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57C121CD2AE600282EFF /* AppDelegate.m */; };
 		0CBB57C821CD2AE600282EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB57C621CD2AE600282EFF /* Main.storyboard */; };
 		0CBB57CA21CD2AE700282EFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB57C921CD2AE700282EFF /* Assets.xcassets */; };
@@ -20,7 +30,6 @@
 		0CBB57D021CD2AE700282EFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57CF21CD2AE700282EFF /* main.m */; };
 		0CE5D9542450977000C32651 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5D9532450977000C32651 /* PlayerViewController.m */; };
 		18E1955AFBAF09B0C290D911 /* libPods-TVOnLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */; };
-		B51CB39722156438006EC5BC /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B51CB39622156438006EC5BC /* libMBProgressHUD.a */; };
 		B51CB39922156438006EC5BC /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B51CB39822156438006EC5BC /* libReachability.a */; };
 		B51CB39C22156906006EC5BC /* NvToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CB39B22156906006EC5BC /* NvToast.m */; };
 /* End PBXBuildFile section */
@@ -38,6 +47,29 @@
 		0C86CBE221F77DA300C26F51 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTXT.h; sourceTree = "<group>"; };
 		0C86CBE321F77DA300C26F51 /* ConvertTXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTXT.m; sourceTree = "<group>"; };
 		0C86CBF121F78C7600C26F51 /* list */ = {isa = PBXFileReference; lastKnownFileType = folder; path = list; sourceTree = "<group>"; };
+		0C9969FD245A048000DC5EE1 /* libHTMLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHTMLKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAF64AD245B38D9005E68AC /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAF64AF245B3925005E68AC /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CAF64B2245B3F18005E68AC /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		0CAF64B3245B3F18005E68AC /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		0CAF64B4245B3F18005E68AC /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		0CAF64B5245B3F18005E68AC /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		0CAF64B6245B3F18005E68AC /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		0CAF64B7245B3F18005E68AC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		0CAF64B8245B3F18005E68AC /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		0CAF64B9245B3F18005E68AC /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		0CAF64BA245B3F18005E68AC /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		0CAF64BB245B3F18005E68AC /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		0CAF64BC245B3F18005E68AC /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		0CAF64BD245B3F18005E68AC /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		0CAF64BE245B3F18005E68AC /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		0CAF64BF245B3F18005E68AC /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		0CAF64C9245B4160005E68AC /* LDXNetKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDXNetKit.h; sourceTree = "<group>"; };
+		0CAF64CA245B4161005E68AC /* LDXNetKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDXNetKit.m; sourceTree = "<group>"; };
+		0CAF64CC245B4308005E68AC /* FileListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileListManager.h; sourceTree = "<group>"; };
+		0CAF64CD245B4308005E68AC /* FileListManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileListManager.m; sourceTree = "<group>"; };
+		0CAF64CF245B4D53005E68AC /* AdvanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvanceViewController.h; sourceTree = "<group>"; };
+		0CAF64D0245B4D53005E68AC /* AdvanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdvanceViewController.m; sourceTree = "<group>"; };
 		0CBB57BD21CD2AE600282EFF /* TVOnLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVOnLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBB57C021CD2AE600282EFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CBB57C121CD2AE600282EFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,8 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51CB39722156438006EC5BC /* libMBProgressHUD.a in Frameworks */,
 				B51CB39922156438006EC5BC /* libReachability.a in Frameworks */,
+				0CAF64B0245B3925005E68AC /* libMBProgressHUD.a in Frameworks */,
 				18E1955AFBAF09B0C290D911 /* libPods-TVOnLine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +121,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CAF64B1245B3F18005E68AC /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF64B2245B3F18005E68AC /* AFSecurityPolicy.h */,
+				0CAF64B3245B3F18005E68AC /* AFNetworkReachabilityManager.h */,
+				0CAF64B4245B3F18005E68AC /* AFURLSessionManager.h */,
+				0CAF64B5245B3F18005E68AC /* AFURLRequestSerialization.h */,
+				0CAF64B6245B3F18005E68AC /* AFURLResponseSerialization.m */,
+				0CAF64B7245B3F18005E68AC /* AFHTTPSessionManager.m */,
+				0CAF64B8245B3F18005E68AC /* AFURLResponseSerialization.h */,
+				0CAF64B9245B3F18005E68AC /* AFURLSessionManager.m */,
+				0CAF64BA245B3F18005E68AC /* AFURLRequestSerialization.m */,
+				0CAF64BB245B3F18005E68AC /* AFNetworking.h */,
+				0CAF64BC245B3F18005E68AC /* AFNetworkReachabilityManager.m */,
+				0CAF64BD245B3F18005E68AC /* AFSecurityPolicy.m */,
+				0CAF64BE245B3F18005E68AC /* AFCompatibilityMacros.h */,
+				0CAF64BF245B3F18005E68AC /* AFHTTPSessionManager.h */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 		0CBB57B421CD2AE600282EFF = {
 			isa = PBXGroup;
 			children = (
@@ -110,17 +163,24 @@
 		0CBB57BF21CD2AE600282EFF /* TVOnLine */ = {
 			isa = PBXGroup;
 			children = (
+				0CAF64B1245B3F18005E68AC /* AFNetworking */,
 				0C445BEC244F7B25007EBFB0 /* TVOnLine.entitlements */,
 				0C86CBF121F78C7600C26F51 /* list */,
 				0C86CBE221F77DA300C26F51 /* ConvertTXT.h */,
 				0C86CBE321F77DA300C26F51 /* ConvertTXT.m */,
+				0CAF64C9245B4160005E68AC /* LDXNetKit.h */,
+				0CAF64CA245B4161005E68AC /* LDXNetKit.m */,
 				0CBB57C021CD2AE600282EFF /* AppDelegate.h */,
 				0CBB57C121CD2AE600282EFF /* AppDelegate.m */,
 				0CE5D9522450977000C32651 /* PlayerViewController.h */,
 				0CE5D9532450977000C32651 /* PlayerViewController.m */,
+				0CAF64CC245B4308005E68AC /* FileListManager.h */,
+				0CAF64CD245B4308005E68AC /* FileListManager.m */,
 				0C195C0924509FC2001351D9 /* ListViewController.h */,
 				0C195C0A24509FC2001351D9 /* ListViewController.m */,
 				0C195C0B24509FC2001351D9 /* ListViewController.xib */,
+				0CAF64CF245B4D53005E68AC /* AdvanceViewController.h */,
+				0CAF64D0245B4D53005E68AC /* AdvanceViewController.m */,
 				0C8252C12451E3B7002F9347 /* ListView.h */,
 				0C8252C22451E3B7002F9347 /* ListView.m */,
 				B51CB39A22156906006EC5BC /* NvToast.h */,
@@ -139,6 +199,9 @@
 		B5455B7722014C2F008FE896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0CAF64AF245B3925005E68AC /* libMBProgressHUD.a */,
+				0CAF64AD245B38D9005E68AC /* libAFNetworking.a */,
+				0C9969FD245A048000DC5EE1 /* libHTMLKit.a */,
 				B519854924500C4E0017E407 /* OpenGL.framework */,
 				B51CB39622156438006EC5BC /* libMBProgressHUD.a */,
 				B51CB39822156438006EC5BC /* libReachability.a */,
@@ -269,13 +332,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CAF64C5245B3F18005E68AC /* AFSecurityPolicy.m in Sources */,
 				0C21EF74243E481000295CB2 /* GetAVList.m in Sources */,
+				0CAF64C4245B3F18005E68AC /* AFNetworkReachabilityManager.m in Sources */,
+				0CAF64CE245B4308005E68AC /* FileListManager.m in Sources */,
+				0CAF64C0245B3F18005E68AC /* AFURLResponseSerialization.m in Sources */,
 				0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */,
+				0CAF64D2245B4D54005E68AC /* AdvanceViewController.m in Sources */,
+				0CAF64C3245B3F18005E68AC /* AFURLRequestSerialization.m in Sources */,
 				0C195C0C24509FC2001351D9 /* ListViewController.m in Sources */,
+				0CAF64C2245B3F18005E68AC /* AFURLSessionManager.m in Sources */,
 				B51CB39C22156906006EC5BC /* NvToast.m in Sources */,
 				0C8252C32451E3B7002F9347 /* ListView.m in Sources */,
 				0CE5D9542450977000C32651 /* PlayerViewController.m in Sources */,
+				0CAF64C1245B3F18005E68AC /* AFHTTPSessionManager.m in Sources */,
 				0CBB57D021CD2AE700282EFF /* main.m in Sources */,
+				0CAF64CB245B4161005E68AC /* LDXNetKit.m in Sources */,
 				0CBB57C221CD2AE600282EFF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,7 +495,6 @@
 				CODE_SIGN_ENTITLEMENTS = TVOnLine/TVOnLine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = PK2L69FY26;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -435,7 +506,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TVOnLine/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +531,6 @@
 				CODE_SIGN_ENTITLEMENTS = TVOnLine/TVOnLine.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = PK2L69FY26;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -472,7 +542,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TVOnLine/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -13,6 +13,7 @@
 #import "GetAVList.h"
 #import "PlayerViewController.h"
 #import "ListView.h"
+#import "AdvanceViewController.h"
 
 @interface ListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -54,16 +55,16 @@
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView reloadData];
     
-    [GetAVList getAVList:^(NSString *r) {
-        if ([fm fileExistsAtPath:self.filePath]) {
-            [fm removeItemAtPath:self.filePath error:nil];
-        }
-        [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:self.filePath atomically:true];
-        self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
-        });
-    }];
+//    [GetAVList getAVList:^(NSString *r) {
+//        if ([fm fileExistsAtPath:self.filePath]) {
+//            [fm removeItemAtPath:self.filePath error:nil];
+//        }
+//        [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:self.filePath atomically:true];
+//        self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self.tableView reloadData];
+//        });
+//    }];
     
     if ([self.delegate respondsToSelector:@selector(didSelectUrlString:)]) {
         NSDictionary*dic = [self.dataSource firstObject];
@@ -154,7 +155,7 @@
     NSFileManager *fm = [NSFileManager defaultManager];
     self.fileList = [[NSMutableArray alloc] init];
     [[fm contentsOfDirectoryAtPath:docpath error:nil] enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if (![obj isEqualToString:@".DS_Store"] && ![obj isEqualToString:@"Inbox"]) {
+        if (![obj isEqualToString:@".DS_Store"] && ![obj isEqualToString:@"Inbox"] && ![obj isEqualToString:@"iChats"]) {
             [self.fileList addObject:obj];
         }
     }];
@@ -164,9 +165,16 @@
 }
 
 - (IBAction)switchButtonClick:(UIButton *)button {
+    #if !TARGET_OS_MACCATALYST
     if ([self.delegate respondsToSelector:@selector(switchPlayer:)]) {
         [self.delegate switchPlayer:button];
     }
+    #endif
+}
+- (IBAction)settingClick:(UIButton *)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    AdvanceViewController *advanceViewController = (AdvanceViewController *)[storyboard instantiateViewControllerWithIdentifier:@"AdvanceViewController"];
+    [self presentViewController:advanceViewController animated:true completion:nil];
 }
 
 - (void)setSwitchText:(NSString *)text {
