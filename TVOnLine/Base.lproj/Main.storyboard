@@ -49,34 +49,34 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqz-r9-LMN">
-                                <rect key="frame" x="702" y="14.5" width="50" height="49"/>
+                                <rect key="frame" x="702" y="14" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EEG-4J-zRa"/>
                                     <constraint firstAttribute="width" constant="50" id="OAn-Xw-c8b"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="arrow.down.circle" catalog="system"/>
+                                <state key="normal" backgroundImage="31"/>
                                 <connections>
                                     <action selector="downloadClick:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="lSB-J6-DmT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIY-FX-SW6">
-                                <rect key="frame" x="702" y="84.5" width="50" height="49"/>
+                                <rect key="frame" x="702" y="84" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Ac8-fJ-ZCZ"/>
                                     <constraint firstAttribute="height" constant="50" id="i03-QX-ihl"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="arrow.up.circle" catalog="system"/>
+                                <state key="normal" backgroundImage="34"/>
                                 <connections>
                                     <action selector="uploadClick:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="rjs-3v-4o6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlw-AI-wfA">
-                                <rect key="frame" x="782" y="14" width="50" height="50"/>
+                                <rect key="frame" x="782" y="13.5" width="50" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="Esc-fT-1ua"/>
                                     <constraint firstAttribute="width" constant="50" id="KmR-Uv-AA3"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="x.circle.fill" catalog="system"/>
+                                <state key="normal" backgroundImage="36"/>
                                 <connections>
                                     <action selector="closeClick:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="dkP-vY-CEU"/>
                                 </connections>
@@ -139,8 +139,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.down.circle" catalog="system" width="128" height="121"/>
-        <image name="arrow.up.circle" catalog="system" width="128" height="121"/>
-        <image name="x.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="31" width="64" height="64"/>
+        <image name="34" width="64" height="64"/>
+        <image name="36" width="64" height="64"/>
     </resources>
 </document>

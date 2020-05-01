@@ -25,6 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.queue = dispatch_queue_create("NvUploadRequest", DISPATCH_QUEUE_CONCURRENT);
+    self.activityIndictator.hidden = true;
+    [self.activityIndictator stopAnimating];
 }
 
 - (IBAction)tapClick:(UITapGestureRecognizer *)sender {
@@ -122,4 +124,16 @@
         });
     });
 }
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+//返回直接支持的方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscapeRight;
+}
+//返回最优先显示的屏幕方向
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationLandscapeRight;
+}
+
 @end
