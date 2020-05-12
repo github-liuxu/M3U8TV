@@ -1,4 +1,4 @@
-CCTV-1,http://hljjms.chinashadt.com:2036/live/1002.stream/playlist.m3u8
+﻿CCTV-1,http://hljjms.chinashadt.com:2036/live/1002.stream/playlist.m3u8
 CCTV-1,http://hbpx.chinashadt.com:2036/live/px2.stream/playlist.m3u8
 CCTV-1,http://223.110.242.131:6610/cntv/live1/HD-2500k-1080P-cctv1/index.m3u8
 CCTV-1,http://112.50.243.8/PLTV/88888888/224/3221225829/1.m3u8

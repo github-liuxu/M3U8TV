@@ -1,4 +1,4 @@
-TVBS欢乐,http://dibo.live:8080/live/pk10291/579365/206255.m3u8
+﻿TVBS欢乐,http://dibo.live:8080/live/pk10291/579365/206255.m3u8
 TVBS精选,http://dibo.live:8080/live/pk10291/579365/206253.m3u8
 TVBS新闻,http://dibo.live:8080/live/pk10291/579365/206254.m3u8
 TVBS新闻台,http://60.199.188.65/HLS/WG_TVBS-N/index.m3u8
@@ -211,3 +211,4 @@ HBO原创,http://dibo.live:8080/live/pk10291/579365/206319.m3u8
 hot incleveland,http://iliketot.dyndns.tv/2f18d4ba25224edaa8bb9aac94b00d4f.m3u8
 MTV,http://unilivemtveu-lh.akamaihd.net/i/mtvno_1@346424/master.m3u8
 TRAVELHD,http://31.13.223.104:1935/travel/community.stream/playlist.m3u8
+ 
