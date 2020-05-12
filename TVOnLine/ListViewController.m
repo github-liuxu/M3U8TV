@@ -55,17 +55,6 @@
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView reloadData];
     
-//    [GetAVList getAVList:^(NSString *r) {
-//        if ([fm fileExistsAtPath:self.filePath]) {
-//            [fm removeItemAtPath:self.filePath error:nil];
-//        }
-//        [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:self.filePath atomically:true];
-//        self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.tableView reloadData];
-//        });
-//    }];
-    
     if ([self.delegate respondsToSelector:@selector(didSelectUrlString:)]) {
         NSDictionary*dic = [self.dataSource firstObject];
         NSURL * url = [NSURL URLWithString:dic[@"url"]];
@@ -174,6 +163,7 @@
 - (IBAction)settingClick:(UIButton *)sender {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     AdvanceViewController *advanceViewController = (AdvanceViewController *)[storyboard instantiateViewControllerWithIdentifier:@"AdvanceViewController"];
+    advanceViewController.delegate = self;
     [self presentViewController:advanceViewController animated:true completion:nil];
 }
 
@@ -402,6 +392,23 @@
         }
     }];
     [dataString writeToFile:self.filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+}
+
+- (void)updateFromWeb {
+    [GetAVList getAVList:^(NSString *r) {
+        NSFileManager *fm = [NSFileManager defaultManager];
+        NSString *fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+        self.filePath = [fpath stringByAppendingPathComponent:@"1-tv.txt"];
+        if ([fm fileExistsAtPath:self.filePath]) {
+            [fm removeItemAtPath:self.filePath error:nil];
+        }
+        [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:self.filePath atomically:true];
+        NSLog(@"%@",r);
+        self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
 }
 
 @end

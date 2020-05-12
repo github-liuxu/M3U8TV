@@ -58,6 +58,9 @@
     [self.activityIndictator removeFromSuperview];
     [self dismissViewControllerAnimated:true completion:nil];
 }
+- (IBAction)downloadFromWeb:(id)sender {
+    [self.delegate updateFromWeb];
+}
 
 - (void)downloadTvFiles:(void(^)(void))block {
     NSString *fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];

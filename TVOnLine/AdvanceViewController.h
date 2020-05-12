@@ -10,7 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol AdvanceViewControllerDelegate <NSObject>
+
+- (void)updateFromWeb;
+
+@end
+
 @interface AdvanceViewController : UIViewController
+
+@property (nonatomic, weak) id delegate;
 
 @end
 

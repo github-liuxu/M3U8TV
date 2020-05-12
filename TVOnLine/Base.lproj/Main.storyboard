@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CQU-Md-5qk">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,6 +97,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSe-Qo-H6c">
+                                <rect key="frame" x="782" y="84" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="05d-eX-ELP"/>
+                                    <constraint firstAttribute="height" constant="50" id="JDC-kr-EdQ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="download"/>
+                                <connections>
+                                    <action selector="downloadFromWeb:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="Xwa-tD-RqM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -103,6 +115,7 @@
                             <constraint firstItem="nlw-AI-wfA" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="4EK-fK-ez3"/>
                             <constraint firstItem="3Ry-y3-X3W" firstAttribute="centerY" secondItem="qmT-kj-IEv" secondAttribute="centerY" id="ArD-Rq-hjW"/>
                             <constraint firstItem="JOI-7W-Hof" firstAttribute="top" secondItem="w3X-2E-xe4" secondAttribute="top" constant="22" id="OLC-Nb-kpn"/>
+                            <constraint firstItem="bSe-Qo-H6c" firstAttribute="centerY" secondItem="VIY-FX-SW6" secondAttribute="centerY" id="OYB-Vp-zdp"/>
                             <constraint firstItem="3Ry-y3-X3W" firstAttribute="leading" secondItem="qmT-kj-IEv" secondAttribute="trailing" constant="8" id="Rh6-Va-l8x"/>
                             <constraint firstItem="vqz-r9-LMN" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="StY-rr-Ga6"/>
                             <constraint firstItem="qmT-kj-IEv" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="Wga-wM-fMt"/>
@@ -112,6 +125,7 @@
                             <constraint firstItem="qmT-kj-IEv" firstAttribute="leading" secondItem="JOI-7W-Hof" secondAttribute="trailing" constant="8" id="aQm-Bk-KHu"/>
                             <constraint firstItem="jM8-CC-ZFf" firstAttribute="bottom" secondItem="w3X-2E-xe4" secondAttribute="bottom" constant="-20" id="gHx-tU-5Uj"/>
                             <constraint firstItem="VIY-FX-SW6" firstAttribute="leading" secondItem="vqz-r9-LMN" secondAttribute="leading" id="o6s-z9-QGn"/>
+                            <constraint firstItem="nlw-AI-wfA" firstAttribute="centerX" secondItem="bSe-Qo-H6c" secondAttribute="centerX" id="qdh-fk-AS9"/>
                             <constraint firstItem="w3X-2E-xe4" firstAttribute="trailing" secondItem="nlw-AI-wfA" secondAttribute="trailing" constant="20" id="sNy-FC-Iuu"/>
                             <constraint firstItem="jM8-CC-ZFf" firstAttribute="leading" secondItem="qmT-kj-IEv" secondAttribute="leading" id="xhe-sa-bVH"/>
                             <constraint firstItem="w3X-2E-xe4" firstAttribute="trailing" secondItem="vqz-r9-LMN" secondAttribute="trailing" constant="100" id="yvE-dT-tfh"/>
@@ -142,5 +156,6 @@
         <image name="31" width="64" height="64"/>
         <image name="34" width="64" height="64"/>
         <image name="36" width="64" height="64"/>
+        <image name="download" width="200" height="200"/>
     </resources>
 </document>
