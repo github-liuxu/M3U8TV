@@ -108,12 +108,26 @@
                                     <action selector="downloadFromWeb:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="Xwa-tD-RqM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0J-Yu-oik">
+                                <rect key="frame" x="704" y="154" width="46" height="46"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="ifg-Eu-iN9"/>
+                                    <constraint firstAttribute="width" constant="46" id="xkZ-Yy-sKY"/>
+                                </constraints>
+                                <state key="normal" title="FLEX"/>
+                                <connections>
+                                    <action selector="flexClick:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="6QJ-LQ-2qy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="VIY-FX-SW6" firstAttribute="top" secondItem="vqz-r9-LMN" secondAttribute="bottom" constant="20" id="1Y1-dM-NXL"/>
                             <constraint firstItem="nlw-AI-wfA" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="4EK-fK-ez3"/>
                             <constraint firstItem="3Ry-y3-X3W" firstAttribute="centerY" secondItem="qmT-kj-IEv" secondAttribute="centerY" id="ArD-Rq-hjW"/>
+                            <constraint firstItem="m0J-Yu-oik" firstAttribute="centerX" secondItem="VIY-FX-SW6" secondAttribute="centerX" id="DD1-Kk-fGH"/>
                             <constraint firstItem="JOI-7W-Hof" firstAttribute="top" secondItem="w3X-2E-xe4" secondAttribute="top" constant="22" id="OLC-Nb-kpn"/>
                             <constraint firstItem="bSe-Qo-H6c" firstAttribute="centerY" secondItem="VIY-FX-SW6" secondAttribute="centerY" id="OYB-Vp-zdp"/>
                             <constraint firstItem="3Ry-y3-X3W" firstAttribute="leading" secondItem="qmT-kj-IEv" secondAttribute="trailing" constant="8" id="Rh6-Va-l8x"/>
@@ -124,6 +138,7 @@
                             <constraint firstItem="VIY-FX-SW6" firstAttribute="top" secondItem="vqz-r9-LMN" secondAttribute="bottom" constant="20" id="YJv-Fw-t2V"/>
                             <constraint firstItem="qmT-kj-IEv" firstAttribute="leading" secondItem="JOI-7W-Hof" secondAttribute="trailing" constant="8" id="aQm-Bk-KHu"/>
                             <constraint firstItem="jM8-CC-ZFf" firstAttribute="bottom" secondItem="w3X-2E-xe4" secondAttribute="bottom" constant="-20" id="gHx-tU-5Uj"/>
+                            <constraint firstItem="m0J-Yu-oik" firstAttribute="top" secondItem="VIY-FX-SW6" secondAttribute="bottom" constant="20" id="lpC-Yp-2NR"/>
                             <constraint firstItem="VIY-FX-SW6" firstAttribute="leading" secondItem="vqz-r9-LMN" secondAttribute="leading" id="o6s-z9-QGn"/>
                             <constraint firstItem="nlw-AI-wfA" firstAttribute="centerX" secondItem="bSe-Qo-H6c" secondAttribute="centerX" id="qdh-fk-AS9"/>
                             <constraint firstItem="w3X-2E-xe4" firstAttribute="trailing" secondItem="nlw-AI-wfA" secondAttribute="trailing" constant="20" id="sNy-FC-Iuu"/>
@@ -156,6 +171,6 @@
         <image name="31" width="64" height="64"/>
         <image name="34" width="64" height="64"/>
         <image name="36" width="64" height="64"/>
-        <image name="download" width="200" height="200"/>
+        <image name="download" width="100" height="100"/>
     </resources>
 </document>

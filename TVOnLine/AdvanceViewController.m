@@ -8,6 +8,7 @@
 
 #import "AdvanceViewController.h"
 #import "FileListManager.h"
+#import "FLEXManager.h"
 
 @interface AdvanceViewController ()
 
@@ -58,8 +59,13 @@
     [self.activityIndictator removeFromSuperview];
     [self dismissViewControllerAnimated:true completion:nil];
 }
+
 - (IBAction)downloadFromWeb:(id)sender {
     [self.delegate updateFromWeb];
+}
+
+- (IBAction)flexClick:(UIButton *)sender {
+    [[FLEXManager sharedManager] showExplorer];
 }
 
 - (void)downloadTvFiles:(void(^)(void))block {
