@@ -8,7 +8,9 @@
 
 #import "AdvanceViewController.h"
 #import "FileListManager.h"
+#if DEBUG
 #import "FLEXManager.h"
+#endif
 
 @interface AdvanceViewController ()
 
@@ -65,7 +67,9 @@
 }
 
 - (IBAction)flexClick:(UIButton *)sender {
+#if DEBUG
     [[FLEXManager sharedManager] showExplorer];
+#endif
 }
 
 - (void)downloadTvFiles:(void(^)(void))block {
