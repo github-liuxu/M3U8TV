@@ -138,11 +138,11 @@
 }
 //返回直接支持的方向
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskLandscapeRight;
+    return UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskLandscapeLeft;
 }
 //返回最优先显示的屏幕方向
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
-    return UIInterfaceOrientationLandscapeRight;
+    return UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationLandscapeLeft;
 }
 
 @end

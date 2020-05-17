@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		0C8252C32451E3B7002F9347 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8252C22451E3B7002F9347 /* ListView.m */; };
 		0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C86CBE321F77DA300C26F51 /* ConvertTXT.m */; };
 		0C86CBF221F78C7600C26F51 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 0C86CBF121F78C7600C26F51 /* list */; };
-		0CAF64B0245B3925005E68AC /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CAF64AF245B3925005E68AC /* libMBProgressHUD.a */; };
 		0CAF64C0245B3F18005E68AC /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64B6245B3F18005E68AC /* AFURLResponseSerialization.m */; };
 		0CAF64C1245B3F18005E68AC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64B7245B3F18005E68AC /* AFHTTPSessionManager.m */; };
 		0CAF64C2245B3F18005E68AC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF64B9245B3F18005E68AC /* AFURLSessionManager.m */; };
@@ -29,9 +28,8 @@
 		0CBB57CD21CD2AE700282EFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CBB57CB21CD2AE700282EFF /* LaunchScreen.storyboard */; };
 		0CBB57D021CD2AE700282EFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB57CF21CD2AE700282EFF /* main.m */; };
 		0CE5D9542450977000C32651 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5D9532450977000C32651 /* PlayerViewController.m */; };
-		18E1955AFBAF09B0C290D911 /* libPods-TVOnLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */; };
-		B51CB39922156438006EC5BC /* libReachability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B51CB39822156438006EC5BC /* libReachability.a */; };
 		B51CB39C22156906006EC5BC /* NvToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CB39B22156906006EC5BC /* NvToast.m */; };
+		F76E2E3EA017CC872607EF80 /* Pods_TVOnLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF61D404E6D5A4CB13816365 /* Pods_TVOnLine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +45,6 @@
 		0C86CBE221F77DA300C26F51 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTXT.h; sourceTree = "<group>"; };
 		0C86CBE321F77DA300C26F51 /* ConvertTXT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTXT.m; sourceTree = "<group>"; };
 		0C86CBF121F78C7600C26F51 /* list */ = {isa = PBXFileReference; lastKnownFileType = folder; path = list; sourceTree = "<group>"; };
-		0C9969FD245A048000DC5EE1 /* libHTMLKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libHTMLKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CAF64AD245B38D9005E68AC /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CAF64AF245B3925005E68AC /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAF64B2245B3F18005E68AC /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
 		0CAF64B3245B3F18005E68AC /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		0CAF64B4245B3F18005E68AC /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
@@ -82,11 +77,8 @@
 		0CE5D9532450977000C32651 /* PlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		1A4AC7482CCC7A0D44A7BE6A /* Pods-电视直播.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-电视直播.release.xcconfig"; path = "Pods/Target Support Files/Pods-电视直播/Pods-电视直播.release.xcconfig"; sourceTree = "<group>"; };
 		6F29C244BD323972B3D87ADC /* Pods-TVOnLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOnLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVOnLine/Pods-TVOnLine.debug.xcconfig"; sourceTree = "<group>"; };
-		937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVOnLine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1AE8B4AD7EEE4C52FAE041 /* Pods-TVOnLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVOnLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVOnLine/Pods-TVOnLine.release.xcconfig"; sourceTree = "<group>"; };
 		B519854924500C4E0017E407 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
-		B51CB39622156438006EC5BC /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B51CB39822156438006EC5BC /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51CB39A22156906006EC5BC /* NvToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NvToast.h; sourceTree = "<group>"; };
 		B51CB39B22156906006EC5BC /* NvToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NvToast.m; sourceTree = "<group>"; };
 		B5455B7C22014C99008FE896 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -103,8 +95,7 @@
 		B5455B9222014D0B008FE896 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B5455B9422014D14008FE896 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B5455B9622014D1C008FE896 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		B5455BA32201899A008FE896 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = Pods/IJKMediaFramework/IJKMediaFramework/Classes/IJKMediaFramework.framework; sourceTree = "<group>"; };
-		DF4055795F056556309BA730 /* libPods-电视直播.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-电视直播.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF61D404E6D5A4CB13816365 /* Pods_TVOnLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TVOnLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51CB39922156438006EC5BC /* libReachability.a in Frameworks */,
-				0CAF64B0245B3925005E68AC /* libMBProgressHUD.a in Frameworks */,
-				18E1955AFBAF09B0C290D911 /* libPods-TVOnLine.a in Frameworks */,
+				F76E2E3EA017CC872607EF80 /* Pods_TVOnLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,13 +188,7 @@
 		B5455B7722014C2F008FE896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0CAF64AF245B3925005E68AC /* libMBProgressHUD.a */,
-				0CAF64AD245B38D9005E68AC /* libAFNetworking.a */,
-				0C9969FD245A048000DC5EE1 /* libHTMLKit.a */,
 				B519854924500C4E0017E407 /* OpenGL.framework */,
-				B51CB39622156438006EC5BC /* libMBProgressHUD.a */,
-				B51CB39822156438006EC5BC /* libReachability.a */,
-				B5455BA32201899A008FE896 /* IJKMediaFramework.framework */,
 				B5455B9622014D1C008FE896 /* VideoToolbox.framework */,
 				B5455B9422014D14008FE896 /* QuartzCore.framework */,
 				B5455B9222014D0B008FE896 /* OpenGLES.framework */,
@@ -220,8 +203,7 @@
 				B5455B8022014CAE008FE896 /* libbz2.tbd */,
 				B5455B7E22014CA4008FE896 /* libz.tbd */,
 				B5455B7C22014C99008FE896 /* libc++.tbd */,
-				DF4055795F056556309BA730 /* libPods-电视直播.a */,
-				937F43909F60AA26D46F12C3 /* libPods-TVOnLine.a */,
+				DF61D404E6D5A4CB13816365 /* Pods_TVOnLine.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -248,6 +230,7 @@
 				0CBB57B921CD2AE600282EFF /* Sources */,
 				0CBB57BA21CD2AE600282EFF /* Frameworks */,
 				0CBB57BB21CD2AE600282EFF /* Resources */,
+				88F3F82AE1A735E162ABE8A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,6 +306,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F3F82AE1A735E162ABE8A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVOnLine/Pods-TVOnLine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TVOnLine/Pods-TVOnLine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TVOnLine/Pods-TVOnLine-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
