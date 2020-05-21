@@ -8,9 +8,9 @@
 
 #import "AdvanceViewController.h"
 #import "FileListManager.h"
-#if DEBUG
+//#if DEBUG
 #import "FLEXManager.h"
-#endif
+//#endif
 
 @interface AdvanceViewController ()
 
@@ -67,9 +67,9 @@
 }
 
 - (IBAction)flexClick:(UIButton *)sender {
-#if DEBUG
+//#if DEBUG
     [[FLEXManager sharedManager] showExplorer];
-#endif
+//#endif
 }
 
 - (void)downloadTvFiles:(void(^)(void))block {
@@ -136,6 +136,8 @@
             block();
         });
     });
+}
+- (IBAction)webClick:(id)sender {
 }
 - (BOOL)shouldAutorotate {
     return YES;

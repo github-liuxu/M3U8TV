@@ -120,6 +120,19 @@
                                     <action selector="flexClick:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="6QJ-LQ-2qy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK7-8y-9F2">
+                                <rect key="frame" x="782" y="152" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0d5-19-WdD"/>
+                                    <constraint firstAttribute="height" constant="50" id="U7O-6T-DgR"/>
+                                </constraints>
+                                <state key="normal" title="Web"/>
+                                <connections>
+                                    <action selector="webClick:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="pVc-Ab-a4E"/>
+                                    <segue destination="0Cn-yY-ZkS" kind="presentation" id="gmk-Uo-OvR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -130,6 +143,7 @@
                             <constraint firstItem="m0J-Yu-oik" firstAttribute="centerX" secondItem="VIY-FX-SW6" secondAttribute="centerX" id="DD1-Kk-fGH"/>
                             <constraint firstItem="JOI-7W-Hof" firstAttribute="top" secondItem="w3X-2E-xe4" secondAttribute="top" constant="22" id="OLC-Nb-kpn"/>
                             <constraint firstItem="bSe-Qo-H6c" firstAttribute="centerY" secondItem="VIY-FX-SW6" secondAttribute="centerY" id="OYB-Vp-zdp"/>
+                            <constraint firstItem="hK7-8y-9F2" firstAttribute="centerX" secondItem="bSe-Qo-H6c" secondAttribute="centerX" id="PZf-JA-eCm"/>
                             <constraint firstItem="3Ry-y3-X3W" firstAttribute="leading" secondItem="qmT-kj-IEv" secondAttribute="trailing" constant="8" id="Rh6-Va-l8x"/>
                             <constraint firstItem="vqz-r9-LMN" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="StY-rr-Ga6"/>
                             <constraint firstItem="qmT-kj-IEv" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="Wga-wM-fMt"/>
@@ -142,6 +156,7 @@
                             <constraint firstItem="VIY-FX-SW6" firstAttribute="leading" secondItem="vqz-r9-LMN" secondAttribute="leading" id="o6s-z9-QGn"/>
                             <constraint firstItem="nlw-AI-wfA" firstAttribute="centerX" secondItem="bSe-Qo-H6c" secondAttribute="centerX" id="qdh-fk-AS9"/>
                             <constraint firstItem="w3X-2E-xe4" firstAttribute="trailing" secondItem="nlw-AI-wfA" secondAttribute="trailing" constant="20" id="sNy-FC-Iuu"/>
+                            <constraint firstItem="hK7-8y-9F2" firstAttribute="centerY" secondItem="m0J-Yu-oik" secondAttribute="centerY" id="xGu-1F-I0S"/>
                             <constraint firstItem="jM8-CC-ZFf" firstAttribute="leading" secondItem="qmT-kj-IEv" secondAttribute="leading" id="xhe-sa-bVH"/>
                             <constraint firstItem="w3X-2E-xe4" firstAttribute="trailing" secondItem="vqz-r9-LMN" secondAttribute="trailing" constant="100" id="yvE-dT-tfh"/>
                             <constraint firstItem="jM8-CC-ZFf" firstAttribute="top" secondItem="qmT-kj-IEv" secondAttribute="bottom" constant="8" id="yvs-T1-e0F"/>
@@ -165,6 +180,117 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1021.875" y="-7.2463768115942031"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C2M-Ge-Gxn">
+            <objects>
+                <navigationController id="0Cn-yY-ZkS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rHs-bs-508">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ryd-qY-k2s" kind="relationship" relationship="rootViewController" id="mv6-iX-eLw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dum-eG-UOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1022" y="922"/>
+        </scene>
+        <!--List-->
+        <scene sceneID="a8e-fB-mD2">
+            <objects>
+                <viewController id="Ryd-qY-k2s" customClass="WebListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tfr-Ug-P3g">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WPD-XR-sBS">
+                                <rect key="frame" x="0.0" y="112" width="896" height="302"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ryd-qY-k2s" id="pHS-as-IbP"/>
+                                    <outlet property="delegate" destination="Ryd-qY-k2s" id="eom-Dg-g4h"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.huya.com/g/seeTogether" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOe-eU-KEy">
+                                <rect key="frame" x="0.0" y="44" width="798" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="xgS-xd-h3E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bv-0D-NCU">
+                                <rect key="frame" x="808" y="44" width="73" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HG6-AT-aXV"/>
+                                    <constraint firstAttribute="width" constant="73" id="YAJ-Wo-okT"/>
+                                </constraints>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendClick:" destination="Ryd-qY-k2s" eventType="touchUpInside" id="Rwa-xQ-8ja"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7bv-0D-NCU" firstAttribute="leading" secondItem="VOe-eU-KEy" secondAttribute="trailing" constant="10" id="7BQ-3X-o1u"/>
+                            <constraint firstItem="WPD-XR-sBS" firstAttribute="leading" secondItem="Tfr-Ug-P3g" secondAttribute="leading" id="DML-ga-3bo"/>
+                            <constraint firstItem="7bv-0D-NCU" firstAttribute="top" secondItem="VOe-eU-KEy" secondAttribute="top" id="JWN-AM-WOa"/>
+                            <constraint firstItem="VOe-eU-KEy" firstAttribute="leading" secondItem="Tfr-Ug-P3g" secondAttribute="leading" id="XOq-zz-RPR"/>
+                            <constraint firstItem="VOe-eU-KEy" firstAttribute="top" secondItem="bOW-Zp-4a4" secondAttribute="top" id="geh-j4-PW5"/>
+                            <constraint firstAttribute="trailing" secondItem="WPD-XR-sBS" secondAttribute="trailing" id="iVV-0g-9LR"/>
+                            <constraint firstAttribute="trailing" secondItem="7bv-0D-NCU" secondAttribute="trailing" constant="15" id="lGm-4l-8R1"/>
+                            <constraint firstAttribute="bottom" secondItem="WPD-XR-sBS" secondAttribute="bottom" id="paB-An-6sk"/>
+                            <constraint firstItem="WPD-XR-sBS" firstAttribute="top" secondItem="VOe-eU-KEy" secondAttribute="bottom" constant="8" id="q2k-Rv-KC2"/>
+                            <constraint firstAttribute="trailing" secondItem="VOe-eU-KEy" secondAttribute="trailing" constant="98" id="qkN-Zc-dSX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bOW-Zp-4a4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="List" id="iKD-2b-75S"/>
+                    <connections>
+                        <outlet property="tableView" destination="WPD-XR-sBS" id="cO6-GN-GTA"/>
+                        <outlet property="textField" destination="VOe-eU-KEy" id="eIP-Zm-ENw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mrI-mw-o8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-395.75892857142856" y="920.28985507246387"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="YWr-0q-Vrx">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZXC-fZ-DNz" customClass="WebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W4k-e0-Ado">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V63-wQ-w1z">
+                                <rect key="frame" x="44" y="0.0" width="852" height="414"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="V63-wQ-w1z" secondAttribute="bottom" id="M6T-wO-JAf"/>
+                            <constraint firstAttribute="trailing" secondItem="V63-wQ-w1z" secondAttribute="trailing" id="NMg-wY-ob7"/>
+                            <constraint firstItem="V63-wQ-w1z" firstAttribute="top" secondItem="swR-1p-AMx" secondAttribute="top" id="qOP-EO-XRp"/>
+                            <constraint firstItem="V63-wQ-w1z" firstAttribute="leading" secondItem="swR-1p-AMx" secondAttribute="leading" id="qrX-BU-XOj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="swR-1p-AMx"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="V63-wQ-w1z" id="1Gy-W1-zjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbO-IS-pcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246.42857142857142" y="910.14492753623199"/>
         </scene>
     </scenes>
     <resources>

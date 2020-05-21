@@ -10,6 +10,9 @@
 		0C195C0C24509FC2001351D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C195C0A24509FC2001351D9 /* ListViewController.m */; };
 		0C195C0D24509FC2001351D9 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C195C0B24509FC2001351D9 /* ListViewController.xib */; };
 		0C21EF74243E481000295CB2 /* GetAVList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C21EF73243E481000295CB2 /* GetAVList.m */; };
+		0C6927252476E8980000F64E /* WebListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6927242476E8980000F64E /* WebListViewController.m */; };
+		0C6927282476EF030000F64E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6927272476EF030000F64E /* WebViewController.m */; };
+		0C69272A2476F72D0000F64E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6927292476F72D0000F64E /* WebKit.framework */; };
 		0C8252C32451E3B7002F9347 /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8252C22451E3B7002F9347 /* ListView.m */; };
 		0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C86CBE321F77DA300C26F51 /* ConvertTXT.m */; };
 		0C86CBF221F78C7600C26F51 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 0C86CBF121F78C7600C26F51 /* list */; };
@@ -40,6 +43,11 @@
 		0C21EF72243E481000295CB2 /* GetAVList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAVList.h; sourceTree = "<group>"; };
 		0C21EF73243E481000295CB2 /* GetAVList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAVList.m; sourceTree = "<group>"; };
 		0C445BEC244F7B25007EBFB0 /* TVOnLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TVOnLine.entitlements; sourceTree = "<group>"; };
+		0C6927232476E8980000F64E /* WebListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebListViewController.h; sourceTree = "<group>"; };
+		0C6927242476E8980000F64E /* WebListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebListViewController.m; sourceTree = "<group>"; };
+		0C6927262476EF030000F64E /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		0C6927272476EF030000F64E /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		0C6927292476F72D0000F64E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		0C8252C12451E3B7002F9347 /* ListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		0C8252C22451E3B7002F9347 /* ListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		0C86CBE221F77DA300C26F51 /* ConvertTXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTXT.h; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C69272A2476F72D0000F64E /* WebKit.framework in Frameworks */,
 				F76E2E3EA017CC872607EF80 /* Pods_TVOnLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +179,10 @@
 				0C195C0B24509FC2001351D9 /* ListViewController.xib */,
 				0CAF64CF245B4D53005E68AC /* AdvanceViewController.h */,
 				0CAF64D0245B4D53005E68AC /* AdvanceViewController.m */,
+				0C6927232476E8980000F64E /* WebListViewController.h */,
+				0C6927242476E8980000F64E /* WebListViewController.m */,
+				0C6927262476EF030000F64E /* WebViewController.h */,
+				0C6927272476EF030000F64E /* WebViewController.m */,
 				0C8252C12451E3B7002F9347 /* ListView.h */,
 				0C8252C22451E3B7002F9347 /* ListView.m */,
 				B51CB39A22156906006EC5BC /* NvToast.h */,
@@ -188,6 +201,7 @@
 		B5455B7722014C2F008FE896 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C6927292476F72D0000F64E /* WebKit.framework */,
 				B519854924500C4E0017E407 /* OpenGL.framework */,
 				B5455B9622014D1C008FE896 /* VideoToolbox.framework */,
 				B5455B9422014D14008FE896 /* QuartzCore.framework */,
@@ -333,6 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CAF64C5245B3F18005E68AC /* AFSecurityPolicy.m in Sources */,
+				0C6927252476E8980000F64E /* WebListViewController.m in Sources */,
+				0C6927282476EF030000F64E /* WebViewController.m in Sources */,
 				0C21EF74243E481000295CB2 /* GetAVList.m in Sources */,
 				0CAF64C4245B3F18005E68AC /* AFNetworkReachabilityManager.m in Sources */,
 				0CAF64CE245B4308005E68AC /* FileListManager.m in Sources */,
@@ -425,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -478,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -506,7 +522,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TVOnLine/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,7 +558,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/TVOnLine/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
