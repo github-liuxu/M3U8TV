@@ -137,8 +137,7 @@
         });
     });
 }
-- (IBAction)webClick:(id)sender {
-}
+
 - (BOOL)shouldAutorotate {
     return YES;
 }

@@ -129,7 +129,6 @@
                                 </constraints>
                                 <state key="normal" title="Web"/>
                                 <connections>
-                                    <action selector="webClick:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="pVc-Ab-a4E"/>
                                     <segue destination="0Cn-yY-ZkS" kind="presentation" id="gmk-Uo-OvR"/>
                                 </connections>
                             </button>
@@ -181,10 +180,10 @@
             </objects>
             <point key="canvasLocation" x="-1021.875" y="-7.2463768115942031"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nv Base Navigation Controller-->
         <scene sceneID="C2M-Ge-Gxn">
             <objects>
-                <navigationController id="0Cn-yY-ZkS" sceneMemberID="viewController">
+                <navigationController id="0Cn-yY-ZkS" customClass="NvBaseNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rHs-bs-508">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -266,7 +265,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V63-wQ-w1z">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V63-wQ-w1z">
                                 <rect key="frame" x="44" y="0.0" width="852" height="414"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
