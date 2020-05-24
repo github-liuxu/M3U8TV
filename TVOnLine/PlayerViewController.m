@@ -39,7 +39,7 @@
     self.playerViewController = [[AVPlayerViewController alloc] init];
     [self addChildViewController:self.playerViewController];
     [self.view addSubview:self.playerViewController.view];
-    self.parentViewController.view.frame = self.view.bounds;
+    self.playerViewController.view.frame = self.view.bounds;
     [self.playerViewController didMoveToParentViewController:self];
     
     self.isAvPlayer = YES;

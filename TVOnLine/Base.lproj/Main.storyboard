@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CQU-Md-5qk">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -180,10 +180,10 @@
             </objects>
             <point key="canvasLocation" x="-1021.875" y="-7.2463768115942031"/>
         </scene>
-        <!--Nv Base Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="C2M-Ge-Gxn">
             <objects>
-                <navigationController id="0Cn-yY-ZkS" customClass="NvBaseNavigationController" sceneMemberID="viewController">
+                <navigationController id="0Cn-yY-ZkS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rHs-bs-508">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -205,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WPD-XR-sBS">
-                                <rect key="frame" x="0.0" y="112" width="896" height="302"/>
+                                <rect key="frame" x="0.0" y="92" width="896" height="322"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Ryd-qY-k2s" id="pHS-as-IbP"/>
@@ -213,17 +213,17 @@
                                 </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.huya.com/g/seeTogether" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOe-eU-KEy">
-                                <rect key="frame" x="0.0" y="44" width="798" height="60"/>
+                                <rect key="frame" x="0.0" y="44" width="798" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="xgS-xd-h3E"/>
+                                    <constraint firstAttribute="height" constant="40" id="xgS-xd-h3E"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bv-0D-NCU">
-                                <rect key="frame" x="808" y="44" width="73" height="60"/>
+                                <rect key="frame" x="808" y="44" width="73" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="HG6-AT-aXV"/>
+                                    <constraint firstAttribute="height" constant="40" id="HG6-AT-aXV"/>
                                     <constraint firstAttribute="width" constant="73" id="YAJ-Wo-okT"/>
                                 </constraints>
                                 <state key="normal" title="Send"/>

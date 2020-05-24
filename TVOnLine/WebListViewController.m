@@ -15,6 +15,7 @@
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) UIButton *backButton;
 @property (nonatomic, strong) NSString *filePath;
 
 @end
@@ -30,11 +31,63 @@
     [self.button setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
     [self.button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.button];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self leftNavigationBarItemView]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"WebListCell"];
     NSString* fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     self.filePath = [fpath stringByAppendingPathComponent:@"weblist.txt"];
     self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
     [self.tableView reloadData];
+}
+
+- (UIView *)leftNavigationBarItemView {
+    self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.backButton.frame = CGRectMake(0, 0, 30, 44);
+    [self.backButton setTitle:@"Add" forState:UIControlStateNormal];
+    [self.backButton setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
+    [self.backButton addTarget:self action:@selector(leftNavButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    return self.backButton;
+}
+
+- (void)leftNavButtonClick:(UIButton *)button {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"修改" message:@"请输入新名字" preferredStyle:UIAlertControllerStyleAlert];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"此处输入名字";
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+    }];
+    
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        
+        textField.placeholder = @"此处输入URL";
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+    }];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        UITextField *textfield = alert.textFields.firstObject;
+        UITextField *textfieldurl = alert.textFields.lastObject;
+        NSString *newName = textfield.text;
+        NSString *newUrl = textfieldurl.text;
+        if (newName == nil) {
+            newName = @"";
+        }
+        
+        if (newUrl == nil) {
+            newUrl = @"";
+        }
+        
+        NSMutableDictionary *mutiDic = [NSMutableDictionary dictionary];
+        [mutiDic setObject:newName forKey:@"name"];
+        [mutiDic setObject:newUrl forKey:@"url"];
+        [self.dataSource addObject:mutiDic];
+        [self.tableView reloadData];
+        [self saveData:self.dataSource];
+    }]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)buttonClick {
