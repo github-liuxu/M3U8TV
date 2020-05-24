@@ -91,10 +91,12 @@
 }
 
 - (void)buttonClick {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AVPlayerPlay" object:nil];
     [self dismissViewControllerAnimated:true completion:NULL];
 }
 
 - (IBAction)sendClick:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AVPlayerPause" object:nil];
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     WebViewController *web = [story instantiateViewControllerWithIdentifier:@"WebViewController"];
     web.urlString = self.textField.text;
@@ -219,6 +221,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AVPlayerPause" object:nil];
     NSDictionary*dic = self.dataSource[indexPath.row];
     NSString *urlString = dic[@"url"];
     urlString = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];

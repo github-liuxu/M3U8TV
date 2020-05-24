@@ -33,6 +33,10 @@
 
 @implementation PlayerViewController
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -67,6 +71,24 @@
             [NvToast showInfoWithMessage:@"没有网络"];
         }
     });
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isPausePlayer:) name:@"AVPlayerPause" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(isPausePlayer:) name:@"AVPlayerPlay" object:nil];
+}
+
+- (void)isPausePlayer:(NSNotification *)notification {
+    if ([notification.name isEqualToString:@"AVPlayerPause"]) {
+        #if __has_include(<IJKMediaPlayer.h>)
+            [self.playerVC stop];
+            [self.playerVC.view removeFromSuperview];
+            [self.playerVC shutdown];
+            self.playerVC = nil;
+        #endif
+            [self.playerViewController.player pause];
+            self.playerViewController.player = nil;
+    } else {
+        [self didSelectUrlString:self.avurl];
+    }
 }
 
 - (void)networkStateChange:(NSNotification *)notification {
