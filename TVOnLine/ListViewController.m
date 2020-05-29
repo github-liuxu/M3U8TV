@@ -161,6 +161,7 @@
     #endif
 }
 - (IBAction)settingClick:(UIButton *)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AVPlayerPause" object:nil];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     AdvanceViewController *advanceViewController = (AdvanceViewController *)[storyboard instantiateViewControllerWithIdentifier:@"AdvanceViewController"];
     advanceViewController.delegate = self;

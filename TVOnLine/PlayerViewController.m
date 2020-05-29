@@ -87,7 +87,7 @@
             [self.playerViewController.player pause];
             self.playerViewController.player = nil;
     } else {
-        [self didSelectUrlString:self.avurl];
+            [self didSelectUrlString:self.avurl];
     }
 }
 

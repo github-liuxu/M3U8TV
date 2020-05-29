@@ -58,6 +58,7 @@
 }
 
 - (IBAction)closeClick:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"AVPlayerPlay" object:nil];
     [self.activityIndictator removeFromSuperview];
     [self dismissViewControllerAnimated:true completion:nil];
 }
