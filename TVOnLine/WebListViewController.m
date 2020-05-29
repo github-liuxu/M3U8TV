@@ -30,8 +30,8 @@
     [self.button setTitle:@"Done" forState:UIControlStateNormal];
     [self.button setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
     [self.button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.button];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self leftNavigationBarItemView]];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.button];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self rightNavigationBarItemView]];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"WebListCell"];
     NSString* fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     self.filePath = [fpath stringByAppendingPathComponent:@"weblist.txt"];
@@ -39,16 +39,16 @@
     [self.tableView reloadData];
 }
 
-- (UIView *)leftNavigationBarItemView {
+- (UIView *)rightNavigationBarItemView {
     self.backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.backButton.frame = CGRectMake(0, 0, 30, 44);
     [self.backButton setTitle:@"Add" forState:UIControlStateNormal];
     [self.backButton setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
-    [self.backButton addTarget:self action:@selector(leftNavButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.backButton addTarget:self action:@selector(rightNavButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     return self.backButton;
 }
 
-- (void)leftNavButtonClick:(UIButton *)button {
+- (void)rightNavButtonClick:(UIButton *)button {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"修改" message:@"请输入新名字" preferredStyle:UIAlertControllerStyleAlert];
     [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = @"此处输入名字";
