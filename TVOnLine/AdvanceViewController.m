@@ -8,6 +8,7 @@
 
 #import "AdvanceViewController.h"
 #import "FileListManager.h"
+#import "CrashListViewController.h"
 //#if DEBUG
 #import "FLEXManager.h"
 //#endif
@@ -71,6 +72,18 @@
 //#if DEBUG
     [[FLEXManager sharedManager] showExplorer];
 //#endif
+}
+
+- (IBAction)show:(id)sender {
+    CrashListViewController *listVC = [CrashListViewController new];
+    listVC.delegate = self;
+    listVC.emailAddress = @"chuyang009@163.com";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:listVC];
+    [self presentViewController:nav animated:YES completion:NULL];
+}
+
+- (void)backClick {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)downloadTvFiles:(void(^)(void))block {

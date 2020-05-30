@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 //#import "PlayerViewController.h"
+#import "CrashUncaughtExceptionHandler.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
     // Override point for customization after application launch.
 //    self.window.rootViewController = [[PlayerViewController alloc] init];
 //    [self.window makeKeyAndVisible];
+    [CrashUncaughtExceptionHandler installUncaughtExceptionHandler:YES];
     return YES;
 }
 

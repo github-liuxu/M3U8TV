@@ -132,12 +132,25 @@
                                     <segue destination="0Cn-yY-ZkS" kind="presentation" id="gmk-Uo-OvR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcx-hf-Ks1">
+                                <rect key="frame" x="704" y="220" width="46" height="46"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="JLO-9z-QuK"/>
+                                    <constraint firstAttribute="height" constant="46" id="det-yv-Qbr"/>
+                                </constraints>
+                                <state key="normal" title="Crash"/>
+                                <connections>
+                                    <action selector="show:" destination="uDq-mQ-zIc" eventType="touchUpInside" id="fYu-9q-SgL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="VIY-FX-SW6" firstAttribute="top" secondItem="vqz-r9-LMN" secondAttribute="bottom" constant="20" id="1Y1-dM-NXL"/>
                             <constraint firstItem="nlw-AI-wfA" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="4EK-fK-ez3"/>
+                            <constraint firstItem="Fcx-hf-Ks1" firstAttribute="centerX" secondItem="m0J-Yu-oik" secondAttribute="centerX" id="8LT-cv-5rs"/>
                             <constraint firstItem="3Ry-y3-X3W" firstAttribute="centerY" secondItem="qmT-kj-IEv" secondAttribute="centerY" id="ArD-Rq-hjW"/>
                             <constraint firstItem="m0J-Yu-oik" firstAttribute="centerX" secondItem="VIY-FX-SW6" secondAttribute="centerX" id="DD1-Kk-fGH"/>
                             <constraint firstItem="JOI-7W-Hof" firstAttribute="top" secondItem="w3X-2E-xe4" secondAttribute="top" constant="22" id="OLC-Nb-kpn"/>
@@ -145,6 +158,7 @@
                             <constraint firstItem="hK7-8y-9F2" firstAttribute="centerX" secondItem="bSe-Qo-H6c" secondAttribute="centerX" id="PZf-JA-eCm"/>
                             <constraint firstItem="3Ry-y3-X3W" firstAttribute="leading" secondItem="qmT-kj-IEv" secondAttribute="trailing" constant="8" id="Rh6-Va-l8x"/>
                             <constraint firstItem="vqz-r9-LMN" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="StY-rr-Ga6"/>
+                            <constraint firstItem="Fcx-hf-Ks1" firstAttribute="top" secondItem="m0J-Yu-oik" secondAttribute="bottom" constant="20" id="UVE-ge-LSh"/>
                             <constraint firstItem="qmT-kj-IEv" firstAttribute="centerY" secondItem="JOI-7W-Hof" secondAttribute="centerY" id="Wga-wM-fMt"/>
                             <constraint firstItem="jM8-CC-ZFf" firstAttribute="trailing" secondItem="qmT-kj-IEv" secondAttribute="trailing" id="Wrf-Kw-JPI"/>
                             <constraint firstItem="JOI-7W-Hof" firstAttribute="leading" secondItem="w3X-2E-xe4" secondAttribute="leading" constant="40" id="Y6k-du-ngV"/>

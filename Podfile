@@ -9,6 +9,7 @@ target 'TVOnLine' do
   # Pods for 电视直播
   pod 'Reachability'
   pod 'MBProgressHUD'
+  pod 'LDXCrash'
   #pod 'IJKMediaFramework'
   pod 'HTMLKit'
   pod 'FLEX'
