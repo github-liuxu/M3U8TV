@@ -21,9 +21,9 @@ typedef void(^LDXFailedBlock)(NSURLResponse *response,NSError *connectionError);
 
 @property (nonatomic,strong,readonly) NSMutableArray <NSURLSessionDownloadTask *>*taskArray;
 //返回字典
-+ (void)GETUrlString:(NSString *)urlString param:(NSDictionary *)param complate:(LDXComplateBlock)complateBlock failed:(LDXFailedBlock)failedBlock;
++ (void)GETUrlString:(NSString *)urlString headers:(NSDictionary *)headers complate:(LDXComplateBlock)complateBlock failed:(LDXFailedBlock)failedBlock;
 //返回字符串
-+ (void)GETUrlString:(NSString *)urlString param:(NSDictionary *)param result:(LDXResultBlock)resultBlock failed:(LDXFailedBlock)failedBlock;
++ (void)GETUrlString:(NSString *)urlString headers:(NSDictionary *)headers result:(LDXResultBlock)resultBlock failed:(LDXFailedBlock)failedBlock;
 //返回字典
 + (void)POSTUrlString:(NSString *)urlString param:(NSDictionary *)param complate:(LDXComplateBlock)complateBlock failed:(LDXFailedBlock)failedBlock;
 //返回字符串

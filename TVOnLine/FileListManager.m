@@ -8,24 +8,25 @@
 
 #import "FileListManager.h"
 #import "LDXNetKit.h"
+#import "YYModel.h"
 
 @implementation FileListManager
 
-+ (void)GetFileList:(NSString *)listUrl complate:(void(^)(NSArray*))complateBlock {
-    [LDXNetKit GETUrlString:listUrl param:nil complate:^(NSURLResponse *response, NSDictionary *result) {
-        NSLog(@"%@", result);
-        complateBlock(result[@"files"]);
++ (void)GetFileList:(NSString *)listUrl cls:(Class)cls complate:(void(^)(id obj))complateBlock {
+    //文件列表
+    [LDXNetKit GETUrlString:listUrl headers:@{@"User-Agent":@"pan.baidu.com"} complate:^(NSURLResponse *response, NSDictionary *result) {
+        NSObject * topLevel = [cls yy_modelWithDictionary:result];
+        complateBlock(topLevel);
     } failed:^(NSURLResponse *response, NSError *connectionError) {
-        NSLog(@"%@", connectionError.localizedFailureReason);
-        complateBlock(@[]);
+        complateBlock(nil);
     }];
 }
 
 + (void)GetFileString:(NSString *)fileUrl complate:(void(^)(NSString*))complateBlock {
-    [LDXNetKit GETUrlString:fileUrl param:nil result:^(NSURLResponse *response, NSString *result) {
+    [LDXNetKit GETUrlString:fileUrl headers:@{@"User-Agent":@"pan.baidu.com"} result:^(NSURLResponse *response, NSString *result) {
         complateBlock(result);
     } failed:^(NSURLResponse *response, NSError *connectionError) {
-        complateBlock(@"");
+        complateBlock(nil);
     }];
 }
 

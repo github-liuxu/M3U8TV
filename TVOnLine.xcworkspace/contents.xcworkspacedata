@@ -5,6 +5,9 @@
       location = "group:TVOnLine.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:BaiduOauth2/BaiduOauth2.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

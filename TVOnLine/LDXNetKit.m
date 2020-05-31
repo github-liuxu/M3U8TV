@@ -14,56 +14,24 @@
 
 @implementation LDXNetKit
 
-+ (void)GETUrlString:(NSString *)urlString param:(NSDictionary *)param complate:(LDXComplateBlock)complateBlock failed:(LDXFailedBlock)failedBlock {
-    NSMutableURLRequest *request;
-    NSString *getStr = urlString;
-    getStr = [urlString stringByAppendingString:@"?"];
-    for (NSString* str in param) {
-        id value = [param objectForKey:str];
-        if ([value isKindOfClass:[NSString class]]) {
-            getStr = [getStr stringByAppendingFormat:@"%@=%@&",str,value];
-        } else {
-            NSInteger tempNum = [value integerValue];
-            getStr = [getStr stringByAppendingFormat:@"%@=%ld&",str,(long)tempNum];
-        }
-    }
-    getStr = [getStr substringToIndex:getStr.length-1];
-    NSCharacterSet *encodeUrlSet = [NSCharacterSet URLQueryAllowedCharacterSet];
-    NSString *encodeUrl = [getStr stringByAddingPercentEncodingWithAllowedCharacters:encodeUrlSet];
-    NSURL *url = [NSURL URLWithString:encodeUrl];
-    request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
-    request.HTTPMethod = @"GET";
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error) {
-            failedBlock(response, error);
-        } else {
-            NSDictionary *result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            complateBlock(response,result);
-        }
++ (void)GETUrlString:(NSString *)urlString headers:(NSDictionary *)headers complate:(LDXComplateBlock)complateBlock failed:(LDXFailedBlock)failedBlock {
+    [LDXNetKit GETUrlString:urlString headers:headers result:^(NSURLResponse *response, NSString *result) {
+        NSData *data = [result dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *resultDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        complateBlock(response,resultDic);
+    } failed:^(NSURLResponse *response, NSError *connectionError) {
+        failedBlock(response, connectionError);
     }];
-    [task resume];
 }
 
-+ (void)GETUrlString:(NSString *)urlString param:(NSDictionary *)param result:(LDXResultBlock)resultBlock failed:(LDXFailedBlock)failedBlock {
++ (void)GETUrlString:(NSString *)urlString headers:(NSDictionary *)headers result:(LDXResultBlock)resultBlock failed:(LDXFailedBlock)failedBlock {
     NSMutableURLRequest *request;
-    NSString *getStr = urlString;
-    getStr = [urlString stringByAppendingString:@"?"];
-    for (NSString* str in param) {
-        id value = [param objectForKey:str];
-        if ([value isKindOfClass:[NSString class]]) {
-            getStr = [getStr stringByAppendingFormat:@"%@=%@&",str,value];
-        } else {
-            NSInteger tempNum = [value integerValue];
-            getStr = [getStr stringByAppendingFormat:@"%@=%ld&",str,(long)tempNum];
-        }
-    }
-    getStr = [getStr substringToIndex:getStr.length-1];
-    NSCharacterSet *encodeUrlSet = [NSCharacterSet URLQueryAllowedCharacterSet];
-    NSString *encodeUrl = [getStr stringByAddingPercentEncodingWithAllowedCharacters:encodeUrlSet];
-    NSURL *url = [NSURL URLWithString:encodeUrl];
+    NSURL *url = [NSURL URLWithString:urlString];
     request = [[NSMutableURLRequest alloc]initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     request.HTTPMethod = @"GET";
+    if (headers) {
+        request.allHTTPHeaderFields = headers;
+    }
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
