@@ -14,6 +14,7 @@
 #endif
 #import <BaiduOauth2/BaiduOauth2.h>
 #import "LDXNetKit.h"
+#import "NvToast.h"
 
 @interface AdvanceViewController ()
 
@@ -45,7 +46,7 @@
 
 - (IBAction)downloadClick:(UIButton *)sender {
     BaiduOauth2ViewController *baidu = [[BaiduOauth2ViewController alloc] initWithNibName:@"BaiduOauth2ViewController" bundle:[NSBundle bundleForClass:[BaiduOauth2ViewController class]]];
-    baidu.url = @"https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=gGB3c1nlIenzsqWV7G4dqNpg&redirect_uri=oob&scope=netdisk";
+    baidu.url = @"https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=gGB3c1nlIenzsqWV7G4dqNpg&redirect_uri=oob&scope=netdisk&display=popup";
     baidu.delegate = self;
     [self addChildViewController:baidu];
     [self.view addSubview:baidu.view];
@@ -55,6 +56,7 @@
 
 - (void)oauthLoginSuccess:(BaiduOauth2ViewController *)baiduOauthViewController info:(NSDictionary *)info {
     NSLog(@"%@",info);
+    [NvToast showInfoWithMessage:@"授权成功"];
     [baiduOauthViewController removeFromParentViewController];
     [baiduOauthViewController.view removeFromSuperview];
     [baiduOauthViewController didMoveToParentViewController:nil];
@@ -62,20 +64,22 @@
     [[info allKeys] enumerateObjectsUsingBlock:^(NSString *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
          [[NSUserDefaults standardUserDefaults] setObject:info[obj] forKey:obj];
      }];
-    
-    self.activityIndictator.hidden = false;
-    [self.activityIndictator startAnimating];
-    [self downloadTvFiles:^{
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.activityIndictator stopAnimating];
-        });
-    }];
+    if ([info[@"access_token"] length] > 0) {
+        self.activityIndictator.hidden = false;
+        [self.activityIndictator startAnimating];
+        [self downloadTvFiles:^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.activityIndictator stopAnimating];
+            });
+        }];
+    }
 }
 
 - (void)oauthLoginFail:(BaiduOauth2ViewController *)baiduOauthViewController info:(NSDictionary *)info {
     [baiduOauthViewController removeFromParentViewController];
     [baiduOauthViewController.view removeFromSuperview];
     [baiduOauthViewController didMoveToParentViewController:nil];
+    [NvToast showInfoWithMessage:@"授权失败"];
 }
 
 - (IBAction)uploadClick:(UIButton *)sender {
@@ -159,9 +163,6 @@
                 NSString *string = fileInfo.list[i].dlink;
                 if (string) {
                     [weakSelf.dlinks addObject:string];
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        weakSelf.textView.text = [weakSelf.textView.text stringByAppendingFormat:@"\n%@",string];
-                    });
                 }
             }
             dispatch_semaphore_signal(sem);
@@ -181,10 +182,10 @@
             NSString *downloadUrl = [NSString stringWithFormat:@"%@&access_token=%@",weakSelf.dlinks[i],access_token];
             [FileListManager GetFileString:downloadUrl complate:^(NSString * _Nonnull string) {
                 NSLog(@"%@",string);
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    weakSelf.textView.text = [weakSelf.textView.text stringByAppendingFormat:@"\n%@",string];
-                });
                 if (![string isEqualToString:@""] && string != nil) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        weakSelf.textView.text = [weakSelf.textView.text stringByAppendingFormat:@"\n%@",obj.filename];
+                    });
                     NSString* tvfile = [fpath stringByAppendingPathComponent:obj.filename];
                     if ([fm fileExistsAtPath:tvfile]) {
                         [fm removeItemAtPath:tvfile error:nil];

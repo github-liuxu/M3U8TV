@@ -9,7 +9,7 @@
 #import "BaiduOauth2ViewController.h"
 @import WebKit;
 
-@interface BaiduOauth2ViewController ()
+@interface BaiduOauth2ViewController ()<WKNavigationDelegate>
 @property (weak, nonatomic) IBOutlet WKWebView *webView;
 
 @end
