@@ -12,6 +12,7 @@
 		0C6AE6C42482D94D00EA5805 /* BaiduOauth2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6AE6C12482D94D00EA5805 /* BaiduOauth2ViewController.m */; };
 		0C6AE6C52482D94D00EA5805 /* BaiduOauth2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C6AE6C22482D94D00EA5805 /* BaiduOauth2ViewController.xib */; };
 		0C6AE6CC2482DAD700EA5805 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6AE6CB2482DAD700EA5805 /* WebKit.framework */; };
+		B5E6F37C248CF0DF00A1EB4F /* 36.png in Resources */ = {isa = PBXBuildFile; fileRef = B5E6F37B248CF0DF00A1EB4F /* 36.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0C6AE6C12482D94D00EA5805 /* BaiduOauth2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaiduOauth2ViewController.m; sourceTree = "<group>"; };
 		0C6AE6C22482D94D00EA5805 /* BaiduOauth2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaiduOauth2ViewController.xib; sourceTree = "<group>"; };
 		0C6AE6CB2482DAD700EA5805 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		B5E6F37B248CF0DF00A1EB4F /* 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 36.png; path = ../../TVOnLine/Assets.xcassets/36.imageset/36.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		0C6AE6B72482D92200EA5805 /* BaiduOauth2 */ = {
 			isa = PBXGroup;
 			children = (
+				B5E6F37B248CF0DF00A1EB4F /* 36.png */,
 				0C6AE6B82482D92200EA5805 /* BaiduOauth2.h */,
 				0C6AE6C02482D94D00EA5805 /* BaiduOauth2ViewController.h */,
 				0C6AE6C12482D94D00EA5805 /* BaiduOauth2ViewController.m */,
@@ -143,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E6F37C248CF0DF00A1EB4F /* 36.png in Resources */,
 				0C6AE6C52482D94D00EA5805 /* BaiduOauth2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

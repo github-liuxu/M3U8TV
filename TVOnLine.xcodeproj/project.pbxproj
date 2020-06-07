@@ -31,6 +31,7 @@
 		0CE5D9542450977000C32651 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE5D9532450977000C32651 /* PlayerViewController.m */; };
 		54E0F3B37FF4E8067EA89E96 /* Pods_TVOnLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C27AF31BAFF087D6A8E074 /* Pods_TVOnLine.framework */; };
 		B51CB39C22156906006EC5BC /* NvToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CB39B22156906006EC5BC /* NvToast.m */; };
+		B5E6F37A248CE17700A1EB4F /* ToolCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E6F379248CE17700A1EB4F /* ToolCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,6 +108,8 @@
 		B5455B9222014D0B008FE896 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		B5455B9422014D14008FE896 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B5455B9622014D1C008FE896 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		B5E6F378248CE17700A1EB4F /* ToolCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolCollectionViewCell.h; sourceTree = "<group>"; };
+		B5E6F379248CE17700A1EB4F /* ToolCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,8 @@
 				0C195C0B24509FC2001351D9 /* ListViewController.xib */,
 				0CAF64CF245B4D53005E68AC /* AdvanceViewController.h */,
 				0CAF64D0245B4D53005E68AC /* AdvanceViewController.m */,
+				B5E6F378248CE17700A1EB4F /* ToolCollectionViewCell.h */,
+				B5E6F379248CE17700A1EB4F /* ToolCollectionViewCell.m */,
 				0C6AE6CD2483C22700EA5805 /* QTTopLevel.h */,
 				0C6AE6CE2483C22700EA5805 /* QTTopLevel.m */,
 				0C6AE6D02483CA1000EA5805 /* FileInfo.h */,
@@ -342,6 +347,7 @@
 				0C86CBE421F77DA300C26F51 /* ConvertTXT.m in Sources */,
 				0CAF64D2245B4D54005E68AC /* AdvanceViewController.m in Sources */,
 				0C195C0C24509FC2001351D9 /* ListViewController.m in Sources */,
+				B5E6F37A248CE17700A1EB4F /* ToolCollectionViewCell.m in Sources */,
 				B51CB39C22156906006EC5BC /* NvToast.m in Sources */,
 				0C8252C32451E3B7002F9347 /* ListView.m in Sources */,
 				0CE5D9542450977000C32651 /* PlayerViewController.m in Sources */,

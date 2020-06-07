@@ -15,16 +15,22 @@
 #import <BaiduOauth2/BaiduOauth2.h>
 #import "LDXNetKit.h"
 #import "NvToast.h"
+#import "ToolCollectionViewCell.h"
+//#import "WebViewController.h"
 
 @interface AdvanceViewController ()
+<
+UICollectionViewDataSource,
+UICollectionViewDelegate
+>
 
-@property (weak, nonatomic) IBOutlet UITextField *textField;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndictator;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (nonatomic, strong) NSArray <QTList*>*fileList;
 @property (nonatomic, strong) dispatch_queue_t queue;
 @property (nonatomic, strong) FileInfo *dlinkFileInfo;
 @property (nonatomic, strong) NSMutableArray *dlinks;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
@@ -35,16 +41,50 @@
     // Do any additional setup after loading the view from its nib.
     self.queue = dispatch_queue_create("NvUploadRequest", DISPATCH_QUEUE_CONCURRENT);
     self.dlinks = [NSMutableArray array];
-    self.activityIndictator.hidden = true;
-    [self.activityIndictator stopAnimating];
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
+    [self.collectionView registerClass:[ToolCollectionViewCell class] forCellWithReuseIdentifier:@"ToolCollectionViewCell"];
+    self.dataSource = [NSMutableArray array];
+    [self.dataSource addObject:@"31"];
+    [self.dataSource addObject:@"34"];
+    [self.dataSource addObject:@"download"];
+    [self.dataSource addObject:@"webview"];
+    [self.dataSource addObject:@"debug"];
+    [self.dataSource addObject:@"feedback"];
 }
 
-- (IBAction)tapClick:(UITapGestureRecognizer *)sender {
-    [self.textField resignFirstResponder];
-    [self.textView resignFirstResponder];
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.dataSource.count;
 }
 
-- (IBAction)downloadClick:(UIButton *)sender {
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    ToolCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ToolCollectionViewCell" forIndexPath:indexPath];
+    cell.imageView.image = [UIImage imageNamed:self.dataSource[indexPath.item]];
+    return cell;
+}
+
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSString *name = self.dataSource[indexPath.item];
+    if ([name isEqualToString:@"31"]) {
+        [self downloadClick];
+    } else if ([name isEqualToString:@"34"]) {
+        [NvToast showInfoWithMessage:@"开发中"];
+    } else if ([name isEqualToString:@"download"]) {
+        [self downloadFromWeb];
+    } else if ([name isEqualToString:@"webview"]) {
+        UIStoryboard *st = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+        UINavigationController *nav = [st instantiateViewControllerWithIdentifier:@"WebNavigationConteoller"];
+        [self presentViewController:nav animated:true completion:nil];
+    } else if ([name isEqualToString:@"debug"]) {
+        [self flexClick];
+    } else if ([name isEqualToString:@"feedback"]) {
+        [self show];
+    }
+}
+
+- (void)downloadClick {
     BaiduOauth2ViewController *baidu = [[BaiduOauth2ViewController alloc] initWithNibName:@"BaiduOauth2ViewController" bundle:[NSBundle bundleForClass:[BaiduOauth2ViewController class]]];
     baidu.url = @"https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=gGB3c1nlIenzsqWV7G4dqNpg&redirect_uri=oob&scope=netdisk&display=popup";
     baidu.delegate = self;
@@ -65,17 +105,12 @@
          [[NSUserDefaults standardUserDefaults] setObject:info[obj] forKey:obj];
      }];
     if ([info[@"access_token"] length] > 0) {
-        self.activityIndictator.hidden = false;
-        [self.activityIndictator startAnimating];
         [self downloadTvFiles:^{
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self.activityIndictator stopAnimating];
-            });
         }];
     }
 }
 
-- (void)oauthLoginFail:(BaiduOauth2ViewController *)baiduOauthViewController info:(NSDictionary *)info {
+- (void)oauthLoginClose:(BaiduOauth2ViewController *)baiduOauthViewController {
     [baiduOauthViewController removeFromParentViewController];
     [baiduOauthViewController.view removeFromSuperview];
     [baiduOauthViewController didMoveToParentViewController:nil];
@@ -83,32 +118,32 @@
 }
 
 - (IBAction)uploadClick:(UIButton *)sender {
-    self.activityIndictator.hidden = false;
-    [self.activityIndictator startAnimating];
+//    self.activityIndictator.hidden = false;
+//    [self.activityIndictator startAnimating];
     [self uploadTvFiles:^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.activityIndictator stopAnimating];
+//            [self.activityIndictator stopAnimating];
         });
     }];
 }
 
 - (IBAction)closeClick:(id)sender {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"AVPlayerPlay" object:nil];
-    [self.activityIndictator removeFromSuperview];
+//    [self.activityIndictator removeFromSuperview];
     [self dismissViewControllerAnimated:true completion:nil];
 }
 
-- (IBAction)downloadFromWeb:(id)sender {
+- (void)downloadFromWeb {
     [self.delegate updateFromWeb];
 }
 
-- (IBAction)flexClick:(UIButton *)sender {
+- (void)flexClick {
 #if DEBUG
     [[FLEXManager sharedManager] showExplorer];
 #endif
 }
 
-- (IBAction)show:(id)sender {
+- (void)show {
     CrashListViewController *listVC = [CrashListViewController new];
     listVC.delegate = self;
     listVC.emailAddress = @"chuyang009@163.com";
@@ -207,7 +242,6 @@
 
 - (void)uploadTvFiles:(void(^)(void))block {
     NSString *fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-    NSString *host = self.textField.text;
     NSFileManager *fm = [NSFileManager defaultManager];
     __weak typeof(self)weakSelf = self;
     NSArray *fileNames = [[[fm contentsOfDirectoryAtPath:fpath error:nil] pathsMatchingExtensions:@[@"txt"]] copy];
@@ -217,7 +251,7 @@
         NSString *text = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
         dispatch_async(weakSelf.queue, ^{
             dispatch_semaphore_t sem = dispatch_semaphore_create(0);
-            [FileListManager PostFileString:host param:@{@"data":text,@"fileName":fileName} complate:^(NSString *string) {
+            [FileListManager PostFileString:@"" param:@{@"data":text,@"fileName":fileName} complate:^(NSString *string) {
                 NSLog(@"%@",string);
                 dispatch_async(dispatch_get_main_queue(), ^{
                     weakSelf.textView.text = [weakSelf.textView.text stringByAppendingFormat:@"\n%@",string];

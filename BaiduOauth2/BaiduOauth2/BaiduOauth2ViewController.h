@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)oauthLoginSuccess:(BaiduOauth2ViewController *)baiduOauthViewController info:(NSDictionary *)info;
 
-- (void)oauthLoginFail:(BaiduOauth2ViewController *)baiduOauthViewController info:(NSDictionary *)info;
+- (void)oauthLoginClose:(BaiduOauth2ViewController *)baiduOauthViewController;
 
 @end
 

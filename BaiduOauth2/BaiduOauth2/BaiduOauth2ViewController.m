@@ -35,10 +35,12 @@
             [param setObject:array.lastObject forKey:array.firstObject];
         }];
         [self.delegate oauthLoginSuccess:self info:param];
-    } else {
-        [self.delegate oauthLoginFail:self info:nil];
     }
     
+}
+
+- (IBAction)close:(id)sender {
+    [self.delegate oauthLoginClose:self];
 }
 
 @end
