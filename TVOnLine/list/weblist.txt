@@ -3,3 +3,4 @@ huya,https://www.huya.com/g/seeTogether
 66直播,http://www.66zhibo.net
 vip解析,http://vip.hd181.com
 tv365,http://www.tv365.vip
+douyu,https://m.douyu.com/8507162?type=yqk

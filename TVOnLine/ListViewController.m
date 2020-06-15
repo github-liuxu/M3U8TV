@@ -318,10 +318,22 @@
     } else {
         if ([self.delegate respondsToSelector:@selector(didSelectUrlString:)]) {
             NSDictionary*dic = self.dataSource[indexPath.row];
-            NSString *urlString = dic[@"url"];
-            urlString = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-            NSURL * url = [NSURL URLWithString:urlString];
-            [self.delegate didSelectUrlString:url];
+            __block NSString *urlString = dic[@"url"];
+            if ([urlString containsString:@"http"]) {
+                urlString = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+                NSURL * url = [NSURL URLWithString:urlString];
+                [self.delegate didSelectUrlString:url];
+            } else {
+                NSString *uurl = [NSString stringWithFormat:@"https://m.huya.com/%@",[urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""]];
+                __weak typeof(self)weakSelf = self;
+                [GetAVList getURL:uurl complate:^(NSString * _Nonnull urlString) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        NSString * urlStr = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+                        NSURL * url = [NSURL URLWithString:urlStr];
+                        [weakSelf.delegate didSelectUrlString:url];
+                    });
+                }];
+            }
         }
     }
 }
@@ -394,18 +406,19 @@
 }
 
 - (void)updateFromWeb {
+    __weak typeof(self)weakSelf = self;
     [GetAVList getAVList:^(NSString *r) {
-        NSFileManager *fm = [NSFileManager defaultManager];
-        NSString *fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-        self.filePath = [fpath stringByAppendingPathComponent:@"1-tv.txt"];
-        if ([fm fileExistsAtPath:self.filePath]) {
-            [fm removeItemAtPath:self.filePath error:nil];
-        }
-        [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:self.filePath atomically:true];
-        NSLog(@"%@",r);
-        self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
+            NSFileManager *fm = [NSFileManager defaultManager];
+            NSString *fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+            weakSelf.filePath = [fpath stringByAppendingPathComponent:@"1-tv.txt"];
+            if ([fm fileExistsAtPath:weakSelf.filePath]) {
+                [fm removeItemAtPath:weakSelf.filePath error:nil];
+            }
+            [[r dataUsingEncoding:NSUTF8StringEncoding] writeToFile:weakSelf.filePath atomically:true];
+            NSLog(@"%@",r);
+            weakSelf.dataSource = [[ConvertTXT alloc] initTextWith:weakSelf.filePath].array;
+            [weakSelf.tableView reloadData];
         });
     }];
 }
