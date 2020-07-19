@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GetAVList : NSObject
 
-+ (void)getAVList:(void(^)(NSString*))complate;
-+ (void)getURL:(NSString *)uurl complate:(void(^)(NSString*))complate;
+- (void)getAVList:(void(^)(NSString*))complate;
+- (void)getURL:(NSString *)uurl complate:(void(^)(NSString*))complate;
 
 @end
 

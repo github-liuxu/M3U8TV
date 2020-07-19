@@ -13,6 +13,6 @@ target 'TVOnLine' do
   pod 'LDXCrash'
   #pod 'IJKMediaFramework'
   pod 'HTMLKit'
-  pod 'FLEX'
+  #pod 'FLEX'
 
 end

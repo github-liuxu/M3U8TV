@@ -26,6 +26,7 @@
 @property (strong, nonatomic) NSMutableArray *dataSource;
 @property (nonatomic, assign) BOOL isAvPlayer;//是否使用avplayer
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *rightConstant;
+@property (nonatomic, strong) GetAVList *getList;
 
 @end
 
@@ -34,6 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.getList = [GetAVList new];
     ((ListView*)self.view).delegate = self;
     [self.fileTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCellFileList"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
@@ -326,7 +328,7 @@
             } else {
                 NSString *uurl = [NSString stringWithFormat:@"https://m.huya.com/%@",[urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""]];
                 __weak typeof(self)weakSelf = self;
-                [GetAVList getURL:uurl complate:^(NSString * _Nonnull urlString) {
+                [self.getList getURL:uurl complate:^(NSString * _Nonnull urlString) {
                     dispatch_async(dispatch_get_main_queue(), ^{
                         NSString * urlStr = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
                         NSURL * url = [NSURL URLWithString:urlStr];
@@ -407,7 +409,7 @@
 
 - (void)updateFromWeb {
     __weak typeof(self)weakSelf = self;
-    [GetAVList getAVList:^(NSString *r) {
+    [self.getList getAVList:^(NSString *r) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSFileManager *fm = [NSFileManager defaultManager];
             NSString *fpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];

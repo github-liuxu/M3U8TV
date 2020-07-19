@@ -8,10 +8,20 @@
 
 #import "GetAVList.h"
 #import "HTMLKit.h"
+@import UIKit;
+@import WebKit;
+
+@interface GetAVList () <WKUIDelegate, WKNavigationDelegate>
+
+@property (nonatomic, strong) WKWebView *webView;
+@property (nonatomic, strong) NSString *message;
+@property (nonatomic, copy) void(^messageBlock)(NSString *urlString);
+
+@end
 
 @implementation GetAVList
 
-+ (void)getAVList:(void(^)(NSString*))complate {
+- (void)getAVList:(void(^)(NSString*))complate {
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:@"http://ivi.bupt.edu.cn/"] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         __block NSString *r = @"";
@@ -43,31 +53,33 @@
     }] resume];
 }
 
-+ (void)getURL:(NSString *)uurl complate:(void(^)(NSString*))complate {
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:uurl]];
-    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:@"Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Mobile Safari/537.36" forHTTPHeaderField:@"User-Agent"];
+- (void)getURL:(NSString *)uurl complate:(void(^)(NSString*))complate {
+    self.messageBlock = complate;
+    self.message = @"";
+    [self.webView removeFromSuperview];
+    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(-100, -100, 50, 50)];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:uurl]]];
+    [[[UIApplication sharedApplication] windows].firstObject addSubview:self.webView];
+    self.webView.UIDelegate = self;
+    self.webView.navigationDelegate = self;
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    NSString *js = @"var videos = document.getElementsByTagName('video');alert(videos[0].currentSrc);";
     __weak typeof(self)weakSelf = self;
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        //当被检索的字符串太大时，用block控制查找
-        NSString *searchText = result;
-        NSString *regex = @"liveLineUrl = \"([\\s\\S]*?)\";";
-        NSError *err;
-        NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionCaseInsensitive error:&err];
-        if (err) return;
-        [regular enumerateMatchesInString:searchText options:NSMatchingReportCompletion range:NSMakeRange(0, searchText.length) usingBlock:^(NSTextCheckingResult * _Nullable result1, NSMatchingFlags flags, BOOL * _Nonnull stop) {
-            NSRange matchRange = result1.range;
-            NSLog(@"range:%@",NSStringFromRange(matchRange));
-            NSString *str = [searchText substringWithRange:matchRange];
-            str = [str stringByReplacingOccurrencesOfString:@"liveLineUrl = \"" withString:@"https:"];
-            str = [str stringByReplacingOccurrencesOfString:@"\";" withString:@""];
-            *stop = true;
-            complate(str);
-        }];
+    [self.webView evaluateJavaScript:js completionHandler:^(id _Nullable obj, NSError * _Nullable error) {
+        NSLog(@"%@--%@",obj,error);
+        weakSelf.messageBlock(weakSelf.message);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [weakSelf.webView removeFromSuperview];
+            weakSelf.messageBlock = nil;
+        });
     }];
-    [task resume];
+}
+
+- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
+    self.message = message;
+    completionHandler();
 }
 
 @end

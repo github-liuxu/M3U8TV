@@ -9,7 +9,7 @@
 #import "AdvanceViewController.h"
 #import "FileListManager.h"
 #import "CrashListViewController.h"
-#if DEBUG
+#if __has_include(<FLEXManager.h>)
 #import "FLEXManager.h"
 #endif
 #import <BaiduOauth2/BaiduOauth2.h>
@@ -49,7 +49,9 @@ UICollectionViewDelegate
     [self.dataSource addObject:@"34"];
     [self.dataSource addObject:@"download"];
     [self.dataSource addObject:@"webview"];
+#if __has_include(<FLEXManager.h>)
     [self.dataSource addObject:@"debug"];
+#endif
     [self.dataSource addObject:@"feedback"];
 }
 
@@ -138,7 +140,7 @@ UICollectionViewDelegate
 }
 
 - (void)flexClick {
-#if DEBUG
+#if __has_include(<FLEXManager.h>)
     [[FLEXManager sharedManager] showExplorer];
 #endif
 }
