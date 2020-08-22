@@ -71,7 +71,10 @@
         NSLog(@"%@--%@",obj,error);
         weakSelf.messageBlock(weakSelf.message);
         dispatch_async(dispatch_get_main_queue(), ^{
+            weakSelf.webView.UIDelegate = nil;
+            weakSelf.webView.navigationDelegate = nil;
             [weakSelf.webView removeFromSuperview];
+            weakSelf.webView = nil;
             weakSelf.messageBlock = nil;
         });
     }];

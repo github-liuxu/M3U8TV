@@ -384,8 +384,11 @@
 
 - (void)setFilePath:(NSString *)filePath {
     _filePath = filePath;
-    self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
-    [self.tableView reloadData];
+    //此处要异步reload，不然cpu会涨到100%
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.dataSource = [[ConvertTXT alloc] initTextWith:self.filePath].array;
+        [self.tableView reloadData];
+    });
 }
 
 - (void)saveData:(NSMutableArray *)dataSource {
