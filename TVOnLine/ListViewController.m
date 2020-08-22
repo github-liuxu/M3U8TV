@@ -242,7 +242,17 @@
             [self.fileList removeObjectAtIndex:indexPath.row];
             [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
         }];
+#if TARGET_OS_MACCATALYST
+        //添加一个打开沙盒按钮
+        UITableViewRowAction *openAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"打开" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+            NSString *docpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+            NSString *filePath = [docpath stringByAppendingPathComponent:self.fileList[indexPath.row]];
+            FILE *pipe = popen([[NSString stringWithFormat:@"open %@",filePath] cStringUsingEncoding: NSUTF8StringEncoding], "r+");
+            pclose(pipe);
+        }];
         
+        return @[deleteAction,openAction];
+#endif
         return @[deleteAction];
     } else {
         //添加一个删除按钮
@@ -380,6 +390,14 @@
     }]];
     
     [self presentViewController:alert animated:YES completion:nil];
+}
+- (IBAction)touchDownRepeat {
+#if TARGET_OS_MACCATALYST
+    //添加一个打开沙盒
+    NSString *docpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    FILE *pipe = popen([[NSString stringWithFormat:@"open %@",docpath] cStringUsingEncoding: NSUTF8StringEncoding], "r+");
+    pclose(pipe);
+#endif
 }
 
 - (void)setFilePath:(NSString *)filePath {
