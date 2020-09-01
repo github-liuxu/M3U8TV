@@ -16,6 +16,11 @@
 @property (nonatomic, strong) UIButton *rightButton;
 @property (nonatomic, strong) UIButton *setButton;
 @property (nonatomic, strong) NSString *jsUrlString;
+@property (nonatomic, assign) int count;
+@property (nonatomic, assign) BOOL isCount;
+@property (nonatomic, assign) BOOL isGetList;
+@property (nonatomic, strong) NSMutableArray *list;
+
 
 @end
 
@@ -28,6 +33,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self rightNavigationBarItemView]];
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlString]]];
     self.webView.UIDelegate = self;
+    self.list = [NSMutableArray array];
 }
 
 - (UIView *)leftNavigationBarItemView {
@@ -76,10 +82,76 @@
 }
 
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
+    
+    if (self.isCount) {
+        self.isCount = false;
+        self.count = [message intValue];
+        completionHandler();
+        return;
+    }
+    if (self.isGetList) {
+        [self.list addObject:message];
+        if (self.list.count == self.count) {
+            self.isGetList = false;
+        }
+        completionHandler();
+        return;
+    }
+    
     if (message != nil) {
         self.jsUrlString = message;
         completionHandler();
     }
+}
+
+- (void)getCount:(void(^)(void))block {
+    self.isCount = true;
+    NSString *getCountJs = @"var videos = document.getElementsByClassName('clickstat g-link'); alert(videos.length)";
+    [self.webView evaluateJavaScript:getCountJs completionHandler:^(id _Nullable any, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+        if (any) {
+            NSLog(@"%@",any);
+        }
+        if (block) {
+            block();
+        }
+    }];
+}
+
+- (void)getInfo {
+    self.isGetList = true;
+    for (int i = 0; i < self.count; i++) {
+        NSString *getInfoJs = [NSString stringWithFormat:@"var videos = document.getElementsByClassName('clickstat g-link'); alert(videos[%d])",i];
+        [self.webView evaluateJavaScript:getInfoJs completionHandler:^(id _Nullable any, NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"%@",error);
+            }
+            if (any) {
+                NSLog(@"%@",any);
+            }
+        }];
+    }
+}
+
+- (IBAction)update:(id)sender {
+    __weak typeof(self)weakSelf = self;
+    [self getCount:^{
+        NSLog(@"%d",self.count);
+        [weakSelf getInfo];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSMutableArray *array = [NSMutableArray array];
+            [weakSelf.list enumerateObjectsUsingBlock:^(NSString *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                if ([obj containsString:@"http"]) {
+                    NSString *room = [obj componentsSeparatedByString:@"/"].lastObject;
+                    [array addObject:room];
+                }
+            }];
+            NSLog(@"%@",array);
+        });
+        
+    }];
 }
 
 - (BOOL)shouldAutorotate {

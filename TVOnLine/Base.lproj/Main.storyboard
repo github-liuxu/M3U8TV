@@ -191,11 +191,24 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDP-7J-uK9">
+                                <rect key="frame" x="60" y="350" width="61" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="AeJ-Zj-YKC"/>
+                                    <constraint firstAttribute="width" constant="61" id="rXO-LR-dbi"/>
+                                </constraints>
+                                <state key="normal" title="update"/>
+                                <connections>
+                                    <action selector="update:" destination="ZXC-fZ-DNz" eventType="touchUpInside" id="0Yh-4L-N5Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="V63-wQ-w1z" secondAttribute="bottom" id="M6T-wO-JAf"/>
                             <constraint firstAttribute="trailing" secondItem="V63-wQ-w1z" secondAttribute="trailing" id="NMg-wY-ob7"/>
+                            <constraint firstItem="cDP-7J-uK9" firstAttribute="leading" secondItem="swR-1p-AMx" secondAttribute="leading" constant="16" id="aGe-Ua-R06"/>
+                            <constraint firstItem="cDP-7J-uK9" firstAttribute="bottom" secondItem="swR-1p-AMx" secondAttribute="bottom" id="cvN-k5-EJn"/>
                             <constraint firstItem="V63-wQ-w1z" firstAttribute="top" secondItem="swR-1p-AMx" secondAttribute="top" id="qOP-EO-XRp"/>
                             <constraint firstItem="V63-wQ-w1z" firstAttribute="leading" secondItem="swR-1p-AMx" secondAttribute="leading" id="qrX-BU-XOj"/>
                         </constraints>
