@@ -4,3 +4,5 @@ huya,https://www.huya.com/g/seeTogether
 vip解析,http://vip.hd181.com
 tv365,http://www.tv365.vip
 douyu,https://m.douyu.com/8507162?type=yqk
+vip,http://vip.hd181.com
+88影视,https://web.88-spa.com:8443/#/
