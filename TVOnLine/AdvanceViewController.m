@@ -88,7 +88,7 @@ UICollectionViewDelegate
 
 - (void)downloadClick {
     BaiduOauth2ViewController *baidu = [[BaiduOauth2ViewController alloc] initWithNibName:@"BaiduOauth2ViewController" bundle:[NSBundle bundleForClass:[BaiduOauth2ViewController class]]];
-    baidu.url = @"https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=gGB3c1nlIenzsqWV7G4dqNpg&redirect_uri=oob&scope=netdisk&display=popup";
+    baidu.url = @"https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=64MWqc9URdh06c0uotVHPnkWjWRmbgOO&redirect_uri=oob&scope=netdisk&display=popup";
     baidu.delegate = self;
     [self addChildViewController:baidu];
     [self.view addSubview:baidu.view];
