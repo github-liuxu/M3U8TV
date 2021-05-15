@@ -16,6 +16,7 @@
 #import "LDXNetKit.h"
 #import "NvToast.h"
 #import "ToolCollectionViewCell.h"
+#import "YYDiskCache.h"
 //#import "WebViewController.h"
 
 @interface AdvanceViewController ()
@@ -53,6 +54,7 @@ UICollectionViewDelegate
     [self.dataSource addObject:@"debug"];
 #endif
     [self.dataSource addObject:@"feedback"];
+    [self.dataSource addObject:@"token"];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -83,12 +85,21 @@ UICollectionViewDelegate
         [self flexClick];
     } else if ([name isEqualToString:@"feedback"]) {
         [self show];
+    } else if ([name isEqualToString:@"token"]) {
+        [self showToken];
     }
 }
 
 - (void)downloadClick {
     BaiduOauth2ViewController *baidu = [[BaiduOauth2ViewController alloc] initWithNibName:@"BaiduOauth2ViewController" bundle:[NSBundle bundleForClass:[BaiduOauth2ViewController class]]];
-    baidu.url = @"https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=64MWqc9URdh06c0uotVHPnkWjWRmbgOO&redirect_uri=oob&scope=netdisk&display=popup";
+    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/client_id"]];
+    NSString *client_id = [diskCache objectForKey:@"client_id"];
+    if ([client_id isEqualToString:@""] || client_id == nil) {
+        client_id = @"64MWqc9URdh06c0uotVHPnkWjWRmbgOO";
+        [diskCache setObject:client_id forKey:@"client_id"];
+    }
+    
+    baidu.url =[NSString stringWithFormat:@"https://openapi.baidu.com/oauth/2.0/authorize?response_type=token&client_id=%@&redirect_uri=oob&scope=netdisk&display=popup",client_id];
     baidu.delegate = self;
     [self addChildViewController:baidu];
     [self.view addSubview:baidu.view];
@@ -268,6 +279,30 @@ UICollectionViewDelegate
             block();
         });
     });
+}
+
+- (void)showToken {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"更新client_id" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/client_id"]];
+    NSLog(@"%@",[diskCache objectForKey:@"client_id"]);
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"client_id";
+        NSLog(@"%@",[diskCache objectForKey:@"client_id"]);
+        textField.text = [diskCache objectForKey:@"client_id"];
+        NSLog(@"%@",[diskCache objectForKey:@"client_id"]);
+    }];
+    [alertController.textFields lastObject].text = [diskCache objectForKey:@"client_id"];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [alertController addAction:cancelAction];
+    UIAlertAction *defaultAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSString *client_id = [alertController.textFields lastObject].text;
+        [diskCache setObject:@"client_id" forKey:client_id];
+        NSLog(@"%@",[diskCache objectForKey:@"client_id"]);
+    }];
+    [alertController addAction:defaultAction];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (BOOL)shouldAutorotate {

@@ -12,7 +12,8 @@ target 'TVOnLine' do
   pod 'YYModel'
   pod 'LDXCrash'
   #pod 'IJKMediaFramework'
-  pod 'HTMLKit'
+  pod 'HTMLKit', '~> 4.2'
+  pod 'YYCache'
   #pod 'FLEX'
 
 end
