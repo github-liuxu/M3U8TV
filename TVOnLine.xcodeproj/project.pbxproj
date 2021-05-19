@@ -10,6 +10,7 @@
 		0C195C0C24509FC2001351D9 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C195C0A24509FC2001351D9 /* ListViewController.m */; };
 		0C195C0D24509FC2001351D9 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C195C0B24509FC2001351D9 /* ListViewController.xib */; };
 		0C21EF74243E481000295CB2 /* GetAVList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C21EF73243E481000295CB2 /* GetAVList.m */; };
+		0C4487C926502BB300E2A7FC /* HuYa.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4487C826502BB300E2A7FC /* HuYa.m */; };
 		0C6927252476E8980000F64E /* WebListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6927242476E8980000F64E /* WebListViewController.m */; };
 		0C6927282476EF030000F64E /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6927272476EF030000F64E /* WebViewController.m */; };
 		0C69272A2476F72D0000F64E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6927292476F72D0000F64E /* WebKit.framework */; };
@@ -56,6 +57,8 @@
 		0C21EF72243E481000295CB2 /* GetAVList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAVList.h; sourceTree = "<group>"; };
 		0C21EF73243E481000295CB2 /* GetAVList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAVList.m; sourceTree = "<group>"; };
 		0C445BEC244F7B25007EBFB0 /* TVOnLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TVOnLine.entitlements; sourceTree = "<group>"; };
+		0C4487C726502BB300E2A7FC /* HuYa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HuYa.h; sourceTree = "<group>"; };
+		0C4487C826502BB300E2A7FC /* HuYa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuYa.m; sourceTree = "<group>"; };
 		0C6927232476E8980000F64E /* WebListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebListViewController.h; sourceTree = "<group>"; };
 		0C6927242476E8980000F64E /* WebListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebListViewController.m; sourceTree = "<group>"; };
 		0C6927262476EF030000F64E /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				0CBB57CF21CD2AE700282EFF /* main.m */,
 				0C21EF72243E481000295CB2 /* GetAVList.h */,
 				0C21EF73243E481000295CB2 /* GetAVList.m */,
+				0C4487C726502BB300E2A7FC /* HuYa.h */,
+				0C4487C826502BB300E2A7FC /* HuYa.m */,
 			);
 			path = TVOnLine;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				0CAF64CB245B4161005E68AC /* LDXNetKit.m in Sources */,
 				0CBB57C221CD2AE600282EFF /* AppDelegate.m in Sources */,
 				0C6AE6CF2483C22700EA5805 /* QTTopLevel.m in Sources */,
+				0C4487C926502BB300E2A7FC /* HuYa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

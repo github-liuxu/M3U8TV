@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)getAVList:(void(^)(NSString*))complate;
 - (void)getURL:(NSString *)uurl complate:(void(^)(NSString*))complate;
+- (NSString *)getUrlString:(NSString *)roomId;
 
 @end
 

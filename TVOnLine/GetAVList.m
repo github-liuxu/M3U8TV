@@ -8,6 +8,7 @@
 
 #import "GetAVList.h"
 #import "HTMLKit.h"
+#import "HuYa.h"
 @import UIKit;
 @import WebKit;
 
@@ -51,6 +52,11 @@
         }];
         complate(r);
     }] resume];
+}
+
+- (NSString *)getUrlString:(NSString *)roomId {
+    HuYa *huya = [HuYa new];
+    return [[huya getRealUrl:roomId] allValues].firstObject;
 }
 
 - (void)getURL:(NSString *)uurl complate:(void(^)(NSString*))complate {

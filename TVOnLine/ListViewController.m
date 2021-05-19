@@ -331,20 +331,28 @@
         if ([self.delegate respondsToSelector:@selector(didSelectUrlString:)]) {
             NSDictionary*dic = self.dataSource[indexPath.row];
             __block NSString *urlString = dic[@"url"];
+            NSLog(@"%@",urlString);
             if ([urlString containsString:@"http"]) {
                 urlString = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
                 NSURL * url = [NSURL URLWithString:urlString];
                 [self.delegate didSelectUrlString:url];
             } else {
-                NSString *uurl = [NSString stringWithFormat:@"https://m.huya.com/%@",[urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""]];
                 __weak typeof(self)weakSelf = self;
-                [self.getList getURL:uurl complate:^(NSString * _Nonnull urlString) {
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        NSString * urlStr = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
-                        NSURL * url = [NSURL URLWithString:urlStr];
-                        [weakSelf.delegate didSelectUrlString:url];
-                    });
-                }];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    NSString *uurl = [NSString stringWithFormat:@"%@",[urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""]];
+                    NSString *urlString = [self.getList getUrlString:uurl];
+                    NSString * urlStr = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+                    NSLog(@"%@",urlStr);
+                    NSURL * url = [NSURL URLWithString:urlStr];
+                    [weakSelf.delegate didSelectUrlString:url];
+                });
+//                [self.getList getURL:uurl complate:^(NSString * _Nonnull urlString) {
+//                    dispatch_async(dispatch_get_main_queue(), ^{
+//                        NSString * urlStr = [urlString stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+//                        NSURL * url = [NSURL URLWithString:urlStr];
+//                        [weakSelf.delegate didSelectUrlString:url];
+//                    });
+//                }];
             }
         }
     }
