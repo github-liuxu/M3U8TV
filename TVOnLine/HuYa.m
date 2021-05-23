@@ -21,7 +21,7 @@
     __block NSDictionary *real_url = nil;
     dispatch_semaphore_t sem = dispatch_semaphore_create(0);
     [LDXNetKit GETUrlString:roomUrl headers:header result:^(NSURLResponse *response, NSString *result) {
-        NSLog(@"%@",result);
+//        NSLog(@"%@",result);
         NSString *resultUrl = @"";
         NSString *searchText = result;
         NSError *error = NULL;

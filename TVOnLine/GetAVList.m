@@ -14,9 +14,6 @@
 
 @interface GetAVList () <WKUIDelegate, WKNavigationDelegate>
 
-@property (nonatomic, strong) WKWebView *webView;
-@property (nonatomic, strong) NSString *message;
-@property (nonatomic, copy) void(^messageBlock)(NSString *urlString);
 
 @end
 
@@ -57,38 +54,6 @@
 - (NSString *)getUrlString:(NSString *)roomId {
     HuYa *huya = [HuYa new];
     return [[huya getRealUrl:roomId] allValues].firstObject;
-}
-
-- (void)getURL:(NSString *)uurl complate:(void(^)(NSString*))complate {
-    self.messageBlock = complate;
-    self.message = @"";
-    [self.webView removeFromSuperview];
-    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(-100, -100, 50, 50)];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:uurl]]];
-    [[[UIApplication sharedApplication] windows].firstObject addSubview:self.webView];
-    self.webView.UIDelegate = self;
-    self.webView.navigationDelegate = self;
-}
-
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    NSString *js = @"var videos = document.getElementsByTagName('video');alert(videos[0].currentSrc);";
-    __weak typeof(self)weakSelf = self;
-    [self.webView evaluateJavaScript:js completionHandler:^(id _Nullable obj, NSError * _Nullable error) {
-        NSLog(@"%@--%@",obj,error);
-        weakSelf.messageBlock(weakSelf.message);
-        dispatch_async(dispatch_get_main_queue(), ^{
-            weakSelf.webView.UIDelegate = nil;
-            weakSelf.webView.navigationDelegate = nil;
-            [weakSelf.webView removeFromSuperview];
-            weakSelf.webView = nil;
-            weakSelf.messageBlock = nil;
-        });
-    }];
-}
-
-- (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    self.message = message;
-    completionHandler();
 }
 
 @end

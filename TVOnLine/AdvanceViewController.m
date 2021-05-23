@@ -92,7 +92,7 @@ UICollectionViewDelegate
 
 - (void)downloadClick {
     BaiduOauth2ViewController *baidu = [[BaiduOauth2ViewController alloc] initWithNibName:@"BaiduOauth2ViewController" bundle:[NSBundle bundleForClass:[BaiduOauth2ViewController class]]];
-    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/client_id"]];
+    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/client_id"]];
     NSString *client_id = [diskCache objectForKey:@"client_id"];
     if ([client_id isEqualToString:@""] || client_id == nil) {
         client_id = @"64MWqc9URdh06c0uotVHPnkWjWRmbgOO";
@@ -283,7 +283,7 @@ UICollectionViewDelegate
 
 - (void)showToken {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"更新client_id" message:nil preferredStyle:UIAlertControllerStyleAlert];
-    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/client_id"]];
+    YYDiskCache *diskCache = [[YYDiskCache alloc] initWithPath:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/client_id"]];
     NSLog(@"%@",[diskCache objectForKey:@"client_id"]);
     [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
         textField.placeholder = @"client_id";
